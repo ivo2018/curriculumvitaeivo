@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-import "../components/Home.css"
-const Home = () => {
+import window from "../imgs/window2.png"
+import "../components/About.css"
+import { getMouseEventOptions } from '@testing-library/user-event/dist/utils';
+const About = () => {  
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
         if(element){
@@ -70,10 +72,43 @@ const Home = () => {
 
 
  }
+ useEffect(() => {
+    function titleEffect(){
+    var element =document.querySelector('.homePage');
+    if(element){
+    element.addEventListener("mousemove",
+    function (event) {
+        if(event.movementX >0){
+      document.getElementById('content-title').style.boxShadow="15px 6px 5px -2px rgba(77, 33, 33, 0.568)";
+      //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+      document.getElementById('content-title').style.transition="0.8s all";
+        }   else
+        if(event.movementX<0)    {
+            document.getElementById('content-title').style.boxShadow="-15px -6px 5px -2px rgba(77, 33, 33, 0.568)";
+            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+            document.getElementById('content-title').style.transition="0.8s all";
+        }  else  
+        if(event.movementY<0 )    {
+            document.getElementById('content-title').style.boxShadow="0px -6px 2px 0.5px rgba(77, 33, 33, 0.568)";
+            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+            document.getElementById('content-title').style.transition="0.8s all";
+        }  else
+        if(event.movementY>0)    {
+            document.getElementById('content-title').style.boxShadow="0px 6px 2px 0.5px rgba(77, 33, 33, 0.568)";
+            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+            document.getElementById('content-title').style.transition="0.8s all";
+        }  
+        else{
+            document.getElementById('content-title').style.boxShadow="0px 6px 2px 0.5px rgba(77, 33, 33, 0.568)";
+        }
+
+      
+    })};
+
+  }titleEffect()});
 
     return (
-        <div class="homePage"  >
-
+        <div class="homePage">
             <div class="homePage__folders">
                 <div class="homePage__folders-work" onClick={changeColor} >
                   <img src={folder} alt="folder"  />
@@ -108,8 +143,23 @@ const Home = () => {
                   </button>
             </div>
         </div>
+        <div class="homePage__about">
+            <div class="homePage__about-title">
+           <a>About</a>
+           </div>  
+           <div class="homePage__content">
+            <div class="homePage__content-title">
+            <h1 id="content-title">Ivo Ortiz</h1>
+     
+            </div>
+               <div class="homePage__content-description">
+               <h2>Full Stack Developer Junior</h2>
+            </div>
+          
+           </div>
+     </div>
      </div>
     );
 };
 
-export default Home;
+export default About;
