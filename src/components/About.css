@@ -98,6 +98,10 @@ padding: 6px;
 
 }
 @media (max-width:420px){
+.homePage__folders{
+  display: flex;
+  margin:0px;
+}
   .homePage__content-title {
    font-size: 1.5em;
   width: 100%;
@@ -117,8 +121,8 @@ padding: 6px;
   /*border: outset 33px  #B8B1AF;*/
   border: ridge 3px rgb(245, 245, 245);
   box-shadow: 3px 2px 2px black;
-  display: inline;
-  margin: 6em;
+  
+  margin:auto;
   height:30em;
   width: 100%;
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%,  rgba(241, 211, 211, 0.788) 0%);
