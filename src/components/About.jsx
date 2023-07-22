@@ -3,9 +3,9 @@ import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-import window from "../imgs/window2.png"
+
 import "../components/About.css"
-import { getMouseEventOptions } from '@testing-library/user-event/dist/utils';
+
 const About = () => {  
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
@@ -113,7 +113,7 @@ const About = () => {
                 <div class="homePage__folders-work" onClick={changeColor} >
                   <img src={folder} alt="folder"  />
                    <button  id="work">
-                    <a>
+                    <a href="/#">
                    Work
                    </a>
                   </button>
@@ -121,7 +121,7 @@ const About = () => {
              <div  class="homePage__folders-skills" onClick={changeColor}  >
                  <img src ={skills} alt="folder"/>
                   <button id="skills">
-                   <a >
+                   <a href="/#" >
                     Skills
                    </a>
                    </button>
@@ -129,7 +129,7 @@ const About = () => {
                 <div  class="homePage__folders-about" onClick={changeColor} >
                   <img src ={about} alt="folder"/>
                    <button  id="about">
-                  <a >
+                  <a href="/#" >
                   About
                   </a>
                   </button>
@@ -137,7 +137,7 @@ const About = () => {
             <div  class="homePage__folders-message" onClick={changeColor} >
                  <img src ={message} alt="folder"/>
                   <button  id="contact">
-                 <a >
+                 <a href="/#" >
                   Contact
                  </a>
                   </button>
@@ -145,7 +145,7 @@ const About = () => {
         </div>
         <div class="homePage__about">
             <div class="homePage__about-title">
-           <a>About</a>
+           <a href="/#">About</a>
            </div>  
            <div class="homePage__content">
             <div class="homePage__content-title">
