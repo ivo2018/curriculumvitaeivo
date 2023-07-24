@@ -3,7 +3,7 @@ import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-
+import avatarimage from "../imgs/avatarimage.png"
 import "../components/About.css"
 
 const About = () => {  
@@ -155,19 +155,27 @@ const About = () => {
                <div class="homePage__content-description">
                <h2>Full Stack Developer Junior</h2>
             </div>
+            <div class="homepage__content-medium">
+            <div clasS="homePage__content-img">
+            <img src={avatarimage} alt=""/>
+            </div>
             <div class="homePage__content-text" >
-                <div class="homePage__content-text_content">
-                <a href="/#">
+
+                <div class="homePage__content-text_content"> 
+                    <li >
+                        <a href="/#" >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                  Praesentium eos doloremque itaque
                  quisquam excepturi assumenda ea  
                  velit sapiente odio sunt temporibus
                   nulla, quas atque eveniet consequatur
                    doloribus, suscipit amet quaerat.
+                
                    </a>
-         
+                   </li>  
             </div>
             </div>
+           </div>
            </div>
      </div>
      </div>
