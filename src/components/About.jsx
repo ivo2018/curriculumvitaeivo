@@ -3,8 +3,12 @@ import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-import avatarimage from "../imgs/avatarimage.png"
+import avatarimage from "../imgs/avatarimage.png";
+import binary from "../imgs/binary.jpg";
+import binary2 from "../imgs/binary2.jpg";
+import binary3 from "../imgs/binary3.jpg";
 import "../components/About.css"
+
 
 const About = () => {  
     function changeColor(){
@@ -148,6 +152,9 @@ const About = () => {
            <a href="/#">About</a>
            </div>  
            <div class="homePage__content">
+           <div class="homePage_content-binary">
+            <img src={binary3}></img>
+           </div>
             <div class="homePage__content-title">
             <h1 id="content-title">Ivo Ortiz</h1>
             </div>
@@ -164,20 +171,24 @@ const About = () => {
                 <div class="homePage__content-text_content"> 
                     <li >
                         <a href="/#" >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                 Praesentium eos doloremque itaque
-                 quisquam excepturi assumenda ea  
-                 velit sapiente odio sunt temporibus
-                  nulla, quas atque eveniet consequatur
-                   doloribus, suscipit amet quaerat.
+                        I'm Ivo, full stack developer from Barcelona. 
+                        This is my website, a place where I share my projects, 
+                        let my imagination run wild and let people know things about me.
+                        Here are my personal interests, for professional purposes you can
+                         be interested in my work or my skills.
                 
                    </a>
                    </li>  
+             
             </div>
+            
             </div>
+            
+           </div>
+           
            </div>
            </div>
-     </div>
+     
      </div>
     );
 };
