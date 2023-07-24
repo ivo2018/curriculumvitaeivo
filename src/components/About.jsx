@@ -4,8 +4,8 @@ import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
-import binary from "../imgs/binary.jpg";
-import binary2 from "../imgs/binary2.jpg";
+//import binary from "../imgs/binary.jpg";
+//import binary2 from "../imgs/binary2.jpg";
 import binary3 from "../imgs/binary3.jpg";
 import "../components/About.css"
 
@@ -153,7 +153,7 @@ const About = () => {
            </div>  
            <div class="homePage__content">
            <div class="homePage_content-binary">
-            <img src={binary3}></img>
+            <img src={binary3} alt=""></img>
            </div>
             <div class="homePage__content-title">
             <h1 id="content-title">Ivo Ortiz</h1>
