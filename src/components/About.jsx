@@ -150,12 +150,24 @@ const About = () => {
            <div class="homePage__content">
             <div class="homePage__content-title">
             <h1 id="content-title">Ivo Ortiz</h1>
-     
             </div>
+       
                <div class="homePage__content-description">
                <h2>Full Stack Developer Junior</h2>
             </div>
-          
+            <div class="homePage__content-text" >
+                <div class="homePage__content-text_content">
+                <a href="/#">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                 Praesentium eos doloremque itaque
+                 quisquam excepturi assumenda ea  
+                 velit sapiente odio sunt temporibus
+                  nulla, quas atque eveniet consequatur
+                   doloribus, suscipit amet quaerat.
+                   </a>
+         
+            </div>
+            </div>
            </div>
      </div>
      </div>
