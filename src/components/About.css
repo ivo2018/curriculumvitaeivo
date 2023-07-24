@@ -70,6 +70,7 @@ margin: auto;
 width: 60em;
 }
 .homePage__about-title{
+  padding:2px;
 color: aliceblue;
 /* box-shadow: 15px 10px 35px 15px rgb(42, 161, 12) ; opcion 2 /*
 /* border-radius: 20px; opcion 2/*
@@ -78,10 +79,12 @@ color: aliceblue;
 background:rgba(2, 2, 80);
 }
 .homePage__about-title a{
-color: aliceblue;
+color: rgb(255, 255, 255);
 padding: 0.9%;
 text-decoration: none;
-font-size: 21px;
+font-size: 18px;
+font-weight: 400;
+
 }
 .homePage__content{
 /* background-image: url("../imgs/binary.jpg");*/
