@@ -104,7 +104,7 @@ display: flex;
 .homePage_content-binary img{
 background-image: url("../imgs/binary.jpg");
 background-color: rgba(19, 235, 235, 0.836);
-height: 82%;
+height: 83%;
 width:75%;
 opacity: 0.05;
 position: absolute;
@@ -229,6 +229,7 @@ transition: 0.01s all;
 .homePage__content-key2{
     opacity: 0.7;
 }
+
 .homePage__content-key2 img:active{
 
   width: 32%;
@@ -318,6 +319,7 @@ line-height:1em;
  width: 100%;
  height: 32%;  
 }
+
 .homePage__content-key{
 padding-top: 30%;
 padding-right:10%;
@@ -330,21 +332,28 @@ padding-right:10%;
 
 }
 
-.homePage__content-key2 img:active{
 
-  width: 93%;
-  height: 93%;
+
+.homePage_content-binary img{
+  background-image: url("../imgs/binary.jpg");
+  background-color: rgba(19, 235, 235, 0.836);
+  height: 90%;
+  width:96%;
+  opacity: 0.05;
+  position: absolute;
   
-
-}
-.homePage__content-key1 img:active{
-  width: 93%;
-  height: 93%;
-  padding-bottom: 16%;
-
-  
-    }
-
+  }
+  .homePage__content-key1 img:active{
+    width: 95%;
+    height: 95%;
+    padding-bottom: 15%;
+    transition: 0 all;
+    
+      }
+  .homePage__content-key2 img:active{
+    width: 95%;
+    height: 95%;
+  }
 
 
 }
