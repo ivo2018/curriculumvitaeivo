@@ -4,6 +4,7 @@ import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
+import key from "../imgs/key.png";
 //import binary from "../imgs/binary.jpg";
 //import binary2 from "../imgs/binary2.jpg";
 import binary3 from "../imgs/binary3.jpg";
@@ -179,7 +180,15 @@ const About = () => {
                 
                    </a>
                    </li>  
-             
+                   <li class="homePage__content-key" >
+                    <div class="homePage__content-key1">
+                       <img src={key} alt=""></img>
+                       </div>
+                       <div class="homePage__content-key2">
+                       <img src={key} alt=""></img> 
+                       </div>
+                   </li>  
+                  
             </div>
             
             </div>
