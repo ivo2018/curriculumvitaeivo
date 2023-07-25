@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState } from 'react';
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
@@ -12,6 +12,7 @@ import "../components/About.css"
 
 
 const About = () => {  
+    const [keyisdown, setKeyIsDown] = useState(false);
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
         if(element){
@@ -110,7 +111,32 @@ const About = () => {
       
     })};
 
-  }titleEffect()});
+  }
+  function opacity(){
+    var element = document.querySelector(".homePage__content-key1");
+    if(element){
+        element.addEventListener("click",
+        function (event){
+           
+            document.getElementById("key2").style.opacity="1";
+     
+        })}
+      
+    };
+    function opacity2(){
+        var element2 = document.querySelector(".homePage__content-key2");
+        if(element2){
+            element2.addEventListener("click",
+            function (event){
+           
+                document.getElementById("key2").style.opacity="0.7";
+                document.getElementById("key2").style.width="32%";
+                document.getElementById("key2").style.height="32%";
+                
+         
+            })}
+    }
+  titleEffect();opacity()});
 
     return (
         <div class="homePage">
@@ -184,8 +210,8 @@ const About = () => {
                     <div class="homePage__content-key1">
                        <img src={key} alt=""></img>
                        </div>
-                       <div class="homePage__content-key2">
-                       <img src={key} alt=""></img> 
+                       <div  id="key2" class="homePage__content-key2">
+                       <img  src={key} alt=""></img> 
                        </div>
                    </li>  
                   
