@@ -207,9 +207,9 @@ const About = () => {
                 <div class="homePage__content-text_content"> 
                     <li >
                         <a href="/#" >
-                      <a >
+                      <a  href="/#">
                          {description}
-                         <a className="effect">
+                         <a href="/#" className="effect">
 
                          </a>
                          </a>
