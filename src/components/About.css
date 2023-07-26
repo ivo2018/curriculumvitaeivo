@@ -314,14 +314,12 @@ padding-right:10%;
   
   }
   .homePage__content-key1 img:active{
-    width: 95%;
-    height: 95%;
+
     padding-bottom: 15%;
     transition: 0.01s all;
       }
    .homePage__content-key2 img:active{
-        width: 93%;
-        height: 93%;     
+   
       }
 }
 .homePage__content-description h2{
