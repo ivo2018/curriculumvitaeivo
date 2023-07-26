@@ -12,7 +12,8 @@ import "../components/About.css"
 
 
 const About = () => {  
-    const [keyisdown, setKeyIsDown] = useState(false);
+  const [opacitystate,setOpacityState] = useState(false);
+  const [description,setDescription] = useState("  I'm Ivo, full stack developer from Barcelona This is my website, a place where I share my projects, let my imagination run wild and let people know things about me.Here are my personal interests, for professional purposes you can be interested in my work or my skills.");
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
         if(element){
@@ -86,22 +87,22 @@ const About = () => {
     function (event) {
         if(event.movementX >0){
       document.getElementById('content-title').style.boxShadow="15px 6px 5px -2px rgba(77, 33, 33, 0.568)";
-      //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+ 
       document.getElementById('content-title').style.transition="0.8s all";
         }   else
         if(event.movementX<0)    {
             document.getElementById('content-title').style.boxShadow="-15px -6px 5px -2px rgba(77, 33, 33, 0.568)";
-            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+   
             document.getElementById('content-title').style.transition="0.8s all";
         }  else  
         if(event.movementY<0 )    {
             document.getElementById('content-title').style.boxShadow="0px -6px 2px 0.5px rgba(77, 33, 33, 0.568)";
-            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+       
             document.getElementById('content-title').style.transition="0.8s all";
         }  else
         if(event.movementY>0)    {
             document.getElementById('content-title').style.boxShadow="0px 6px 2px 0.5px rgba(77, 33, 33, 0.568)";
-            //document.getElementById('content-title').style.boxShadow="0px 6px 2px 7px rgba(77, 33, 33, 0.568)";
+          
             document.getElementById('content-title').style.transition="0.8s all";
         }  
         else{
@@ -111,32 +112,40 @@ const About = () => {
       
     })};
 
+    
+
   }
   function opacity(){
     var element = document.querySelector(".homePage__content-key1");
     if(element){
         element.addEventListener("click",
         function (event){
-           
-            document.getElementById("key2").style.opacity="1";
-     
+            if(opacitystate==false){
+            document.getElementById("key2").style.opacity="0.99";  
+            document.getElementById("key1").style.opacity="0.5";     
+            setOpacityState(true);
+            setDescription("Thanks So Mucth")
+          
+  
+            }
         })}
-      
-    };
+    }
     function opacity2(){
         var element2 = document.querySelector(".homePage__content-key2");
         if(element2){
             element2.addEventListener("click",
             function (event){
-           
-                document.getElementById("key2").style.opacity="0.7";
-                document.getElementById("key2").style.width="32%";
-                document.getElementById("key2").style.height="32%";
-                
-         
+               if(opacitystate===true)
+                document.getElementById("key2").style.opacity="0.5";
+                document.getElementById("key1").style.opacity="0.99";   
+                setDescription("I'm Ivo, full stack developer from Barcelona This is my website, a place where I share my projects, let my imagination run wild and let people know things about me.Here are my personal interests, for professional purposes you can be interested in my work or my skills.")
+                setOpacityState(false);
             })}
-    }
-  titleEffect();opacity()});
+      
+    };
+
+
+  titleEffect();opacity();opacity2()});
 
     return (
         <div class="homePage">
@@ -198,16 +207,13 @@ const About = () => {
                 <div class="homePage__content-text_content"> 
                     <li >
                         <a href="/#" >
-                        I'm Ivo, full stack developer from Barcelona. 
-                        This is my website, a place where I share my projects, 
-                        let my imagination run wild and let people know things about me.
-                        Here are my personal interests, for professional purposes you can
-                         be interested in my work or my skills.
+                      
+                         {description}
                 
                    </a>
                    </li>  
-                   <li class="homePage__content-key" >
-                    <div class="homePage__content-key1">
+                   <li   class="homePage__content-key ">
+                    <div id ="key1" class="homePage__content-key1">
                        <img src={key} alt=""></img>
                        </div>
                        <div  id="key2" class="homePage__content-key2">

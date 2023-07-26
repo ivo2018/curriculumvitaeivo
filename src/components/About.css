@@ -36,9 +36,7 @@ margin: auto;
 height: 3.3em;
 width: 3.3em;
 padding-bottom: 5%;
-
 }
-
 .homePage__folders div img:hover{
 cursor: pointer;
 }
@@ -48,9 +46,7 @@ cursor: pointer;
 }
 .homePage__folders div button:hover{
 cursor: pointer;
-
 }
-
  .homePage__folders div :focus{
   background:rgba(2, 2, 80, 0);
   outline: dotted 1.2px rgb(255, 255, 255);
@@ -84,7 +80,6 @@ padding: 0.9%;
 text-decoration: none;
 font-size: 18px;
 font-weight: 400;
-
 }
 .homePage__content{
 /* background-image: url("../imgs/binary.jpg");*/
@@ -108,10 +103,7 @@ height: 83%;
 width:75%;
 opacity: 0.05;
 position: absolute;
-
 }
-
-
 .homePage__content-title h1{
 z-index: 2;
 font-family: 'Gopixel Personal Use', sans-serif;                                               
@@ -135,21 +127,15 @@ width: 100%;
 height: 100%;
 justify-content: center;
 margin:2% -10%;
-
 }
 .homePage__content-img{
-
-
 }
 .homePage__content-img img{
 object-fit: fill;
 width: 100%;
 height: 50%;  
-
-
 }
 .homePage__content-text{
- 
 border-radius:0px 15px 20px ;
 border-top: none;
 width: 40%;
@@ -171,7 +157,6 @@ display:block;
 }
 .homePage__content-text_content li a
 {
-
 }
 .homePage__content-text_content li a{
 display: block;
@@ -184,17 +169,6 @@ letter-spacing: 1px;
 font-weight: 400;
 line-height:1.3em;
 padding: 2%;
-
-
-
-/*
-  display: block;
-color: black;
-font-size: 13px;
-font-weight: 400;
-text-decoration: none;
-line-height:1.2em;
-width: 90%;*/
 }
 .homePage__content-key  {
   display: block;
@@ -209,16 +183,16 @@ width: 90%;*/
 .homePage__content-key img{
 
   padding-bottom: 10%;
-  width:40%;
-  height: 40%;
+  width:2em;
+  height: 2em;
   transition: 0.3s all;
 
 }
 
 .homePage__content-key1 img:active{
-width: 35%;
-height: 35%;
-padding-bottom: 15%;
+  width:1.8em;
+height: 1.8%;
+padding-bottom: 10.6%;
 transition: 0.01s all;
 
   }
@@ -227,13 +201,13 @@ transition: 0.01s all;
   transform: rotate(180deg);
 }
 .homePage__content-key2{
-    opacity: 0.7;
+    opacity:0.5;
 }
 
 .homePage__content-key2 img:active{
 
-  width: 32%;
-  height: 32%;
+  width: 1.8em;
+  height: 1.8%;
   
 
 }
@@ -329,11 +303,7 @@ padding-right:10%;
   width:2em;
   height: 100%;
   transition: 0.3s all;
-
 }
-
-
-
 .homePage_content-binary img{
   background-image: url("../imgs/binary.jpg");
   background-color: rgba(19, 235, 235, 0.836);
@@ -347,19 +317,14 @@ padding-right:10%;
     width: 95%;
     height: 95%;
     padding-bottom: 15%;
-    transition: 0 all;
-    
+    transition: 0.01s all;
       }
-  .homePage__content-key2 img:active{
-    width: 95%;
-    height: 95%;
-  }
-
-
+   .homePage__content-key2 img:active{
+        width: 93%;
+        height: 93%;     
+      }
 }
-
 .homePage__content-description h2{
 font-size: 1.4em;
 font-weight: 500;
-
 }
