@@ -120,7 +120,7 @@ const About = () => {
     if(element){
         element.addEventListener("click",
         function (event){
-            if(opacitystate==false){
+            if(opacitystate===false){
             document.getElementById("key2").style.opacity="0.99";  
             document.getElementById("key1").style.opacity="0.5";     
             setOpacityState(true);
