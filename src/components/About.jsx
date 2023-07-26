@@ -13,7 +13,7 @@ import "../components/About.css"
 
 const About = () => {  
   const [opacitystate,setOpacityState] = useState(false);
-  const [description,setDescription] = useState("  I'm Ivo, full stack developer from Barcelona This is my website, a place where I share my projects, let my imagination run wild and let people know things about me.Here are my personal interests, for professional purposes you can be interested in my work or my skills.");
+  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
         if(element){
@@ -124,7 +124,7 @@ const About = () => {
             document.getElementById("key2").style.opacity="0.99";  
             document.getElementById("key1").style.opacity="0.5";     
             setOpacityState(true);
-            setDescription("Thanks So Mucth")
+            setDescription("Here are my personal interests, for professional purposes you can be interested in my work or my skills. Thanks So Mucth")
           
   
             }
@@ -138,7 +138,7 @@ const About = () => {
                if(opacitystate===true)
                 document.getElementById("key2").style.opacity="0.5";
                 document.getElementById("key1").style.opacity="0.99";   
-                setDescription("I'm Ivo, full stack developer from Barcelona This is my website, a place where I share my projects, let my imagination run wild and let people know things about me.Here are my personal interests, for professional purposes you can be interested in my work or my skills.")
+                setDescription("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.")
                 setOpacityState(false);
             })}
       
@@ -207,8 +207,12 @@ const About = () => {
                 <div class="homePage__content-text_content"> 
                     <li >
                         <a href="/#" >
-                      
+                      <a >
                          {description}
+                         <a className="effect">
+
+                         </a>
+                         </a>
                 
                    </a>
                    </li>  

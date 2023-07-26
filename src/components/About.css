@@ -148,16 +148,15 @@ padding: 2%;
   
   display: flex;
 margin: 0% 2%;
-width: 100%;
+width: 120%;
 
 }
 .homePage__content-text_content li 
 {
 display:block;
 }
-.homePage__content-text_content li a
-{
-}
+
+
 .homePage__content-text_content li a{
 display: block;
 color: black; 
@@ -169,7 +168,29 @@ letter-spacing: 1px;
 font-weight: 400;
 line-height:1.3em;
 padding: 2%;
+
+
 }
+
+@keyframes example {
+  from {background-color: rgba(255, 0, 0, 0);}
+  to {  background-color: rgba(63, 134, 119, 0.678); border-bottom:0.5px inset black}
+}
+.effect::before
+{
+  content: '';
+ position: absolute;
+ margin: -3.2% -10%;
+ width: 12.5%;
+ height: 2%;
+  mix-blend-mode:hard-light;
+  animation-name: example;
+  animation: example 2s linear 2s /*1 interacion*/ normal forwards;
+
+   
+}
+
+
 .homePage__content-key  {
   display: block;
   width:100%;
@@ -280,7 +301,7 @@ color: black;
 text-decoration: none;
 background:rgba(32, 146, 139, 0.418);
 border-radius:0px 20px 20px ;
-width: 80%;
+width: 100%;
 font-size: 13px;
 letter-spacing: 1px;
 font-weight: 400;
