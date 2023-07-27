@@ -189,7 +189,7 @@ const About = () => {
             <div class="homePage__about-title">
      
            <a href="/#">About        <div class="homePage__about-close">
-           <img src={close}></img>
+           <img src={close} alt=""></img>
            </div> </a>
            </div>  
      
