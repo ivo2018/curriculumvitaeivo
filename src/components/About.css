@@ -273,7 +273,7 @@ height: 100%;
   text-align: center;   
 }
 .homePage__about-title{
-  height: 8%;
+  height: 5%;
   
 }
 .homePage__content-title {
@@ -388,7 +388,7 @@ padding-right:22%;
       }
       .homePage__about-close{
         display: flex;
-        margin: -2.5% 93% ;
+        margin: -4% 93% ;
         width: 0.5em;
         height: 0.5em;
         background-color: rgb(216, 226, 226);
