@@ -8,7 +8,7 @@ import key from "../imgs/key.png";
 //import binary from "../imgs/binary.jpg";
 //import binary2 from "../imgs/binary2.jpg";
 import binary3 from "../imgs/binary3.jpg";
-import close from "../imgs/close-icon.png";
+//import close from "../imgs/close-icon.png";
 import "../components/About.css"
 
 
@@ -188,9 +188,9 @@ const About = () => {
       
             <div class="homePage__about-title">
      
-           <a href="/#">About        <div class="homePage__about-close">
-           <img src={close} alt=""></img>
-           </div> </a>
+           <a href="/#">About      {/*  <div class="homePage__about-close">
+          {/* <img src={close} alt=""></img>
+           </div>*/}  </a>
            </div>  
      
            <div class="homePage__content">
