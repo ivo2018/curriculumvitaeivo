@@ -9,25 +9,28 @@ width: 100%;
 .homePage__folders{
   margin: 6em;
 
+
 }
 .homePage__folders div{
-  height: 8em;
-  width: 5em;
+  height: 6em;
+  width: 6em;
   text-align: center;   
+
 }
 .homePage__folders button{
 background:none;
 border: none;
 display: inline;
-width: 5.5em;
-height: 1.7em;
+
 
 }
 .homePage__folders button a{
+
 text-decoration: none;
 color: white;
 font-size: 1.5em;
 font-weight:500;
+
 
   }
 .homePage__folders img{
@@ -35,7 +38,8 @@ display: block;
 margin: auto;
 height: 3.3em;
 width: 3.3em;
-padding-bottom: 5%;
+padding-bottom: 4%;
+
 }
 .homePage__folders div img:hover{
 cursor: pointer;
