@@ -5,6 +5,7 @@ import about from "../imgs/about.png"
 import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
+import marcador from "../imgs/marcador.png"
 //import binary from "../imgs/binary.jpg";
 //import binary2 from "../imgs/binary2.jpg";
 import binary3 from "../imgs/binary3.jpg";
@@ -242,11 +243,12 @@ const About = () => {
                         <a href="/#" >
                     {opacitystate ? (     
                        <a class="homePage__content-text_content-aboutDescription2" href="/#">
-                       Here are my personal interests, for professional purposes you can be interested in <span>my work or my skills</span>. Thanks So Mutch
+                       Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador}></img>
+                        my work or my skills</span>. Thanks So Mutch
                            <a href="/#" > </a></a> 
                           ) : (  
                      <a class="homePage__content-text_content-aboutDescription1" href="/#">
-                      I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span>let my imagination run</span> wild and let people know things about me.
+                      I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={marcador}></img>let my imagination run</span> wild and let people know things about me.
                       <a href="/#">  </a></a>   )}
                                         
                       
