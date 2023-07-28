@@ -15,7 +15,7 @@ import "../components/About.css"
 const About = () => {  
   const [opacitystate,setOpacityState] = useState(false);
   
-  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
+//  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
         if(element){
@@ -126,7 +126,7 @@ const About = () => {
             document.getElementById("key2").style.opacity="0.99";  
             document.getElementById("key1").style.opacity="0.5";     
             setOpacityState(true);
-            setDescription("Here are my personal interests, for professional purposes you can be interested in my work or my skills. Thanks So Mutch")
+        ///    setDescription("Here are my personal interests, for professional purposes you can be interested in my work or my skills. Thanks So Mutch")
           
   
             }
@@ -140,7 +140,7 @@ const About = () => {
                if(opacitystate===true)
                 document.getElementById("key2").style.opacity="0.5";
                 document.getElementById("key1").style.opacity="0.99";   
-                setDescription("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.")
+           //     setDescription("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.")
                 setOpacityState(false);
             })}
       
@@ -243,11 +243,11 @@ const About = () => {
                     {opacitystate ? (     
                        <a class="homePage__content-text_content-aboutDescription2" href="/#">
                        Here are my personal interests, for professional purposes you can be interested in <span>my work or my skills</span>. Thanks So Mutch
-                           <a href="/#" />  </a> 
-                          ):(  
+                           <a href="/#" > </a></a> 
+                          ) : (  
                      <a class="homePage__content-text_content-aboutDescription1" href="/#">
                       I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span>let my imagination run</span> wild and let people know things about me.
-                      <a href="/#"/>   </a>   )}
+                      <a href="/#">  </a></a>   )}
                                         
                       
                 
