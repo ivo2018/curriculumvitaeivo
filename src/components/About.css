@@ -70,7 +70,7 @@ margin: auto;
 width: 60em;
 }
 .homePage__about-title{
-
+position: relative;
   padding:2px;
 color: aliceblue;
 /* box-shadow: 15px 10px 35px 15px rgb(42, 161, 12) ; opcion 2 /*
@@ -243,9 +243,24 @@ height: 3.3em;
   
 
 }
-.homePage__about-close{
+.homePage__about-title img{
+  position: absolute;
+  top: 11%;
+  right: 1%;
+  width: 0.8em;
+  height: 0.8em;
+  object-fit:scale-down;
+  background-color: rgb(170, 182, 182);
+  background-color: rgb(216, 226, 226);
+  border: 4px outset rgb(187, 181, 181);
+}
+.homePage__about-title img:active{
+
+  border: 4px inset rgb(187, 181, 181);
+  }
+/*.homePage__about-close{
   display: flex;
-  margin: -1.6% 98%;
+  position: relative;
   width: 0.5em;
   height: 0.5em;
   background-color: rgb(216, 226, 226);
@@ -256,9 +271,10 @@ border: 4px outset rgb(187, 181, 181);
 border: 4px inset rgb(187, 181, 181);
 }
 .homePage__about-close img{
+  
   object-fit:scale-down;
   background-color: rgb(170, 182, 182);
-}
+}*/
 
 @media (max-width:1000px){
 .homePage__folders{
@@ -383,17 +399,8 @@ padding-right:22%;
     padding-bottom: 20%;
     transition: 0.01s all;
       }
-   .homePage__content-key2 img:active{
+
    
-      }
-      .homePage__about-close{
-        display: flex;
-        margin: -4% 93% ;
-        width: 0.5em;
-        height: 0.5em;
-        background-color: rgb(216, 226, 226);
-      border: 4px outset rgb(187, 181, 181);
-      }
     
 }
 .homePage__content-description h2{

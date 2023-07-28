@@ -8,7 +8,7 @@ import key from "../imgs/key.png";
 //import binary from "../imgs/binary.jpg";
 //import binary2 from "../imgs/binary2.jpg";
 import binary3 from "../imgs/binary3.jpg";
-//import close from "../imgs/close-icon.png";
+import close from "../imgs/close-icon.png";
 import "../components/About.css"
 
 
@@ -144,9 +144,35 @@ const About = () => {
             })}
       
     };
+    function opacity3(){
+        var element3 = document.querySelector(".homePage__about-title img");
+        if(element3){
+            element3.addEventListener("click",
+            function (event){
+      
+                document.getElementById("father").style.opacity="0";
+                document.getElementById("father").style.width="20%"; 
+
+                document.getElementById("father").style.transition="0.2s all"
+                
+               
+            })}
+            var element4 = document.querySelector(".homePage__folders-about");
+            if(element4){
+                element4.addEventListener("click",
+                function (event){
+          
+                    document.getElementById("father").style.opacity="100%";
+                    document.getElementById("father").style.width="90%"
 
 
-  titleEffect();opacity();opacity2()});
+                   
+                })}
+      
+    };
+
+
+  titleEffect();opacity();opacity2();opacity3()});
 
     return (
         <div class="homePage">
@@ -184,13 +210,13 @@ const About = () => {
                   </button>
             </div>
         </div>
-        <div class="homePage__about">
+        <div id="father" class="homePage__about">
       
             <div class="homePage__about-title">
      
-           <a href="/#">About      {/*  <div class="homePage__about-close">
-          {/* <img src={close} alt=""></img>
-           </div>*/}  </a>
+           <a href="/#">About     
+           </a>
+           <img src={close} alt=""></img>
            </div>  
      
            <div class="homePage__content">
