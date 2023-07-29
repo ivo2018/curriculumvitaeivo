@@ -1,4 +1,5 @@
 import React, { useEffect , useState } from 'react';
+import $ from 'jquery'; 
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
@@ -15,7 +16,7 @@ import "../components/About.css"
 
 const About = () => {  
   const [opacitystate,setOpacityState] = useState(false);
-  
+
 //  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
     function changeColor(){
         var element =document.querySelector('.homePage__folders-work');
@@ -174,10 +175,11 @@ const About = () => {
     };
 
 
-  titleEffect();opacity();opacity2();opacity3()});
+  titleEffect();opacity();opacity2();opacity3();});
 
     return (
         <div class="homePage">
+        
             <div class="homePage__folders">
                 <div class="homePage__folders-work" onClick={changeColor} >
                   <img src={folder} alt="folder"  />
@@ -212,7 +214,8 @@ const About = () => {
                   </button>
             </div>
         </div>
-        <div id="father" class="homePage__about">
+     
+        <div id="father" class="homePage__about" >
       
             <div class="homePage__about-title">
      
@@ -223,7 +226,7 @@ const About = () => {
      
            <div class="homePage__content">
            <div class="homePage_content-binary">
-            <img src={binary3} alt=""></img>
+            <img src={"binary3"} alt=""></img>
            </div>
             <div class="homePage__content-title">
             <h1 id="content-title">Ivo Ortiz</h1>
@@ -272,8 +275,9 @@ const About = () => {
            
            </div>
            </div>
+           </div>
      
-     </div>
+
     );
 };
 
