@@ -232,6 +232,7 @@ const About = () => {
                <div class="homePage__content-description">
                <h2>Full Stack Developer Junior</h2>
             </div>
+     
             <div class="homepage__content-medium">
             <div clasS="homePage__content-img">
             <img src={avatarimage} alt=""/>
@@ -242,9 +243,8 @@ const About = () => {
                     <li >
                         <a href="/#" >
                     {opacitystate ? (     
-                       <a class="homePage__content-text_content-aboutDescription2" href="/#">
-                       Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador} alt=""></img>
-                        my work or my skills</span>. Thanks So Mutch
+                       <a class="homePage__content-text_content-aboutDescription2" href="/#" >
+                       Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador} alt=""></img> my work or my skills</span>. Thanks So Mutch
                            <a href="/#" > </a></a> 
                           ) : (  
                      <a class="homePage__content-text_content-aboutDescription1" href="/#">
