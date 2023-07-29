@@ -1,5 +1,5 @@
 import React, { useEffect , useState } from 'react';
-import $ from 'jquery'; 
+//import $ from 'jquery'; 
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
@@ -9,7 +9,7 @@ import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 //import binary from "../imgs/binary.jpg";
 //import binary2 from "../imgs/binary2.jpg";
-import binary3 from "../imgs/binary3.jpg";
+//import binary3 from "../imgs/binary3.jpg";
 import close from "../imgs/close-icon.png";
 import "../components/About.css"
 
