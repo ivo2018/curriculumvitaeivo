@@ -7,16 +7,10 @@ import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
-//import binary from "../imgs/binary.jpg";
-//import binary2 from "../imgs/binary2.jpg";
-//import binary3 from "../imgs/binary3.jpg";
 import close from "../imgs/close-icon.png";
 import "../components/About.css"
-
-
 const About = () => {  
   const [opacitystate,setOpacityState] = useState(false);
-//  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
     function changeColor(){
       
         var work,about,skills,contact;
@@ -176,10 +170,8 @@ const About = () => {
 
 
   titleEffect();opacity();closeWindow();});
-
     return (
         <div class="homePage">
-        
             <div class="homePage__folders">
                 <div class="homePage__folders-work" onClick={changeColor} >
                   <img src={folder} alt="folder"  />
@@ -214,16 +206,12 @@ const About = () => {
                   </button>
             </div>
         </div>
-     
         <div id="windowAbout" class="homePage__about" >
-      
             <div class="homePage__about-title">
-     
            <a href="/#">About     
            </a>
            <img src={close} alt=""></img>
            </div>  
-     
            <div class="homePage__content">
            <div class="homePage_content-binary">
             <img src={"binary3"} alt=""></img>
@@ -231,20 +219,16 @@ const About = () => {
             <div class="homePage__content-title">
             <h1 id="content-title">Ivo Ortiz</h1>
             </div>
-       
                <div class="homePage__content-description">
                <h2>Full Stack Developer Junior</h2>
             </div>
-     
             <div class="homepage__content-medium">
             <div clasS="homePage__content-img">
             <img src={avatarimage} alt=""/>
             </div>
             <div class="homePage__content-text" >
-
                 <div class="homePage__content-text_content"> 
                     <li >
-                  
                         <a href="/#" >
                     {opacitystate ? (     
                        <a class="homePage__content-text_content-aboutDescription2" href="/#" >
@@ -253,12 +237,8 @@ const About = () => {
                           ) : (  
                      <a class="homePage__content-text_content-aboutDescription1" href="/#">
                       I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={marcador} alt=""></img>let my imagination run</span> wild and let people know things about me.
-                      <a href="/#">  </a></a>   )}
-                                        
-                      
-                
-                   </a>
-              
+                      <a href="/#">  </a></a>   )}                                                  
+                   </a>            
                    </li>  
                    <li   class="homePage__content-key ">
                     <div id ="key1" class="homePage__content-key1">
@@ -267,19 +247,13 @@ const About = () => {
                        <div  id="key2" class="homePage__content-key2">
                        <img  src={key} alt=""></img> 
                        </div>
-                   </li>  
-                  
-            </div>
-            
-            </div>
-            
-           </div>
-           
+                   </li>             
+            </div>        
+            </div>      
+           </div>      
            </div>
            </div>
            </div>
-     
-
     );
 };
 
