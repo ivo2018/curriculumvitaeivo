@@ -244,6 +244,7 @@ const About = () => {
 
                 <div class="homePage__content-text_content"> 
                     <li >
+                  
                         <a href="/#" >
                     {opacitystate ? (     
                        <a class="homePage__content-text_content-aboutDescription2" href="/#" >
@@ -257,6 +258,7 @@ const About = () => {
                       
                 
                    </a>
+              
                    </li>  
                    <li   class="homePage__content-key ">
                     <div id ="key1" class="homePage__content-key1">
