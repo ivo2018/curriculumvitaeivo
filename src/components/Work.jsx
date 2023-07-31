@@ -9,7 +9,7 @@ import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
 import "../components/About.css"
-const About = () => {  
+const Work = () => {  
   const [opacitystate,setOpacityState] = useState(false);
     function folderClick(){
       
@@ -208,7 +208,7 @@ const About = () => {
         </div>
         <div id="windowAbout" class="homePage__about" >
             <div class="homePage__about-title">
-           <a href="/#">About     
+           <a href="/#">Work   
            </a>
            <img src={close} alt=""></img>
            </div>  
@@ -257,4 +257,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Work;
