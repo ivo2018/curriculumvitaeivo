@@ -10,7 +10,7 @@ import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
-import "../components/About.css"
+import "../components/Work.css"
 const Work = (/*{handleClick,setChange}*/) => {  
     
     const navigate=useNavigate();
@@ -218,7 +218,7 @@ const Work = (/*{handleClick,setChange}*/) => {
            <img src={close} alt=""></img>
            </div>  
            <div class="homePage__content">
-           <div class="homePage_content-binary">
+           <div class="homePage_content-background">
             <img src={"binary3"} alt=""></img>
            </div>
             <div class="homePage__content-title">
