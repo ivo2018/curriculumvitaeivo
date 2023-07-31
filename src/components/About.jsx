@@ -1,4 +1,5 @@
 import React, { useEffect , useState } from 'react';
+import { useNavigate } from "react-router-dom";
 //import $ from 'jquery'; 
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
@@ -8,9 +9,13 @@ import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
+//import SelectionPage from './SelectionPage';
 import "../components/About.css"
-const About = () => {  
+
+const About = (/*{setChange,handleClick}*/) => {  
+    const navigate=useNavigate();
   const [opacitystate,setOpacityState] = useState(false);
+
     function folderClick(){
       
         var work,about,skills,contact;
@@ -165,18 +170,18 @@ const About = () => {
 
                    
                 })}
-      
+
     };
 
 
-  titleEffect();opacity();closeWindow();folderClick();});
+  titleEffect();opacity();closeWindow();folderClick()});
     return (
         <div class="homePage">
             <div class="homePage__folders">
-                <div class="homePage__folders-work"  >
+                <div class="homePage__folders-work" onClick={() => navigate("/work")}   /*onClick ={ function() { setChange('cameron') }} */ >
                   <img src={folder} alt="folder"  />
-                   <button  id="work">
-                    <a href="/work">
+                   <button  id="work" >
+                    <a href=" ">
                    Work
                    </a>
                   </button>
@@ -189,10 +194,10 @@ const About = () => {
                    </a>
                    </button>
             </div>
-                <div  class="homePage__folders-about" >
+                <div  class="homePage__folders-about" onClick={() => navigate("/")}  >
                   <img src ={about} alt="folder"/>
-                   <button  id="about">
-                  <a href="/" >
+                   <button  id="about"   >
+                  <a href=" " >
                   About
                   </a>
                   </button>
@@ -208,7 +213,7 @@ const About = () => {
         </div>
         <div id="windowAbout" class="homePage__about" >
             <div class="homePage__about-title">
-           <a href="/#">About     
+           <a href=" ">About     
            </a>
            <img src={close} alt=""></img>
            </div>  

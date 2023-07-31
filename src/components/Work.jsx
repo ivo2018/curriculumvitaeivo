@@ -1,4 +1,6 @@
+
 import React, { useEffect , useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 //import $ from 'jquery'; 
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
@@ -9,8 +11,11 @@ import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
 import "../components/About.css"
-const Work = () => {  
+const Work = (/*{handleClick,setChange}*/) => {  
+    
+    const navigate=useNavigate();
   const [opacitystate,setOpacityState] = useState(false);
+
     function folderClick(){
       
         var work,about,skills,contact;
@@ -169,14 +174,14 @@ const Work = () => {
     };
 
 
-  titleEffect();opacity();closeWindow();folderClick();});
+  titleEffect();opacity();closeWindow();folderClick()});
     return (
-        <div class="homePage">
+        <div class="homePage" >
             <div class="homePage__folders">
-                <div class="homePage__folders-work"  >
+                <div class="homePage__folders-work" onClick={()=>navigate("/work")}   >
                   <img src={folder} alt="folder"  />
-                   <button  id="work">
-                    <a href="/work">
+                   <button  id="work" >
+                    <a href=" " >
                    Work
                    </a>
                   </button>
@@ -189,10 +194,10 @@ const Work = () => {
                    </a>
                    </button>
             </div>
-                <div  class="homePage__folders-about" >
+                <div  class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/")} >
                   <img src ={about} alt="folder"/>
-                   <button  id="about">
-                  <a href="/" >
+                   <button  id="about"   >
+                  <a  href=" "  >
                   About
                   </a>
                   </button>
