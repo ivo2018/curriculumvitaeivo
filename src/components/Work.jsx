@@ -176,7 +176,7 @@ const Work = () => {
                 <div class="homePage__folders-work"  >
                   <img src={folder} alt="folder"  />
                    <button  id="work">
-                    <a href="/Work">
+                    <a href="/work">
                    Work
                    </a>
                   </button>
