@@ -16,8 +16,6 @@ import "../components/About.css"
 
 const About = () => {  
   const [opacitystate,setOpacityState] = useState(false);
-
-
 //  const [description,setDescription] = useState("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.");
     function changeColor(){
       
