@@ -292,16 +292,16 @@ function dragStoped(){
                 <div class="homePage__content_Divider-part1-second">
                 <div class="wrapper2">
                     <div class="carousel2">
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
-                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
+                        <img src={photo2} alt="img"draggable="false" />
                    
                     </div>
                 </div>
