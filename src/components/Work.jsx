@@ -1,20 +1,18 @@
 
-import React, { useEffect , useState } from 'react';
+import React, { useEffect  } from 'react';
 import { useNavigate } from 'react-router-dom';
 //import $ from 'jquery'; 
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-import avatarimage from "../imgs/avatarimage.png";
-import key from "../imgs/key.png";
-import marcador from "../imgs/marcador.png"
+
 import close from "../imgs/close-icon.png";
 
 const Work = (/*{handleClick,setChange}*/) => {  
     
     const navigate=useNavigate();
-  const [opacitystate,setOpacityState] = useState(false);
+
 
     function folderClick(){
       
@@ -80,70 +78,8 @@ const Work = (/*{handleClick,setChange}*/) => {
 
  }
  useEffect(() => {
-    function titleEffect(){
-        var titlePageName=    document.getElementById('content-title');
-    var element =document.querySelector('.homePage');
-    if(element){
-    element.addEventListener("mousemove",
-    function (event) {
-        if(event.movementX >0){
-            titlePageName.style.boxShadow="15px 6px 5px -2px rgba(77, 33, 33, 0.568)";
- 
-            titlePageName.style.transition="0.8s all";
-        }   else
-        if(event.movementX<0)    {
-            titlePageName.style.boxShadow="-15px -6px 5px -2px rgba(77, 33, 33, 0.568)";
-   
-            titlePageName.style.transition="0.8s all";
-        }  else  
-        if(event.movementY<0 )    {
-            titlePageName.style.boxShadow="0px -6px 2px 0.5px rgba(77, 33, 33, 0.568)";
-       
-            titlePageName.style.transition="0.8s all";
-        }  else
-        if(event.movementY>0)    {
-            titlePageName.style.boxShadow="0px 6px 2px 0.5px rgba(77, 33, 33, 0.568)";
-          
-            titlePageName.style.transition="0.8s all";
-        }  
-        else{
-            titlePageName.style.boxShadow="0px 6px 2px 0.5px rgba(77, 33, 33, 0.568)";
-        }
-
-      
-    })};
-
     
-
-  }
-  function opacity(){
-    var key1 , key2;
-    key1= document.getElementById("key1")
-    key2= document.getElementById("key2")
-    var element = document.querySelector(".homePage__content-key1");
-    if(element){
-        element.addEventListener("click",
-        function (event){
-            if(opacitystate===false){
-            key2.style.opacity="0.99";  
-           key1.style.opacity="0.5";     
-            setOpacityState(true);
-        ///    setDescription("Here are my personal interests, for professional purposes you can be interested in my work or my skills. Thanks So Mutch")
-          
   
-            }
-        })}
-        var element2 = document.querySelector(".homePage__content-key2");
-        if(element2){
-            element2.addEventListener("click",
-            function (event){
-               if(opacitystate===true)
-                key2.style.opacity="0.5";
-              key1.style.opacity="0.99";   
-           //     setDescription("I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects   ,  let my imagination run wild and let people know things about me.")
-                setOpacityState(false);
-            })}
-    }
     
     function closeWindow(){
         var windowAbout=  document.getElementById("windowAbout");
