@@ -159,7 +159,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                 
                
             })}
-            var element4 = document.querySelector(".homePage__folders-about");
+            var element4 = document.querySelector(".homePage__folders-work");
             if(element4){
                 element4.addEventListener("click",
                 function (event){
@@ -174,7 +174,7 @@ const Work = (/*{handleClick,setChange}*/) => {
     };
 
 
-  titleEffect();opacity();closeWindow();folderClick()});
+closeWindow();folderClick()});
     return (
         <div class="homePage" >
             <div class="homePage__folders">
@@ -221,41 +221,9 @@ const Work = (/*{handleClick,setChange}*/) => {
            <div class="homePage_content-background">
             <img src={"binary3"} alt=""></img>
            </div>
-            <div class="homePage__content-title">
-            <h1 id="content-title">Ivo Ortiz</h1>
-            </div>
-               <div class="homePage__content-description">
-               <h2>Full Stack Developer Junior</h2>
-            </div>
-            <div class="homepage__content-medium">
-            <div clasS="homePage__content-img">
-            <img src={avatarimage} alt=""/>
-            </div>
-            <div class="homePage__content-text" >
-                <div class="homePage__content-text_content"> 
-                    <li >
-                        <a href="/#" >
-                    {opacitystate ? (     
-                       <a class="homePage__content-text_content-aboutDescription2" href="/#" >
-                       Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador} alt=""></img> my work or my skills</span>. Thanks So Mutch
-                           <a href="/#" > </a></a> 
-                          ) : (  
-                     <a class="homePage__content-text_content-aboutDescription1" href="/#">
-                      I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={marcador} alt=""></img>let my imagination run</span> wild and let people know things about me.
-                      <a href="/#">  </a></a>   )}                                                  
-                   </a>            
-                   </li>  
-                   <li   class="homePage__content-key ">
-                    <div id ="key1" class="homePage__content-key1">
-                       <img src={key} alt=""></img>
-                       </div>
-                       <div  id="key2" class="homePage__content-key2">
-                       <img  src={key} alt=""></img> 
-                       </div>
-                   </li>             
-            </div>        
-            </div>      
-           </div>      
+   
+         
+            
            </div>
            </div>
            </div>
