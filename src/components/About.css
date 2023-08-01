@@ -360,7 +360,7 @@ display: inline-block;
 }
 .homePage__content-text li a{
 display: block;
-color: rgb(228, 219, 219); 
+color: rgb(243, 239, 184); 
 text-decoration: none;
 background:rgba(44, 46, 24, 0.575);
 border-radius:0px 20px 20px ;
@@ -404,6 +404,11 @@ width: 75%;
 height: 75%;
 padding-bottom: 8%;
 transition: 0.01s all;
+}
+.homePage__content-text_content li a span{
+  text-decoration: underline wavy rgba(213, 238, 238, 0.959);
+  display: inline-block;
+  position: relative;
 }
 }
 .homePage__content-description h2{
