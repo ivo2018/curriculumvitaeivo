@@ -317,15 +317,7 @@ body{
     font-size: 1.4em !important;
     font-weight: 500;
     }
-  .homePage__about{
-  border: ridge 3px rgb(245, 245, 245);
-  position: absolute;
-  box-shadow: 3px 2px 2px black;
-  margin:35% 6%;
-  height: 75%;
-  width: 90%;
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%,  rgba(241, 211, 211, 0.788) 0%);
-  }
+
   .homePage__content{
   display: block;
   text-align: center;

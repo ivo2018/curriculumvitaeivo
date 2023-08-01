@@ -165,7 +165,7 @@ const About = (/*{setChange,handleClick}*/) => {
                 function (event){
           
                     windowAbout.style.opacity="100%";
-                    windowAbout.style.width="60%"
+                    windowAbout.style.width="82%";
 
 
                    
