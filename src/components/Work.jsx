@@ -273,6 +273,9 @@ function dragStoped(){
              <div class="homePage__content_Divider">
               <div class="homePage__content_Divider-part1">
               <div class="homePage__content_Divider-part1-first">
+                <div  class="homePage__content_Divider-part1-first-title">
+                 <a href=" ">  Projects Web</a>
+
                 <div class="wrapper">
                     <div class="carousel">
                         <img src={photo} alt="img"draggable="false" />
@@ -289,7 +292,12 @@ function dragStoped(){
                     </div>
                 </div>
                 </div>
+                </div>
                 <div class="homePage__content_Divider-part1-second">
+            <div class="homePage__content_Divider-part1-first-title2">
+                <a href=" ">
+                Projects Games
+                </a>
                 <div class="wrapper2">
                     <div class="carousel2">
                         <img src={photo2} alt="img"draggable="false" />
@@ -304,6 +312,7 @@ function dragStoped(){
                         <img src={photo2} alt="img"draggable="false" />
                    
                     </div>
+                </div>
                 </div>
                 </div>
 
