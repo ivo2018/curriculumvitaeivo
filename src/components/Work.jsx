@@ -10,7 +10,7 @@ import "../components/Work.css"
 import close from "../imgs/close-icon.png";
 import photo from "../imgs/2-2.jpg";
 import photo2 from "../imgs/2-0.jpg";
-import Background from "../imgs/2-1.jpg";
+
 const Work = (/*{handleClick,setChange}*/) => {  
     
     const navigate=useNavigate();
@@ -164,19 +164,19 @@ closeWindow();folderClick()});
                  <div  class="homePage__content_Divider-part1-first_photo">
                      <div class="homePage__content_Divider-part1-first_photo-1"> 
    
-                     <img src={photo} />
+                     <img src={photo} alt="" />
                          <a>
                         DarteArte
                         </a>    
                     </div>
                  <div class="homePage__content_Divider-part1-first_photo-2"> 
-                     <img src={photo} />
+                     <img src={photo} alt="" />
                          <a>
                          Anymo
                         </a>    
                  </div>        
                 <div class="homePage__content_Divider-part1-first_photo-3"> 
-                      <img src={photo} />
+                      <img src={photo}  alt=""/>
                          <a>
                          Landing 
                           </a>    
@@ -189,19 +189,19 @@ closeWindow();folderClick()});
                    <div  class="homePage__content_Divider-part1-second_photo">
                       <div class="homePage__content_Divider-part1-second_photo-1"> 
    
-                         <img src={photo2} />
+                         <img src={photo2} alt="" />
                             <a>
                           Zemaria
                            </a>    
                     </div>
                       <div class="homePage__content_Divider-part1-second_photo-2"> 
-                         <img src={photo2} />
+                         <img src={photo2} alt="" />
                           <a>
                          Photon
                          </a>    
                      </div>        
                         <div class="homePage__content_Divider-part1-second_photo-3"> 
-                         <img src={photo2} />
+                         <img src={photo2} alt=""/>
                             <a>
                          Photon2
                              </a>    
