@@ -406,7 +406,7 @@ padding-bottom: 8%;
 transition: 0.01s all;
 }
 .homePage__content-text_content li a span{
-  text-decoration: underline wavy rgba(213, 238, 238, 0.959);
+  text-decoration: underline wavy rgb(255, 255, 255);
   display: inline-block;
   position: relative;
 }
