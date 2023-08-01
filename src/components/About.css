@@ -54,10 +54,12 @@ box-sizing: border-box;
 border: ridge 4px rgb(245, 245, 245);
 box-shadow: 3px 2px 2px black;
 display: inline;
+height: 45em;
 margin:5% 0%;
 width: 82%;
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%,  rgba(241, 211, 211, 0.788) 0%);
 }
+
 
 .homePage__about-title{
 position: relative;
@@ -78,7 +80,7 @@ display: block;
 flex-wrap: wrap;
 text-align: center;
 width:98%;
-height: 93%;
+height: 91%;
 background-color: aliceblue;
 margin: 0.5% 0% 0% 0.8%;
 border: outset 2px rgba(0, 0, 0, 0.884) ;
@@ -87,25 +89,25 @@ box-shadow: 0px 0px 2px 2px whitesmoke;
 }
 .homePage_content-binary{
 
-background-image: url("../imgs/binary2.jpg");
+background-image: url("../imgs/2.jpg");
 background-color: rgba(19, 235, 235, 0.836);
 background-size: cover;
-height: 65.5%;
-width:80%;
-opacity: 0.4;
+width: 79.90%;
+height: 40.5em;
+opacity:1;
 position: absolute;
 z-index:1; 
 }
 .homePage__content-title h1{
- 
-  background-color: rgba(196, 195, 155, 0.322);
-
+ background-color: rgba(196, 195, 155, 0.322);
 font-family: 'Gopixel Personal Use', sans-serif;                                               
 font-size: 4em;
 font-weight: 500;
 box-shadow: 0px 6px 2px 0.5px  rgba(77, 33, 33, 0.568);
 width: 50%;
 margin: 2.3% 1% 1% 24%;
+position: relative;
+z-index: 2;
 
 }
 .homePage__content-description h2{
@@ -152,7 +154,8 @@ display:block;
 display: block;
 color: black; 
 text-decoration: none;
-background:rgba(32, 146, 139, 0.418);
+/*background:rgba(32, 146, 139, 0.418);*/
+background:rgba(73, 73, 70, 0.575);
 border-radius:0px 15px 20px ;
 font-size: 1.2em;
 letter-spacing: 1px;
@@ -196,16 +199,16 @@ padding: 2%;
     height: 100%;
     bottom: 0;
     left: 0;
-    background-color: #dadada59;
+    background-color: #fff89cd0;
     transform-origin:left ;
   }
   to {      position: absolute;
     width: 100%;
     transform: scaleX(1);
     height: 100%;
-    bottom: 0;
+    bottom: 1;
     left: 0;
-    background-color: #ca72005e;
+    background-color: #afb5ff1f;
     transform-origin: left ;
 }
 }
@@ -216,7 +219,7 @@ padding: 2%;
     height: 100%;
     bottom: 0;
     left: 0;
-    background-color: #dadada59;
+    background-color: #fff89cd0;
     transform-origin:left ;
   }
   to {      position: absolute;
@@ -225,12 +228,12 @@ padding: 2%;
     height: 100%;
     bottom: 0;
     left: 0;
-    background-color: #ca72005e;
+    background-color: #afb5ff1f;
     transform-origin: left ;
 }
 }
 .homePage__content-text_content li a span{
-  text-decoration: underline wavy rgba(52, 90, 90, 0.822);
+  text-decoration: underline wavy rgba(16, 155, 155, 0.822);
   display: inline-block;
   position: relative;
 }
@@ -327,9 +330,9 @@ width: 100%;
 border: ridge 3px rgb(245, 245, 245);
 position: absolute;
 box-shadow: 3px 2px 2px black;
-margin:35% 10%;
+margin:35% 4%;
 height: 75%;
-width: 90%;
+width: 92% !important;
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%,  rgba(241, 211, 211, 0.788) 0%);
 }
 .homePage__content{
@@ -355,13 +358,13 @@ display: inline-block;
 }
 .homePage__content-text li a{
 display: block;
-color: black;
+color: rgb(255, 255, 255);
 text-decoration: none;
-background:rgba(32, 146, 139, 0.418);
+background:rgba(44, 46, 24, 0.575);
 border-radius:0px 20px 20px ;
-font-size: 82%;
+font-size: 85%;
 letter-spacing: 1px;
-font-weight: 500;
+font-weight: 650;
 line-height:2.5em;
 }
 .homePage__content-img img{
@@ -384,8 +387,8 @@ position: relative;
   background-color: rgba(19, 235, 235, 0.836);
 
   width: 96%;
-  height: 81%;
-  opacity: 0.4; 
+  height: 89.99%;
+  opacity: 0.9; 
 
   } 
   .homePage__content-key1 img:active{

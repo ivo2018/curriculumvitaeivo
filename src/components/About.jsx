@@ -218,13 +218,14 @@ const About = (/*{setChange,handleClick}*/) => {
            <img src={close} alt=""></img>
            </div>  
            <div class="homePage__content">
-    
+           <div class="homePage_content-binary"/>
             <div class="homePage__content-title">
+                
             <h1 id="content-title">Ivo Ortiz</h1>
             </div>
-            <div class="homePage_content-binary">
+      
         
-        </div>
+
                <div class="homePage__content-description">
                <h2>Full Stack Developer Junior</h2>
             </div>
