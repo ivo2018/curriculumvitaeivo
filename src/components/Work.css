@@ -12,47 +12,93 @@ background-color: rgba(248, 248, 248, 0.623);
 }
 
 
-.homePage__content_Divider-part1-first_photo  {
-display: flex;
-    }
-
-.homePage__content_Divider-part1-first_photo div{
-    display: block;
-    padding: 2%;
-}
-
-.homePage__content_Divider-part1-first_photo{
+.homePage__content_Divider-part1-first{
+    display: flex;
  
-text-align: center;
+    justify-content: center;
 }
 
-.homePage__content_Divider-part1-first_photo img{
-
-width: 8em;
-height: 100%;
-padding: 2%;
+.wrapper{
+    max-width: 1200px;
 }
-/*-----*/
-.homePage__content_Divider-part1-second{
-padding-top: 15%;
-}
-.homePage__content_Divider-part1-second_photo  {
-display: flex;
-}
-.homePage__content_Divider-part1-second_photo div{
-display: block;
-padding: 2%;
-}
-    
-.homePage__content_Divider-part1-second_photo{
-text-align: center;
-}
-.homePage__content_Divider-part1-second_photo img{
-width: 8em;
-height: 100%;
-padding: 2%;
+    .wrapper .carousel{
+        font-size: 0px;
+white-space: nowrap;
+cursor: pointer;
+overflow: hidden;
+scroll-behavior: smooth;
     }
+.carousel img{
+    height: 250px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%/3);
+
+}
+.carousel img:first-child{
+margin-left: 0px;
+}
+.carousel.dragging{
+    cursor:grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+@media (max-width:900px){
+    .carousel img{
+        width: calc(100%/2);
+    }
+}
+@media (max-width:550px){
+    .carousel img{
+        width: calc(100%/1);
+    }
+}
     
+/*-----*/
+
+.homePage__content_Divider-part1-second{
+    display: flex;
+    justify-content: center;
+}
+.wrapper2{
+    max-width: 1200px;
+}
+    .wrapper2 .carousel2{
+        font-size: 0px;
+white-space: nowrap;
+cursor: pointer;
+overflow: hidden;
+scroll-behavior: smooth;
+    }
+.carousel2 img{
+    height: 250px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%/3);
+
+}
+.carousel2 img:first-child{
+margin-left: 0px;
+}
+.carousel2.dragging2{
+    cursor:grab;
+    scroll-behavior: auto;
+}
+.carousel2.dragging2 img{
+    pointer-events: none;
+}
+@media (max-width:900px){
+    .carousel2 img{
+        width: calc(100%/2);
+    }
+}
+@media (max-width:550px){
+    .carousel2 img{
+        width: calc(100%/1);
+    }
+}
 /*-------*/
 .homePage__content_Divider-part2{
     background-image: url("../imgs/binary2.jpg");
@@ -67,5 +113,7 @@ padding: 2%;
         height: 100%;
        outline:2px solid rgb(5, 0, 0);
     }
-
-    
+.homePage__content_Divider-part1 a{
+    text-decoration: none;
+    color: black;
+}

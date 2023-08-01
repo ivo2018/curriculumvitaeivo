@@ -12,10 +12,122 @@ import photo from "../imgs/2-2.jpg";
 import photo2 from "../imgs/2-0.jpg";
 
 const Work = (/*{handleClick,setChange}*/) => {  
-    
     const navigate=useNavigate();
 
+    var isDragStart=false,prevPageX,prevScrollLeft;
+    function draggindDown(){
+        var carousel = document.querySelector(".carousel");
+        if(carousel){
+            carousel.addEventListener("mousedown",
+            function(event){
+                isDragStart=true;
+                prevPageX=event.pageX ;
+                prevScrollLeft=carousel.scrollLeft;
+           
+            });
+            carousel.addEventListener("touchstart",
+            function(event){
+                isDragStart=true;
+                prevPageX=event.touches[0].pageX;
+                prevScrollLeft=carousel.scrollLeft;
+           
+            });
+         
+        }
+        var carousel2 = document.querySelector(".carousel2");
+        if(carousel2){
+            carousel2.addEventListener("mousedown",
+            function(event){
+                isDragStart=true;
+                prevPageX=event.pageX ;
+                prevScrollLeft=carousel2.scrollLeft;
+           
+            });
+            carousel2.addEventListener("touchstart",
+            function(event){
+                isDragStart=true;
+                prevPageX=event.touches[0].pageX;
+                prevScrollLeft=carousel2.scrollLeft;
+           
+            });
+         
+        }
+    }
+    function dragging(){
+        var carousel = document.querySelector(".carousel");
 
+      if(carousel){
+    carousel.addEventListener("mousemove",
+    function(event){
+        if(!isDragStart) return;
+        event.preventDefault();
+        carousel.classList.add("dragging");
+       let positionDiff= event.pageX - prevPageX;
+       carousel.scrollLeft=prevScrollLeft-positionDiff;
+        
+    }
+
+    );
+    carousel.addEventListener("touchmove",
+    function(event){
+        if(!isDragStart) return;
+        event.preventDefault();
+        carousel.classList.add("dragging");
+       let positionDiff= event.touches[0].pageX -prevPageX;
+       carousel.scrollLeft=prevScrollLeft-positionDiff;
+        
+    }
+
+    );}
+    var carousel2 = document.querySelector(".carousel2");
+    if(carousel2){
+        carousel2.addEventListener("mousemove",
+        function(event){
+            if(!isDragStart) return;
+            event.preventDefault();
+            carousel2.classList.add("dragging2");
+           let positionDiff= event.pageX - prevPageX;
+           carousel2.scrollLeft=prevScrollLeft-positionDiff;
+            
+        }
+    
+        );
+        carousel2.addEventListener("touchmove",
+        function(event){
+            if(!isDragStart) return;
+            event.preventDefault();
+            carousel2.classList.add("dragging2");
+           let positionDiff= event.touches[0].pageX -prevPageX;
+           carousel2.scrollLeft=prevScrollLeft-positionDiff;
+            
+        }
+    
+        );}
+}
+function dragStoped(){
+
+    var carousel = document.querySelector(".carousel");
+    if(carousel ){
+        carousel.addEventListener("mouseup",
+        function(event){
+            isDragStart=false;
+            carousel.classList.remove("dragging");
+        });
+        }
+        var carousel2 = document.querySelector(".carousel2");
+        if(carousel2 ){
+            carousel2.addEventListener("mouseup",
+            function(event){
+                isDragStart=false;
+                carousel2.classList.remove("dragging2");
+            });
+            }
+      }
+
+
+    
+
+ 
     function folderClick(){
       
         var work,about,skills,contact;
@@ -112,7 +224,8 @@ const Work = (/*{handleClick,setChange}*/) => {
     };
 
 
-closeWindow();folderClick()});
+
+    dragging();draggindDown();dragStoped();closeWindow();folderClick()});
     return (
         <div class="homePage" >
             <div class="homePage__folders">
@@ -159,55 +272,39 @@ closeWindow();folderClick()});
             <div class="homePage_content-background"/>
              <div class="homePage__content_Divider">
               <div class="homePage__content_Divider-part1">
-                <div class="homePage__content_Divider-part1-first">
-                  Web projets
-                 <div  class="homePage__content_Divider-part1-first_photo">
-                     <div class="homePage__content_Divider-part1-first_photo-1"> 
-   
-                     <img src={photo} alt="" />
-                         <a href=" ">
-                        DarteArte
-                        </a>    
+              <div class="homePage__content_Divider-part1-first">
+                <div class="wrapper">
+                    <div class="carousel">
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                   
                     </div>
-                 <div class="homePage__content_Divider-part1-first_photo-2"> 
-                     <img src={photo} alt="" />
-                         <a href=" ">
-                         Anymo
-                        </a>    
-                 </div>        
-                <div class="homePage__content_Divider-part1-first_photo-3"> 
-                      <img src={photo}  alt=""/>
-                         <a href=" ">
-                         Landing 
-                          </a>    
-                </div>   
-   
-                 </div>
-            </div>
+                </div>
+                </div>
                 <div class="homePage__content_Divider-part1-second">
-                  Games Projects
-                   <div  class="homePage__content_Divider-part1-second_photo">
-                      <div class="homePage__content_Divider-part1-second_photo-1"> 
-   
-                         <img src={photo2} alt="" />
-                            <a href=" ">
-                          Zemaria
-                           </a>    
+                <div class="wrapper2">
+                    <div class="carousel2">
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                        <img src={photo} alt="img"draggable="false" />
+                   
                     </div>
-                      <div class="homePage__content_Divider-part1-second_photo-2"> 
-                         <img src={photo2} alt="" />
-                          <a href=" ">
-                         Photon
-                         </a>    
-                     </div>        
-                        <div class="homePage__content_Divider-part1-second_photo-3"> 
-                         <img src={photo2} alt=""/>
-                            <a href=" ">
-                         Photon2
-                             </a>    
-                        </div>   
-   
-                    </div>
+                </div>
                 </div>
 
         </div>
