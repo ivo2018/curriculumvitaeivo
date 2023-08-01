@@ -6,9 +6,11 @@ import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import message from "../imgs/message.png"
-
+import "../components/Work.css"
 import close from "../imgs/close-icon.png";
-
+import photo from "../imgs/2-2.jpg";
+import photo2 from "../imgs/2-0.jpg";
+import Background from "../imgs/2-1.jpg";
 const Work = (/*{handleClick,setChange}*/) => {  
     
     const navigate=useNavigate();
@@ -153,12 +155,69 @@ closeWindow();folderClick()});
            </a>
            <img src={close} alt=""></img>
            </div>  
-           <div class="homePage__content">
-           <div class="homePage_content-background">
-            <img src={"binary3"} alt=""></img>
-           </div>
+     <div class="homePage__content">
+            <div class="homePage_content-background"/>
+             <div class="homePage__content_Divider">
+              <div class="homePage__content_Divider-part1">
+                <div class="homePage__content_Divider-part1-first">
+                  Web projets
+                 <div  class="homePage__content_Divider-part1-first_photo">
+                     <div class="homePage__content_Divider-part1-first_photo-1"> 
    
-         
+                     <img src={photo} />
+                         <a>
+                        DarteArte
+                        </a>    
+                    </div>
+                 <div class="homePage__content_Divider-part1-first_photo-2"> 
+                     <img src={photo} />
+                         <a>
+                         Anymo
+                        </a>    
+                 </div>        
+                <div class="homePage__content_Divider-part1-first_photo-3"> 
+                      <img src={photo} />
+                         <a>
+                         Landing 
+                          </a>    
+                </div>   
+   
+                 </div>
+            </div>
+                <div class="homePage__content_Divider-part1-second">
+                  Games Projects
+                   <div  class="homePage__content_Divider-part1-second_photo">
+                      <div class="homePage__content_Divider-part1-second_photo-1"> 
+   
+                         <img src={photo2} />
+                            <a>
+                          Zemaria
+                           </a>    
+                    </div>
+                      <div class="homePage__content_Divider-part1-second_photo-2"> 
+                         <img src={photo2} />
+                          <a>
+                         Photon
+                         </a>    
+                     </div>        
+                        <div class="homePage__content_Divider-part1-second_photo-3"> 
+                         <img src={photo2} />
+                            <a>
+                         Photon2
+                             </a>    
+                        </div>   
+   
+                    </div>
+                </div>
+
+        </div>
+        <div class="homePage__content_Divider-part2">
+   
+        <div class="homePage__content_Divider-part2-Child">
+
+        </div>
+        </div>   
+          </div>
             
            </div>
            </div>

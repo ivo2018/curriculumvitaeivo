@@ -1,0 +1,71 @@
+.homePage__content_Divider{
+display: flex;
+width: 100%;
+height: 100%;
+text-align: left;
+}
+.homePage__content_Divider-part1{
+    width: 35%;
+    padding-left: 1%;
+    padding-top: 1%;
+background-color: rgba(248, 248, 248, 0.623);
+}
+
+
+.homePage__content_Divider-part1-first_photo  {
+display: flex;
+    }
+
+.homePage__content_Divider-part1-first_photo div{
+    display: block;
+    padding: 2%;
+}
+
+.homePage__content_Divider-part1-first_photo{
+ 
+text-align: center;
+}
+
+.homePage__content_Divider-part1-first_photo img{
+
+width: 8em;
+height: 100%;
+padding: 2%;
+}
+/*-----*/
+.homePage__content_Divider-part1-second{
+padding-top: 15%;
+}
+.homePage__content_Divider-part1-second_photo  {
+display: flex;
+}
+.homePage__content_Divider-part1-second_photo div{
+display: block;
+padding: 2%;
+}
+    
+.homePage__content_Divider-part1-second_photo{
+text-align: center;
+}
+.homePage__content_Divider-part1-second_photo img{
+width: 8em;
+height: 100%;
+padding: 2%;
+    }
+    
+/*-------*/
+.homePage__content_Divider-part2{
+    background-image: url("../imgs/binary2.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    width: 65%;
+    border-left: 20px solid rgb(226, 226, 224);
+}
+    .homePage__content_Divider-part2-Child{
+
+        width: 100%;
+        height: 100%;
+       outline:2px solid rgb(5, 0, 0);
+    }
+
+    
