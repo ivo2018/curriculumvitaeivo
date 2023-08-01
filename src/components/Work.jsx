@@ -165,19 +165,19 @@ closeWindow();folderClick()});
                      <div class="homePage__content_Divider-part1-first_photo-1"> 
    
                      <img src={photo} alt="" />
-                         <a>
+                         <a href=" ">
                         DarteArte
                         </a>    
                     </div>
                  <div class="homePage__content_Divider-part1-first_photo-2"> 
                      <img src={photo} alt="" />
-                         <a>
+                         <a href=" ">
                          Anymo
                         </a>    
                  </div>        
                 <div class="homePage__content_Divider-part1-first_photo-3"> 
                       <img src={photo}  alt=""/>
-                         <a>
+                         <a href=" ">
                          Landing 
                           </a>    
                 </div>   
@@ -190,19 +190,19 @@ closeWindow();folderClick()});
                       <div class="homePage__content_Divider-part1-second_photo-1"> 
    
                          <img src={photo2} alt="" />
-                            <a>
+                            <a href=" ">
                           Zemaria
                            </a>    
                     </div>
                       <div class="homePage__content_Divider-part1-second_photo-2"> 
                          <img src={photo2} alt="" />
-                          <a>
+                          <a href=" ">
                          Photon
                          </a>    
                      </div>        
                         <div class="homePage__content_Divider-part1-second_photo-3"> 
                          <img src={photo2} alt=""/>
-                            <a>
+                            <a href=" ">
                          Photon2
                              </a>    
                         </div>   
