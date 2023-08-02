@@ -37,7 +37,12 @@ scroll-behavior: smooth;
     object-fit: cover;
     margin-left: 14px;
     margin-top: 10px;
-    width: calc(100%/3);
+    width: calc(100%/4);
+
+}
+.carousel img:hover{
+transform: scale(1.1);
+transition: 0.8s all;
 
 }
 .carousel img:first-child{
@@ -85,9 +90,14 @@ scroll-behavior: smooth;
     object-fit: cover;
     margin-left: 14px;
     margin-top: 10px;
-    width: calc(100%/3);
+    width: calc(100%/4);
 
 }
+.carousel2 img:hover{
+    transform: scale(1.1);
+    transition: 0.8s all;
+    
+    }
 .carousel2 img:first-child{
 margin-left: 0px;
 }
@@ -112,15 +122,14 @@ margin-left: 0px;
 }
 /*-------*/
 .homePage__content_Divider-part2{
-    width: 65%;
+
 }
     .homePage__content_Divider-part2-Child{
-        background-image: url("../imgs/binary2.jpg");
-        background-size: cover;
-        opacity: 0.6;
-        width: 100%;
-        height: 645px;
-       outline:2px solid rgb(5, 0, 0);
+
+        opacity: 0.4;
+        width: 56vw;
+        height: 69.5vh;
+    background:linear-gradient(0deg, blue, green 40%, red);
     }
 .homePage__content_Divider-part1 a{
     text-decoration: none;
@@ -129,15 +138,9 @@ margin-left: 0px;
  @media (max-width:1000px){
     .homePage__content_Divider-part2-Child{
           
-        background-image: url("../imgs/binary2.jpg");
-        background-size: cover;
-        position: absolute;
-        top: 6%;
-        bottom: 0;
-        width: 61.5%;
-        height: 90%;
-        border-left: 0px solid rgb(226, 226, 224);
-        border-top: 0px solid rgb(226, 226, 224);
+     
+        height: 66.8vh;
+   
     }
  }
  @media (max-width:500px){
@@ -165,29 +168,33 @@ margin-left: 0px;
         }
         .homePage__content_Divider-part2-Child{
           
-            background-image: url("../imgs/binary2.jpg");
-            background-size: cover;
-            width: 95%;
-            height: 40%;
+        
             position: absolute;
-            top: 55.8%;
-            bottom: 0;
-            border-left: 0px solid rgb(226, 226, 224);
-            border-top: 0px solid rgb(226, 226, 224);
+            opacity: 0.4;
+            width: 96%;
+            top: 42.5%;
+            bottom: 0px;
+            height: 40vh;
+            background:linear-gradient(0deg, blue, green 40%, red);
+         
+          
+        
+      
         }
         .carousel2 img{
-            height: 150px;
+            height: 50px;
             object-fit: cover;
             margin-left: 14px;
             margin-bottom: 14px;
-            width: calc(100%/3);
+            width: calc(100%/4);
         }
 
         .carousel img{
-            height: 150px;
+            height: 50px;
             object-fit: cover;
             margin-left: 14px;
-            width: calc(100%/3);
+            margin-bottom: 5px;
+            width: calc(100%/4);
   
         }  
         .homePage__content_Divider-part1-first-title {
@@ -205,12 +212,5 @@ margin-left: 0px;
             font-size: 2vh;
           
         }
-        .carousel img{
-            height: 80px;
-       
-        
-        }
-        .carousel2 img{
-            height: 80px;
-        }
+     
     }

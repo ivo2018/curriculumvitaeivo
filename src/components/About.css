@@ -45,7 +45,6 @@ cursor: pointer;
 }
  .homePage__folders div :focus{
   background:rgba(74, 2, 80, 0.548);
-
   outline: dotted 1.2px rgb(96, 96, 105);
  }
 
@@ -75,6 +74,7 @@ font-size: 18px;
 font-weight: 400;
 }
 .homePage__content{
+
 /* background-image: url("../imgs/binary.jpg");*/
 display: block;
 flex-wrap: wrap;
@@ -331,6 +331,7 @@ width: 100%;
 #windowAbout{
 border: ridge 3px rgb(245, 245, 245);
 position: absolute;
+
 box-shadow: 3px 2px 2px black;
 margin:35% 4%;
 height: 75%;
