@@ -320,8 +320,13 @@ function dragStoped(){
         <div class="homePage__content_Divider-part2">
    
         <div class="homePage__content_Divider-part2-Child">
-
+      <div class="homePage__content_Divider-part2-Child_proyects">
+        <div class="homePage__content_Divider-part2-Child_proyects-title">
+          <a href=" ">  Title</a>
         </div>
+      </div>
+        </div>
+       
         </div>   
           </div>
             
