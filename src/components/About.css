@@ -59,12 +59,15 @@ body {
 }
 
 #windowAbout {
+  position: absolute;
   box-sizing: border-box;
   border: ridge 4px rgb(245, 245, 245);
   box-shadow: 3px 2px 2px black;
   display: inline;
   height: 45em;
-  margin: 5% 0%;
+  right: 0px;
+  left: 15%;
+  top:5%;
   width: 82%;
   background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(241, 211, 211, 0.788) 0%);
 }
@@ -106,7 +109,7 @@ body {
   background-color: rgba(19, 235, 235, 0.836);
 
   background-size: cover;
-  width: 79.90%;
+  width:98%;
   height: 40.5em;
   opacity: 1;
   position: absolute;
@@ -394,7 +397,9 @@ body {
   #windowAbout {
     border: ridge 3px rgb(245, 245, 245);
     position: absolute;
-
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
     box-shadow: 3px 2px 2px black;
     margin: 35% 4%;
     height: 75%;
@@ -483,6 +488,7 @@ body {
     width: 96%;
     height: 89.99%;
     opacity: 0.9;
+    
 
   }
 
