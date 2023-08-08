@@ -10,6 +10,8 @@ import "../components/Work.css"
 import close from "../imgs/close-icon.png";
 import photo from "../imgs/2-2.jpg";
 import photo2 from "../imgs/2-0.jpg";
+import { closeWindow ,openWindow} from '../functions/eventsFunction';
+import { folderWorkClick,folderAboutClick,folderMessageClick,folderSkillsClick } from '../functions/eventsFunction';
 
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
@@ -124,112 +126,16 @@ const Work = (/*{handleClick,setChange}*/) => {
                 });
         }
     }
-    function folderClick() {
 
-        var work, about, skills, contact;
-        work = document.getElementById('work');
-        about = document.getElementById('about');
-        skills = document.getElementById('skills');
-        contact = document.getElementById('contact');
-        var element = document.querySelector('.homePage__folders-work');
-        if (element) {
-            element.addEventListener("click",
-                function (event) {
-                    work.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-                    work.style.background = 'rgb(2, 2, 80)';
-                    skills.style.outline = 'none';
-                    skills.style.background = 'none';
-                    about.style.outline = 'none';
-                    about.style.background = 'none';
-                    contact.style.outline = 'none';
-                    contact.style.background = 'none';
-
-                })
-        };
-        var element2 = document.querySelector('.homePage__folders-skills');
-        if (element2) {
-            element2.addEventListener("click",
-                function (event) {
-                    skills.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-                    skills.style.background = 'rgb(2, 2, 80)';
-                    work.style.outline = 'none';
-                    work.style.background = 'none';
-                    about.style.outline = 'none';
-                    about.style.background = 'none';
-                    contact.style.outline = 'none';
-                    contact.style.background = 'none';
-                })
-        };
-        var element3 = document.querySelector('.homePage__folders-message');
-        if (element3) {
-            element3.addEventListener("click",
-                function (event) {
-                    contact.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-                    contact.style.background = 'rgb(2, 2, 80)';
-                    skills.style.outline = 'none';
-                    skills.style.background = 'none';
-                    about.style.outline = 'none';
-                    about.style.background = 'none';
-                    work.style.outline = 'none';
-                    work.style.background = 'none';
-                })
-        }
-        var element4 = document.querySelector('.homePage__folders-about');
-        if (element4) {
-            element4.addEventListener("click",
-                function (event) {
-                    about.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-                    about.style.background = 'rgb(2, 2, 80)';
-                    skills.style.outline = 'none';
-                    skills.style.background = 'none';
-                    work.style.outline = 'none';
-                    work.style.background = 'none';
-                    contact.style.outline = 'none';
-                    contact.style.background = 'none';
-                })
-        }
-
-
-    }
     useEffect(() => {
-        function closeWindow() {
-            var windowAbout = document.getElementById("windowAbout");
-            var element3 = document.querySelector(".homePage__about-title img");
-            if (element3) {
-                element3.addEventListener("click",
-                    function (event) {
+      
 
-                        windowAbout.style.opacity = "0";
-                        windowAbout.style.width = "20%";
-
-                        windowAbout.style.transition = "0.2s all"
-
-
-                    })
-            }
-            var element4 = document.querySelector(".homePage__folders-work");
-            if (element4) {
-                element4.addEventListener("click",
-                    function (event) {
-
-                        windowAbout.style.opacity = "100%";
-                        windowAbout.style.width = "82%"
-
-
-
-                    })
-            }
-
-        };
-
-
-
-        dragging(); draggindDown(); dragStoped(); closeWindow(); folderClick()
+        dragging(); draggindDown(); dragStoped(); 
     });
     return (
         <div class="homePage" >
             <div class="homePage__folders">
-                <div class="homePage__folders-work" onClick={() => navigate("/work")}   >
+                <div class="homePage__folders-work" onClick={() => navigate("/work")+folderWorkClick()+openWindow()}   >
                     <img src={folder} alt="folder" />
                     <button id="work" >
                         <a href=" " >
@@ -237,7 +143,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills"  >
+                <div class="homePage__folders-skills" onClick={()=>folderSkillsClick()} >
                     <img src={skills} alt="folder" />
                     <button id="skills">
                         <a href="/#" >
@@ -245,7 +151,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/")} >
+                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/") +folderAboutClick()} >
                     <img src={about} alt="folder" />
                     <button id="about"   >
                         <a href=" "  >
@@ -253,7 +159,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-message"  >
+                <div class="homePage__folders-message"  onClick={()=>folderMessageClick()} >
                     <img src={message} alt="folder" />
                     <button id="contact">
                         <a href="/#" >
@@ -266,7 +172,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                 <div class="homePage__about-title">
                     <a href="/#">Work
                     </a>
-                    <img src={close} alt=""></img>
+                    <img src={close} alt="" onClick={()=> closeWindow()}></img>
                 </div>
                 <div class="homePage__content">
                     <div class="homePage_content-background" />
