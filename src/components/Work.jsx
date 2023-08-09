@@ -8,10 +8,11 @@ import about from "../imgs/about.png"
 import message from "../imgs/message.png"
 import "../components/Work.css"
 import close from "../imgs/close-icon.png";
-import photo from "../imgs/2-2.jpg";
+
 import photo2 from "../imgs/2-0.jpg";
-import { closeWindow ,openWindow} from '../functions/eventsFunction';
-import { folderWorkClick,folderAboutClick,folderMessageClick,folderSkillsClick } from '../functions/eventsFunction';
+import { closeWindow, openWindow } from '../functions/eventsFunction';
+import { folderWorkClick, folderAboutClick, folderMessageClick, folderSkillsClick } from '../functions/eventsFunction';
+import list from '../lists/listsCarouselDivider';
 
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
@@ -128,14 +129,14 @@ const Work = (/*{handleClick,setChange}*/) => {
     }
 
     useEffect(() => {
-      
 
-        dragging(); draggindDown(); dragStoped(); 
+
+        dragging(); draggindDown(); dragStoped();
     });
     return (
         <div class="homePage" >
             <div class="homePage__folders">
-                <div class="homePage__folders-work" onClick={() => navigate("/work")+folderWorkClick()+openWindow()}   >
+                <div class="homePage__folders-work" onClick={() => navigate("/work") + folderWorkClick() + openWindow()}   >
                     <img src={folder} alt="folder" />
                     <button id="work" >
                         <a href=" " >
@@ -143,7 +144,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills" onClick={()=>folderSkillsClick()} >
+                <div class="homePage__folders-skills" onClick={() => folderSkillsClick()} >
                     <img src={skills} alt="folder" />
                     <button id="skills">
                         <a href="/#" >
@@ -151,7 +152,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/") +folderAboutClick()} >
+                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/") + folderAboutClick()} >
                     <img src={about} alt="folder" />
                     <button id="about"   >
                         <a href=" "  >
@@ -159,7 +160,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-message"  onClick={()=>folderMessageClick()} >
+                <div class="homePage__folders-message" onClick={() => folderMessageClick()} >
                     <img src={message} alt="folder" />
                     <button id="contact">
                         <a href="/#" >
@@ -172,7 +173,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                 <div class="homePage__about-title">
                     <a href="/#">Work
                     </a>
-                    <img src={close} alt="" onClick={()=> closeWindow()}></img>
+                    <img src={close} alt="" onClick={() => closeWindow()}></img>
                 </div>
                 <div class="homePage__content">
                     <div class="homePage_content-background" />
@@ -184,6 +185,17 @@ const Work = (/*{handleClick,setChange}*/) => {
 
                                     <div class="wrapper">
                                         <div class="carousel">
+                                            {list.map((producto) => (
+                                                <div class="carousel_div">
+                                                    <a href=" ">{producto.name} </a>
+                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+
+                                                </div>
+
+                                            ))}
+
+
+                                            {/*  <img src={photo} alt="img" draggable="false" />
                                             <img src={photo} alt="img" draggable="false" />
                                             <img src={photo} alt="img" draggable="false" />
                                             <img src={photo} alt="img" draggable="false" />
@@ -192,8 +204,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                             <img src={photo} alt="img" draggable="false" />
                                             <img src={photo} alt="img" draggable="false" />
                                             <img src={photo} alt="img" draggable="false" />
-                                            <img src={photo} alt="img" draggable="false" />
-                                            <img src={photo} alt="img" draggable="false" />
+                                             */}
 
                                         </div>
                                     </div>
@@ -229,9 +240,9 @@ const Work = (/*{handleClick,setChange}*/) => {
                                 <div class="homePage__content_Divider-part2-Child_proyects">
                                     <div class="homePage__content_Divider-part2-Child_proyects-title">
                                         <a href=" ">  Title</a>
-                                          <div class="homePage__content_Divider-part2-Child_proyects-content">
-                                            
-                                          </div>
+                                        <div class="homePage__content_Divider-part2-Child_proyects-content">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
