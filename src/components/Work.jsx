@@ -12,7 +12,8 @@ import close from "../imgs/close-icon.png";
 import photo2 from "../imgs/2-0.jpg";
 import { closeWindow, openWindow } from '../functions/eventsFunction';
 import { folderWorkClick, folderAboutClick, folderMessageClick, folderSkillsClick } from '../functions/eventsFunction';
-import list from '../lists/listsCarouselDivider';
+import list from '../lists/listsCarouselDividerWeb';
+import list2 from '../lists/listsCarouselDividerGames';
 
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
@@ -187,9 +188,8 @@ const Work = (/*{handleClick,setChange}*/) => {
                                         <div class="carousel">
                                             {list.map((producto) => (
                                                 <div class="carousel_div">
-                                                    <a href=" ">{producto.name} </a>
+                                                    <a href=" "> {producto.name} </a>
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
-
                                                 </div>
 
                                             ))}
@@ -217,6 +217,14 @@ const Work = (/*{handleClick,setChange}*/) => {
                                     </a>
                                     <div class="wrapper2">
                                         <div class="carousel2">
+                                            {list2.map((producto) => (
+                                                <div class="carousel_div2">
+                                                    <a href=" "> {producto.name} </a>
+                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                </div>
+
+                                            ))}
+                                            {/*
                                             <img src={photo2} alt="img" draggable="false" />
                                             <img src={photo2} alt="img" draggable="false" />
                                             <img src={photo2} alt="img" draggable="false" />
@@ -227,6 +235,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                             <img src={photo2} alt="img" draggable="false" />
                                             <img src={photo2} alt="img" draggable="false" />
                                             <img src={photo2} alt="img" draggable="false" />
+                                             */}
 
                                         </div>
                                     </div>
@@ -241,7 +250,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                     <div class="homePage__content_Divider-part2-Child_proyects-title">
                                         <a href=" ">  Title</a>
                                         <div class="homePage__content_Divider-part2-Child_proyects-content">
-
+                                            <img src={photo2} alt="" />
                                         </div>
                                     </div>
                                 </div>
