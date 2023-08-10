@@ -8,8 +8,6 @@ import about from "../imgs/about.png"
 import message from "../imgs/message.png"
 import "../components/Work.css"
 import close from "../imgs/close-icon.png";
-
-
 import { closeWindow, openWindow } from '../functions/eventsFunction';
 import { folderWorkClick, folderAboutClick, folderMessageClick, folderSkillsClick } from '../functions/eventsFunction';
 import list from '../lists/listsCarouselDividerWeb';
@@ -128,7 +126,6 @@ const Work = (/*{handleClick,setChange}*/) => {
                 });
         }
     }
-
     useEffect(() => {
         console.log(product);
 
