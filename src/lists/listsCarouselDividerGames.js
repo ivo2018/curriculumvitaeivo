@@ -14,7 +14,7 @@ var list=[
         photo:photo
     },
     {
-        name: "Zemaria",
+        name: "Zemariaa",
         photo:photo
     }
 ];
