@@ -242,11 +242,12 @@ margin: 0% 10%;
     left: 31.8%;
     top: 10%;
 }
-.nav_descripcion li a{
+.nav_descripcion li button{
+    border: none;
  position: relative;
  right: 40%;
-bottom: 0.1em;
- padding: 0.2%;
+background-color: transparent;
+
 
 }
 
@@ -256,7 +257,7 @@ bottom: 0.1em;
     list-style:none;
     
 }
-.nav_descripcion li a{
+.nav_descripcion li button{
     padding-right: 2%;
 
 }
@@ -264,7 +265,8 @@ bottom: 0.1em;
    display: block;
    width: 80%;
    position: relative;
-   left: 1.5%;
+   left: 2.5%;
+   color: black;
 }
 @media (max-width:1000px) {
     .homePage__content_Divider-part2-Child {

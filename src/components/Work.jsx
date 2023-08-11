@@ -265,8 +265,8 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                     <div class="nav_descripcion"> 
                                                 
                                                     <li>
-                                                        <a href=" " class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()}>Overview</a>
-                                                        <a href=" " class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</a>
+                                                        <button class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()}>Overview</button>
+                                                        <button  class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</button>
                                                     </li>
                                                
                                                     <a href=" " id="descripcion-id"> {producto.description} </a>
@@ -281,8 +281,8 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                     <div class="nav_descripcion"> 
                                                     <li>
-                                                        <a href=" " class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()} >Overview</a>
-                                                        <a href=" " class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</a>
+                                                        <button class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()} >Overview</button>
+                                                        <button class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</button>
                                                     </li>
                                                     <a href=" " id="descripcion-id"> {producto.description} </a>
                                                    </div>
