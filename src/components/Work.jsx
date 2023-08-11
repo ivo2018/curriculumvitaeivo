@@ -17,6 +17,32 @@ const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
     const [product,setProduct] = useState();
     var isDragStart = false, prevPageX, prevScrollLeft;
+    function descripcionButton1(){
+        var button1,button2,descripcion;
+        button1 = document.getElementById('descripcion-button1');
+        button2 = document.getElementById('descripcion-button2');
+        descripcion=document.getElementById('descripcion-id');
+     
+        if (button1 && button2&&descripcion != null) {
+        
+            button1.style.background = "rgba(186, 199, 199, 0.986)";
+            button2.style.background = 'none';
+            descripcion.style.background = "rgba(186, 199, 199, 0.986)";
+        }
+       }    
+       function descripcionButton2(){
+        var button1,button2,descripcion;
+        button1 = document.getElementById('descripcion-button1');
+        button2 = document.getElementById('descripcion-button2');
+     descripcion=document.getElementById('descripcion-id');
+        if (button1 && button2&&descripcion != null) {
+        
+            button2.style.background = "rgba(186, 199, 199, 0.986)";
+            button1.style.background = 'none';
+            descripcion.style.background = "rgba(186, 199, 199, 0.986)";
+        }
+       }    
+    
     function draggindDown() {
         var carousel = document.querySelector(".carousel");
         if (carousel) {
@@ -233,17 +259,33 @@ const Work = (/*{handleClick,setChange}*/) => {
                                         <div class="homePage__content_Divider-part2-Child_proyects-content">
                                             {list2.map((producto) => (
                                                 producto.id===product?
-                                                <div class="" onClick={()=>setProduct(producto.name)}>
-                                                    <a href=" "> {producto.name} </a>
+                                                <div class="">
+                                                
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                    <div class="nav_descripcion"> 
+                                                
+                                                    <li>
+                                                        <a href=" " class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()}>Overview</a>
+                                                        <a href=" " class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</a>
+                                                    </li>
+                                               
+                                                    <a href=" " id="descripcion-id"> {producto.description} </a>
+                                                    </div>
                                                 </div>
                                                 :null
                                             ))}
                                              {list.map((producto) => (
                                                 producto.id===product?
-                                                <div class="" onClick={()=>setProduct(producto.name)}>
-                                                    <a href=" "> {producto.name} </a>
+                                                <div class="" >
+                                                  
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                    <div class="nav_descripcion"> 
+                                                    <li>
+                                                        <a href=" " class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()} >Overview</a>
+                                                        <a href=" " class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</a>
+                                                    </li>
+                                                    <a href=" " id="descripcion-id"> {producto.description} </a>
+                                                   </div>
                                                 </div>
                                                 :null
                                             ))}

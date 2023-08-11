@@ -224,12 +224,15 @@ margin: 0% 10%;
     background-color: rgb(179, 189, 189);
     display: flex;
     justify-content: center;
-    
+    text-align: center;
 }
 .homePage__content_Divider-part2-Child_proyects-content img{
     padding-top: 1.5%;
     height: 35vh;
     width: 100vh;
+    padding-bottom: 2%;
+    display: block;
+   
 
 }
 .homePage_content_Divider_part2-Child_contenedor{
@@ -239,7 +242,30 @@ margin: 0% 10%;
     left: 31.8%;
     top: 10%;
 }
+.nav_descripcion li a{
+ position: relative;
+ right: 40%;
+bottom: 0.1em;
+ padding: 0.2%;
 
+}
+
+
+
+.nav_descripcion li{
+    list-style:none;
+    
+}
+.nav_descripcion li a{
+    padding-right: 2%;
+
+}
+#descripcion-id{
+   display: block;
+   width: 80%;
+   position: relative;
+   left: 1.5%;
+}
 @media (max-width:1000px) {
     .homePage__content_Divider-part2-Child {
 
