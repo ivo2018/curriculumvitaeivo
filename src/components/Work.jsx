@@ -16,6 +16,7 @@ import list2 from '../lists/listsCarouselDividerGames';
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
     const [product,setProduct] = useState();
+    const [text,setText] = useState();
     var isDragStart = false, prevPageX, prevScrollLeft;
     function descripcionButton1(){
         var button1,button2,descripcion;
@@ -26,7 +27,10 @@ const Work = (/*{handleClick,setChange}*/) => {
         if (button1 && button2&&descripcion != null) {
         
             button1.style.background = "rgba(186, 199, 199, 0.986)";
+            button1.style.color="black";
+            button1.style.fontWeight="bold";
             button2.style.background = 'none';
+            button2.style.fontWeight = '500';
             descripcion.style.background = "rgba(186, 199, 199, 0.986)";
         }
        }    
@@ -39,7 +43,11 @@ const Work = (/*{handleClick,setChange}*/) => {
         
             button2.style.background = "rgba(186, 199, 199, 0.986)";
             button1.style.background = 'none';
+            button2.style.color="black";
+            button2.style.fontWeight="bold";
+            button1.style.fontWeight = '500';
             descripcion.style.background = "rgba(186, 199, 199, 0.986)";
+        
         }
        }    
     
@@ -195,7 +203,7 @@ const Work = (/*{handleClick,setChange}*/) => {
             </div>
             <div id="windowAbout" class="homePage__about" >
                 <div class="homePage__about-title">
-                    <a href="/#">Work
+                    <a href=" # ">Work
                     </a>
                     <img src={close} alt="" onClick={() => closeWindow()}></img>
                 </div>
@@ -205,13 +213,13 @@ const Work = (/*{handleClick,setChange}*/) => {
                         <div class="homePage__content_Divider-part1">
                             <div class="homePage__content_Divider-part1-first">
                                 <div class="homePage__content_Divider-part1-first-title">
-                                    <a href=" ">  Projects Web</a>
+                                    <a href=" # ">  Projects Web</a>
 
                                     <div class="wrapper">
                                         <div class="carousel">
                                             {list.map((producto) => (
                                                 <div class="carousel_div" onClick={()=>setProduct(producto.id)}>
-                                                    <a href=" "> {producto.name} </a>
+                                                    <a href=" # "> {producto.name} </a>
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                 </div>
 
@@ -227,14 +235,14 @@ const Work = (/*{handleClick,setChange}*/) => {
                             </div>
                             <div class="homePage__content_Divider-part1-second">
                                 <div class="homePage__content_Divider-part1-first-title2">
-                                    <a href=" ">
+                                    <a href=" # ">
                                         Projects Games
                                     </a>
                                     <div class="wrapper2">
                                         <div class="carousel2">
                                             {list2.map((producto) => (
                                                 <div class="carousel_div2" onClick={()=>setProduct(producto.id)}>
-                                                    <a href=" "> {producto.name} </a>
+                                                    <a href=" # "> {producto.name} </a>
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                 </div>
 
@@ -265,11 +273,12 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                     <div class="nav_descripcion"> 
                                                 
                                                     <li>
-                                                        <button class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()}>Overview</button>
-                                                        <button  class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</button>
+                                                        <button class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()+setText("descripcion")}>Overview</button>
+                                                        <button  class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()+setText('details')}>Details</button>
                                                     </li>
+                                                  {(text==="descripcion" ?   <a href=" # " id="descripcion-id"> {producto.description} </a> :text==="details" ?   <a href=" # "id="descripcion-id"> {producto.detalles} </a>:null)}
+                                                 
                                                
-                                                    <a href=" " id="descripcion-id"> {producto.description} </a>
                                                     </div>
                                                 </div>
                                                 :null
@@ -281,10 +290,11 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                     <div class="nav_descripcion"> 
                                                     <li>
-                                                        <button class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()} >Overview</button>
-                                                        <button class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()}>Details</button>
+                                                        <button class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()+setText("descripcion")} >Overview</button>
+                                                        <button class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()+setText('details')}>Details</button>
                                                     </li>
-                                                    <a href=" " id="descripcion-id"> {producto.description} </a>
+                                                    {(text==="descripcion" ?  <a href=" # " id="descripcion-id"> {producto.description} </a>:text==="details" ?  <a href=" # " id="descripcion-id"> {producto.detalle} </a>:null)}
+                                                  
                                                    </div>
                                                 </div>
                                                 :null
