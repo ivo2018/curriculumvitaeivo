@@ -226,6 +226,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         <div class="homePage__content_Divider-part2">
 
                             <div class="homePage__content_Divider-part2-Child">
+                                <div class="homePage_content_Divider_part2-Child_contenedor">
                                 <div class="homePage__content_Divider-part2-Child_proyects">
                                     <div class="homePage__content_Divider-part2-Child_proyects-title">
                                         <a href=" ">  Title</a>
@@ -250,6 +251,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
 
                         </div>
