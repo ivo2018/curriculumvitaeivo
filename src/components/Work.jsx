@@ -9,7 +9,7 @@ import message from "../imgs/message.png"
 import "../components/Work.css"
 import close from "../imgs/close-icon.png";
 import { closeWindow, openWindow } from '../functions/eventsFunction';
-import { folderWorkClick, folderAboutClick, folderMessageClick, folderSkillsClick } from '../functions/eventsFunction';
+import { FolderDecide } from '../functions/eventsFunction';
 import list from '../lists/listsCarouselDividerWeb';
 import list2 from '../lists/listsCarouselDividerGames';
 
@@ -168,7 +168,7 @@ const Work = (/*{handleClick,setChange}*/) => {
     return (
         <div class="homePage" >
             <div class="homePage__folders">
-                <div class="homePage__folders-work" onClick={() => navigate("/work") + folderWorkClick() + openWindow()}   >
+                <div class="homePage__folders-work" onClick={() => navigate("/work") + FolderDecide("work") + openWindow()}   >
                     <img src={folder} alt="folder" />
                     <button id="work" >
                         <a href=" " >
@@ -176,7 +176,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills" onClick={() => folderSkillsClick()} >
+                <div class="homePage__folders-skills"onClick={() => FolderDecide("skills")} >
                     <img src={skills} alt="folder" />
                     <button id="skills">
                         <a href="/#" >
@@ -184,7 +184,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/") + folderAboutClick()} >
+                <div class="homePage__folders-about" /* onClick ={ function() { setChange('false')}}*/ onClick={() => navigate("/") + FolderDecide("about")} >
                     <img src={about} alt="folder" />
                     <button id="about"   >
                         <a href=" "  >
@@ -192,7 +192,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-message" onClick={() => folderMessageClick()} >
+                <div class="homePage__folders-message" onClick={() => FolderDecide("contact")} >
                     <img src={message} alt="folder" />
                     <button id="contact">
                         <a href="/#" >

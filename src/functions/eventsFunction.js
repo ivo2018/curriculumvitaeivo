@@ -30,129 +30,109 @@ export function titleEffect() {
             })
     };
 }
-export function folderWorkClick() {
 
-    var work, about, skills, contact;
-    work = document.getElementById('work');
-    about = document.getElementById('about');
-    skills = document.getElementById('skills');
-    contact = document.getElementById('contact');
-    if (work && about && skills && contact != null) {
-        work.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-        work.style.background = 'rgb(2, 2, 80)';
-        skills.style.outline = 'none';
-        skills.style.background = 'none';
-        about.style.outline = 'none';
-        about.style.background = 'none';
-        contact.style.outline = 'none';
-        contact.style.background = 'none';
-    }
-}
-export function folderSkillsClick() {
-
-    var work, about, skills, contact;
-    work = document.getElementById('work');
-    about = document.getElementById('about');
-    skills = document.getElementById('skills');
-    contact = document.getElementById('contact');
-    if (work && about && skills && contact != null) {
-        skills.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-        skills.style.background = 'rgb(2, 2, 80)';
-        work.style.outline = 'none';
-        work.style.background = 'none';
-        about.style.outline = 'none';
-        about.style.background = 'none';
-        contact.style.outline = 'none';
-        contact.style.background = 'none';
-    }
-}
-export function folderMessageClick() {
-
-    var work, about, skills, contact;
-    work = document.getElementById('work');
-    about = document.getElementById('about');
-    skills = document.getElementById('skills');
-    contact = document.getElementById('contact');
-    if (work && about && skills && contact != null) {
-        contact.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-        contact.style.background = 'rgb(2, 2, 80)';
-        skills.style.outline = 'none';
-        skills.style.background = 'none';
-        about.style.outline = 'none';
-        about.style.background = 'none';
-        work.style.outline = 'none';
-        work.style.background = 'none';
-    }
-}
-export function folderAboutClick() {
-
-    var work, about, skills, contact;
-    work = document.getElementById('work');
-    about = document.getElementById('about');
-    skills = document.getElementById('skills');
-    contact = document.getElementById('contact');
-    if (work && about && skills && contact != null) {
-        about.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
-        about.style.background = 'rgb(2, 2, 80)';
-        skills.style.outline = 'none';
-        skills.style.background = 'none';
-        work.style.outline = 'none';
-        work.style.background = 'none';
-        contact.style.outline = 'none';
-        contact.style.background = 'none';
-    }
-}
-
-export function opacity(opacitystate, setOpacityState) {
-    var key1, key2;
-    key1 = document.getElementById("key1");
-    key2 = document.getElementById("key2");
-    if (key2 != null && key1 != null) {
-        if (opacitystate === false) {
-            key2.style.opacity = "0.99";
-            key1.style.opacity = "0.5";
-            setOpacityState(true);
-        }
-    }
-
-}
-export function opacity2(opacitystate, setOpacityState) {
-    var key1, key2;
-    key1 = document.getElementById("key1");
-    key2 = document.getElementById("key2");
-    if (key2 != null && key1 != null) {
-        if (opacitystate === true)
-            key2.style.opacity = "0.5";
-        key1.style.opacity = "0.99";
-        setOpacityState(false);
-    }
-}
 export function closeWindow() {
     var windowAbout = document.getElementById("windowAbout");
     var windowWork = document.getElementById("windowWork");
-    if (windowAbout != null ) {
+    if (windowAbout != null) {
         windowAbout.style.opacity = "0";
         windowAbout.style.width = "20%";
         windowAbout.style.transition = "0.2s all"
     }
-    if(windowWork!=null){
+    if (windowWork != null) {
         windowWork.style.opacity = "0";
         windowWork.style.width = "20%";
         windowWork.style.transition = "0.2s all"
-        
-}
-    
 
+    }
 };
 export function openWindow() {
     var windowAbout = document.getElementById("windowAbout");
     var windowWork = document.getElementById("windowWork");
     if (windowAbout != null) {
-    windowAbout.style.opacity = "100%";
-    windowAbout.style.width = "82%";
+        windowAbout.style.opacity = "100%";
+        windowAbout.style.width = "82%";
     }
-    if(windowWork!=null){
-    windowWork.style.opacity = "100%";
-    windowWork.style.width = "82%";
+    if (windowWork != null) {
+        windowWork.style.opacity = "100%";
+        windowWork.style.width = "82%";
     }
 }
+
+
+
+export function FolderDecide(setSelect) {
+
+    var work, about, skills, contact;
+    work = document.getElementById('work');
+    about = document.getElementById('about');
+    skills = document.getElementById('skills');
+    contact = document.getElementById('contact');
+    var folderSelected;
+    folderSelected = document.getElementById(setSelect);
+    if (folderSelected) {
+        switch (folderSelected) {
+            case work:
+                folderSelected = work;
+                break;
+            case about:
+                folderSelected = about;
+                break;
+            case skills:
+                folderSelected = skills;
+                break;
+            case contact:
+                folderSelected = contact;
+                break;
+            default:
+                break;
+        }
+    }
+    if (folderSelected) {
+        if (work && about && skills && contact && folderSelected != null) {
+            folderSelected.style.outline = 'dotted 1.2px rgb(255, 255, 255)';
+            folderSelected.style.background = 'rgb(2, 2, 80)';
+        }
+    }
+}
+
+export function opacitySelected(opacitystate, setOpacityState, key) {
+    var key1, key2;
+    key1 = document.getElementById("key1");
+    key2 = document.getElementById("key2");
+    var keySelected = document.getElementById(key);
+    switch (keySelected) {
+        case key1:
+            keySelected = key1;
+            break;
+        case key2:
+            keySelected = key2;
+            break;
+
+        default:
+            break;
+    }
+    if (key2 != null && key1 != null) {
+        if(!opacitystate){
+            
+            keySelected.style.opacity= '0.5';
+            if(keySelected!==key1){
+                key1.style.opacity= '0.9';
+               
+            }else{
+                key2.style.opacity= '0.9';
+                setOpacityState(true);
+            }     
+            } 
+        }
+        if(opacitystate){
+            if(keySelected===key1){
+                key1.style.opacity="0.5"
+            }else{
+                key2.style.opacity="0.5"
+                key1.style.opacity="0.9"
+                setOpacityState(false);
+            }
+        }
+    }
+

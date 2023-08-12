@@ -9,22 +9,24 @@ import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
-import { opacity ,opacity2} from '../functions/eventsFunction';
+import { opacitySelected } from '../functions/eventsFunction';
 //import SelectionPage from './SelectionPage';
 import "../components/About.css"
 import { closeWindow ,openWindow} from '../functions/eventsFunction';
 import { titleEffect } from '../functions/eventsFunction';
-import { folderWorkClick,folderAboutClick,folderMessageClick,folderSkillsClick } from '../functions/eventsFunction';
+
+import { FolderDecide } from '../functions/eventsFunction';
 const About = (/*{setChange,handleClick}*/) => {
     const navigate = useNavigate();
     const [opacitystate, setOpacityState] = useState(false);
+
     useEffect(() => {
         titleEffect();
     });
     return (
         <div class="homePage">
             <div class="homePage__folders">
-                <div class="homePage__folders-work" onClick={() => navigate("/work")+folderWorkClick()}   /*onClick ={ function() { setChange('cameron') }} */ >
+                <div class="homePage__folders-work" onClick={() => navigate("/work")+FolderDecide("work")}   /*onClick ={ function() { setChange('cameron') }} */ >
                     <img src={folder} alt="folder"/>
                     <button id="work"  >
                         <a href=" ">
@@ -32,7 +34,7 @@ const About = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills"  onClick={() => folderSkillsClick()} >
+                <div class="homePage__folders-skills"  onClick={() => FolderDecide("skills")} >
                     <img src={skills} alt="folder" />
                     <button id="skills" >
                         <a href="/#" >
@@ -40,7 +42,7 @@ const About = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-about" onClick={() => navigate("/")+folderAboutClick()+openWindow()}  >
+                <div class="homePage__folders-about" onClick={() => navigate("/")+FolderDecide("about")+openWindow()}  >
                     <img src={about} alt="folder"  />
                     <button id="about"  >
                         <a href=" " >
@@ -48,7 +50,7 @@ const About = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-message"  onClick={() => folderMessageClick()}  >
+                <div class="homePage__folders-message"  onClick={() => FolderDecide("contact")}  >
                     <img src={message} alt="folder" />
                     <button id="contact">
                         <a href="/#" >
@@ -91,10 +93,10 @@ const About = (/*{setChange,handleClick}*/) => {
                                     </a>
                                 </li>
                                 <li class="homePage__content-key ">
-                                    <div id="key1" class="homePage__content-key1" onClick={() => opacity(opacitystate,setOpacityState)}> 
+                                    <div id="key1" class="homePage__content-key1" onClick={() => opacitySelected(opacitystate,setOpacityState,"key1")}> 
                                         <img src={key} alt=""></img>
                                     </div>
-                                    <div id="key2" class="homePage__content-key2" onClick={() => opacity2(opacitystate,setOpacityState)}>
+                                    <div id="key2" class="homePage__content-key2" onClick={() => opacitySelected(opacitystate,setOpacityState,"key2")}>
                                         <img src={key} alt=""></img>
                                     </div>
                                 </li>
