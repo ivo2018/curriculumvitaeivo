@@ -1,3 +1,14 @@
+
+export function carouselMove(){
+    const carousel= document.querySelector(".carousel3");
+    if(carousel){
+    const dragging=(e)=>{
+        console.log(e.pageX);
+
+    }
+    carousel.addEventListener("mousemoving",dragging);
+}
+}
 export function titleEffect() {
     var titlePageName = document.getElementById('content-title');
     var element = document.querySelector('.homePage');

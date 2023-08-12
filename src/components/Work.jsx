@@ -15,42 +15,77 @@ import list2 from '../lists/listsCarouselDividerGames';
 
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
-    const [product,setProduct] = useState();
-    const [text,setText] = useState('descripcion');
+    const [product, setProduct] = useState();
+    const [text, setText] = useState('descripcion');
     var isDragStart = false, prevPageX, prevScrollLeft;
-    function descripcionButton1(){
-        var button1,button2,descripcion;
+    function carouselMove(){
+        const carousel= document.querySelector(".carousel3");
+        if(carousel){
+        const firstImg=carousel.querySelectorAll("img")[0];
+        const arrowIcons= document.querySelectorAll(".wrapper3 i");
+        let isDragStart=false,prevPageX,prevScrollLeft;
+         let firstImgWidth=firstImg.clientWidth+170;
+        
+        arrowIcons.forEach(icon=>{
+            icon.addEventListener("click",()=>{
+              carousel.scrollLeft+=icon.id==="left"?-firstImgWidth :firstImgWidth;
+            });
+        });
+        const dragStart=(e)=>{
+            isDragStart=true;
+            prevPageX=e.pageX;
+            prevScrollLeft=carousel.scrollLeft;
+        }
+        if(carousel){
+        const dragging=(e)=>{
+            if(!isDragStart) return;
+            e.preventDefault();
+            let positionDiff= e.pageX-prevPageX;
+            carousel.scrollLeft= prevScrollLeft-positionDiff;
+        }   
+        const dragStop= () =>{
+            isDragStart=false;
+        }
+        carousel.addEventListener("mousedown",dragStart);
+        carousel.addEventListener("mousemove",dragging);
+        carousel.addEventListener("mouseup",dragStop);
+    }
+}
+    }
+
+    function descripcionButton1() {
+        var button1, button2, descripcion;
         button1 = document.getElementById('descripcion-button1');
         button2 = document.getElementById('descripcion-button2');
-        descripcion=document.getElementById('descripcion-id');
-     
-        if (button1 && button2&&descripcion != null) {
-        
+        descripcion = document.getElementById('descripcion-id');
+
+        if (button1 && button2 && descripcion != null) {
+
             button1.style.background = "rgba(186, 199, 199, 0.986)";
-            button1.style.color="black";
-            button1.style.fontWeight="bold";
+            button1.style.color = "black";
+            button1.style.fontWeight = "bold";
             button2.style.background = 'none';
             button2.style.fontWeight = '500';
             descripcion.style.background = "rgba(186, 199, 199, 0.986)";
         }
-       }    
-       function descripcionButton2(){
-        var button1,button2,descripcion;
+    }
+    function descripcionButton2() {
+        var button1, button2, descripcion;
         button1 = document.getElementById('descripcion-button1');
         button2 = document.getElementById('descripcion-button2');
-     descripcion=document.getElementById('descripcion-id');
-        if (button1 && button2&&descripcion != null) {
-        
+        descripcion = document.getElementById('descripcion-id');
+        if (button1 && button2 && descripcion != null) {
+
             button2.style.background = "rgba(186, 199, 199, 0.986)";
             button1.style.background = 'none';
-            button2.style.color="black";
-            button2.style.fontWeight="bold";
+            button2.style.color = "black";
+            button2.style.fontWeight = "bold";
             button1.style.fontWeight = '500';
             descripcion.style.background = "rgba(186, 199, 199, 0.986)";
-        
+
         }
-       }    
-    
+    }
+
     function draggindDown() {
         var carousel = document.querySelector(".carousel");
         if (carousel) {
@@ -163,7 +198,7 @@ const Work = (/*{handleClick,setChange}*/) => {
     useEffect(() => {
         console.log(product);
 
-        dragging(); draggindDown(); dragStoped();
+        dragging(); draggindDown(); dragStoped(); carouselMove();
     });
     return (
         <div class="homePage" >
@@ -176,7 +211,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills"onClick={() => FolderDecide("skills")} >
+                <div class="homePage__folders-skills" onClick={() => FolderDecide("skills")} >
                     <img src={skills} alt="folder" />
                     <button id="skills">
                         <a href="/#" >
@@ -218,7 +253,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                     <div class="wrapper">
                                         <div class="carousel">
                                             {list.map((producto) => (
-                                                <div class="carousel_div" onClick={()=>setProduct(producto.id)}>
+                                                <div class="carousel_div" onClick={() => setProduct(producto.id)}>
                                                     <a href=" # "> {producto.name} </a>
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                 </div>
@@ -241,7 +276,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                     <div class="wrapper2">
                                         <div class="carousel2">
                                             {list2.map((producto) => (
-                                                <div class="carousel_div2" onClick={()=>setProduct(producto.id)}>
+                                                <div class="carousel_div2" onClick={() => setProduct(producto.id)}>
                                                     <a href=" # "> {producto.name} </a>
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                 </div>
@@ -261,49 +296,57 @@ const Work = (/*{handleClick,setChange}*/) => {
 
                             <div class="homePage__content_Divider-part2-Child">
                                 <div class="homePage_content_Divider_part2-Child_contenedor">
-                                <div class="homePage__content_Divider-part2-Child_proyects">
-                                    <div class="homePage__content_Divider-part2-Child_proyects-title">
-                                        <a href=" ">  Title</a>
-                                        <div class="homePage__content_Divider-part2-Child_proyects-content">
-                                            {list2.map((producto) => (
-                                                producto.id===product?
-                                                <div class="div-map_content">
-                                                
-                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
-                                                    <div class="nav_descripcion"> 
-                                                
-                                                    <li>
-                                                        <button class="nav_descripcion-button1" id="descripcion-button1"  onClick={()=>descripcionButton1()+setText("descripcion")}>Overview</button>
-                                                        <button  class="nav_descripcion-button2"id="descripcion-button2" onClick={()=>descripcionButton2()+setText('details')}>Details</button>
-                                                    </li>
-                                                  {(text==="descripcion" ?   <a href=" # " id="descripcion-id"> {producto.description} </a> :text==="details" ?   <a href=" # "id="descripcion-id"> {producto.detalles} </a>:null)}
-                                                 
-                                               
-                                                    </div>
-                                                </div>
-                                                :null
-                                            ))}
-                                             {list.map((producto) => (
-                                                producto.id===product?
-                                                <div class="div-map_content">
-                                                  
-                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
-                                                    <div class="nav_descripcion"> 
-                                                    <li>
-                                                        <button class="nav_descripcion-button1"  id="descripcion-button1"  onClick={()=>descripcionButton1()+setText("descripcion")} >Overview</button>
-                                                        <button class="nav_descripcion-button2" id="descripcion-button2" onClick={()=>descripcionButton2()+setText('details')}>Details</button>
-                                                    </li>
-                                                    {(text==="descripcion" ?  <a href=" # " id="descripcion-id"> {producto.description} </a>:text==="details" ?  <a href=" # " id="descripcion-id"> {producto.detalle} </a>:null)}
-                                                  
-                                                   </div>
-                                                </div>
-                                                :null
-                                            ))}
-                                                
+                                    <div class="homePage__content_Divider-part2-Child_proyects">
+                                        <div class="homePage__content_Divider-part2-Child_proyects-title">
+                                            <a href=" ">  Title</a>
+                                            <div class="homePage__content_Divider-part2-Child_proyects-content">
+                                                {list2.map((producto) => (
+                                                    producto.id === product ?
+                                                        <div class="div-map_content">
+                                                            <div class="wrapper3">
+                                                                <i id="left" class="fa-solid fa-less-than"></i>
+                                                                <div class="carousel3">
+                                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                                    <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
+                                                                    <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
+                                                                    <img src={producto.photo4} alt="img" draggable="false" title="value"></img>
+                                                                </div>
+                                                                <i id="right"class="fa-solid fa-greater-than"></i>
+                                                            </div>
+                                                            <div class="nav_descripcion">
+
+                                                                <li>
+                                                                    <button class="nav_descripcion-button1" id="descripcion-button1" onClick={() => descripcionButton1() + setText("descripcion")}>Overview</button>
+                                                                    <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
+                                                                </li>
+                                                                {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalles} </a> : null)}
+
+
+                                                            </div>
+                                                        </div>
+                                                        : null
+                                                ))}
+                                                {list.map((producto) => (
+                                                    producto.id === product ?
+                                                        <div class="div-map_content">
+
+                                                            <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                            <div class="nav_descripcion">
+                                                                <li>
+                                                                    <button class="nav_descripcion-button1" id="descripcion-button1" onClick={() => descripcionButton1() + setText("descripcion")} >Overview</button>
+                                                                    <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
+                                                                </li>
+                                                                {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalle} </a> : null)}
+
+                                                            </div>
+                                                        </div>
+                                                        : null
+                                                ))}
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
 
                         </div>
