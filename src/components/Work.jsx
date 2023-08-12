@@ -16,7 +16,7 @@ import list2 from '../lists/listsCarouselDividerGames';
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
     const [product,setProduct] = useState();
-    const [text,setText] = useState();
+    const [text,setText] = useState('descripcion');
     var isDragStart = false, prevPageX, prevScrollLeft;
     function descripcionButton1(){
         var button1,button2,descripcion;
@@ -201,7 +201,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                     </button>
                 </div>
             </div>
-            <div id="windowAbout" class="homePage__about" >
+            <div id="windowWork" class="homePage__about" >
                 <div class="homePage__about-title">
                     <a href=" # ">Work
                     </a>
@@ -267,7 +267,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                         <div class="homePage__content_Divider-part2-Child_proyects-content">
                                             {list2.map((producto) => (
                                                 producto.id===product?
-                                                <div class="">
+                                                <div class="div-map_content">
                                                 
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                     <div class="nav_descripcion"> 
@@ -285,7 +285,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                             ))}
                                              {list.map((producto) => (
                                                 producto.id===product?
-                                                <div class="" >
+                                                <div class="div-map_content">
                                                   
                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                     <div class="nav_descripcion"> 

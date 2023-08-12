@@ -129,17 +129,30 @@ export function opacity2(opacitystate, setOpacityState) {
 }
 export function closeWindow() {
     var windowAbout = document.getElementById("windowAbout");
-    if (windowAbout != null) {
+    var windowWork = document.getElementById("windowWork");
+    if (windowAbout != null ) {
         windowAbout.style.opacity = "0";
         windowAbout.style.width = "20%";
         windowAbout.style.transition = "0.2s all"
     }
+    if(windowWork!=null){
+        windowWork.style.opacity = "0";
+        windowWork.style.width = "20%";
+        windowWork.style.transition = "0.2s all"
+        
+}
+    
 
 };
 export function openWindow() {
     var windowAbout = document.getElementById("windowAbout");
+    var windowWork = document.getElementById("windowWork");
     if (windowAbout != null) {
     windowAbout.style.opacity = "100%";
     windowAbout.style.width = "82%";
+    }
+    if(windowWork!=null){
+    windowWork.style.opacity = "100%";
+    windowWork.style.width = "82%";
     }
 }
