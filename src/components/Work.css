@@ -354,6 +354,7 @@
     object-fit: cover;
     margin-left: 170px; /*    margin-left: 20px; responsive*/
     width: 100%;
+ 
 }
 .carousel3 img:first-child{
   margin-left: 250px;

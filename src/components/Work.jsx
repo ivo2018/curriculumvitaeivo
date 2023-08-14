@@ -17,20 +17,12 @@ const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
     const [product, setProduct] = useState();
     const [text, setText] = useState('descripcion');
+    const isMobile = localStorage.mobile || window.navigator.maxTouchPoints > 1;
     var isDragStart = false, prevPageX, prevScrollLeft;
     function carouselMove(){
         const carousel= document.querySelector(".carousel3");
         if(carousel){
-        const firstImg=carousel.querySelectorAll("img")[0];
-        const arrowIcons= document.querySelectorAll(".wrapper3 i");
         let isDragStart=false,prevPageX,prevScrollLeft;
-         let firstImgWidth=firstImg.clientWidth+170;
-        
-        arrowIcons.forEach(icon=>{
-            icon.addEventListener("click",()=>{
-              carousel.scrollLeft+=icon.id==="left"?-firstImgWidth :firstImgWidth;
-            });
-        });
         const dragStart=(e)=>{
             isDragStart=true;
             prevPageX=e.pageX;
@@ -85,7 +77,35 @@ const Work = (/*{handleClick,setChange}*/) => {
 
         }
     }
+    function firstIcon(){
+        const carousel= document.querySelector(".carousel3");
+        if(carousel){
+        const firstImg=carousel.querySelectorAll("img")[0];
+        if(isMobile){
+        let firstImgWidth=firstImg.clientWidth+20;
 
+            carousel.scrollLeft+=firstImgWidth;
+       
+        }else{
+            let firstImgWidth=firstImg.clientWidth+170;
+
+            carousel.scrollLeft+=firstImgWidth;
+        }
+    }
+    }
+    function secondIcon(){
+        const carousel= document.querySelector(".carousel3");
+        if(carousel){
+        const firstImg=carousel.querySelectorAll("img")[0];
+        if(window.innerWidth>1000){
+        let firstImgWidth=firstImg.clientWidth+170;
+            carousel.scrollLeft+=-firstImgWidth;
+        }else{
+            let firstImgWidth=firstImg.clientWidth+20;
+            carousel.scrollLeft+=-firstImgWidth;
+        }
+        }
+    }
     function draggindDown() {
         var carousel = document.querySelector(".carousel");
         if (carousel) {
@@ -198,7 +218,7 @@ const Work = (/*{handleClick,setChange}*/) => {
     useEffect(() => {
         console.log(product);
 
-        dragging(); draggindDown(); dragStoped(); carouselMove();
+      dragging(); draggindDown(); dragStoped(); carouselMove();
     });
     return (
         <div class="homePage" >
@@ -304,14 +324,14 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                     producto.id === product ?
                                                         <div class="div-map_content">
                                                             <div class="wrapper3">
-                                                                <i id="left" class="fa-solid fa-less-than"></i>
+                                                                <i id="left" class="fa-solid fa-less-than"  onClick={()=>secondIcon() }></i>
                                                                 <div class="carousel3">
                                                                     <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo4} alt="img" draggable="false" title="value"></img>
                                                                 </div>
-                                                                <i id="right"class="fa-solid fa-greater-than"></i>
+                                                                <i id="right"class="fa-solid fa-greater-than" onClick={()=>firstIcon() }></i>
                                                             </div>
                                                             <div class="nav_descripcion">
 
