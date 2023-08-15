@@ -13,6 +13,7 @@ import { FolderDecide } from '../functions/eventsFunction';
 import list from '../lists/listsCarouselDividerWeb';
 import list2 from '../lists/listsCarouselDividerGames';
 
+
 const Work = (/*{handleClick,setChange}*/) => {
     const navigate = useNavigate();
     const [product, setProduct] = useState();
@@ -53,12 +54,12 @@ const Work = (/*{handleClick,setChange}*/) => {
 
         if (button1 && button2 && descripcion != null) {
 
-            button1.style.background = "rgba(186, 199, 199, 0.986)";
+            button1.style.background = "rgba(255, 253, 253, 0.349)";
             button1.style.color = "black";
             button1.style.fontWeight = "bold";
             button2.style.background = 'none';
             button2.style.fontWeight = '500';
-            descripcion.style.background = "rgba(186, 199, 199, 0.986)";
+            descripcion.style.background = "rgba(255, 253, 253, 0.349)";
         }
     }
     function descripcionButton2() {
@@ -68,12 +69,12 @@ const Work = (/*{handleClick,setChange}*/) => {
         descripcion = document.getElementById('descripcion-id');
         if (button1 && button2 && descripcion != null) {
 
-            button2.style.background = "rgba(186, 199, 199, 0.986)";
+            button2.style.background = "rgba(255, 253, 253, 0.349)";
             button1.style.background = 'none';
             button2.style.color = "black";
             button2.style.fontWeight = "bold";
             button1.style.fontWeight = '500';
-            descripcion.style.background = "rgba(186, 199, 199, 0.986)";
+            descripcion.style.background = "rgba(255, 253, 253, 0.349)";
 
         }
     }
@@ -87,7 +88,7 @@ const Work = (/*{handleClick,setChange}*/) => {
             carousel.scrollLeft+=firstImgWidth;
        
         }else{
-            let firstImgWidth=firstImg.clientWidth+170;
+            let firstImgWidth=firstImg.clientWidth+250;
 
             carousel.scrollLeft+=firstImgWidth;
         }
@@ -98,7 +99,7 @@ const Work = (/*{handleClick,setChange}*/) => {
         if(carousel){
         const firstImg=carousel.querySelectorAll("img")[0];
         if(window.innerWidth>1000){
-        let firstImgWidth=firstImg.clientWidth+170;
+        let firstImgWidth=firstImg.clientWidth+230;
             carousel.scrollLeft+=-firstImgWidth;
         }else{
             let firstImgWidth=firstImg.clientWidth+20;

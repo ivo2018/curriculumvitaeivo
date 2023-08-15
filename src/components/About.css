@@ -357,7 +357,7 @@ body {
   border: 4px inset rgb(187, 181, 181);
 }
 
-@media (max-width:1000px) {
+@media (max-width:1200px) {
   .homePage__folders {
     display: flex;
     margin: 20px;
