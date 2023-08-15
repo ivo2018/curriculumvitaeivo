@@ -55,7 +55,7 @@ const Work = (/*{handleClick,setChange}*/) => {
         if (button1 && button2 && descripcion != null) {
 
             button1.style.background = "rgba(255, 253, 253, 0.349)";
-            button1.style.color = "black";
+            button1.style.color = "rgba(0, 0, 0, 0.747)";
             button1.style.fontWeight = "bold";
             button2.style.background = 'none';
             button2.style.fontWeight = '500';
@@ -71,7 +71,7 @@ const Work = (/*{handleClick,setChange}*/) => {
 
             button2.style.background = "rgba(255, 253, 253, 0.349)";
             button1.style.background = 'none';
-            button2.style.color = "black";
+            button2.style.color = "rgba(0, 0, 0, 0.747)";
             button2.style.fontWeight = "bold";
             button1.style.fontWeight = '500';
             descripcion.style.background = "rgba(255, 253, 253, 0.349)";

@@ -16,11 +16,13 @@
 .homePage__content_Divider-part1-first {
     display: flex;
 
+                                                
     padding: 10px 0px;
 }
 
 
 .homePage__content_Divider-part1-first-title a {
+    font-family: 'TheGoodMonolith', sans-serif;
     font-size: 3vh;
 }
 #windowWork {
@@ -63,8 +65,8 @@
     position: absolute;
     bottom: -2%;
     z-index: 100;
-
     margin: 0% 10%;
+    font-size: 22px;
 }
 
 
@@ -121,6 +123,8 @@
 
 .homePage__content_Divider-part1-first-title2 a {
     font-size: 3vh;
+  
+    font-family: 'TheGoodMonolith', sans-serif;
 }
 
 .wrapper2 {
@@ -158,6 +162,8 @@
     bottom: -2%;
     z-index: 100;
     margin: 0% 10%;
+    font-size: 22px;
+  
 }
 
 .carousel2 img:hover {
@@ -276,13 +282,15 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 padding: 0.8%;
     cursor: pointer;
+    border-color: rgb(80, 72, 94);
 
 }
 
 #descripcion-id {
     display: block;
-    color: black;
-    
+    color: rgba(0, 0, 0, 0.747);
+    font-family: 'Brandon Grotesque Nathan Devi', sans-serif;
+    font-weight: 400;                                         
     cursor: text;
     margin: auto;
     width: 50em;
@@ -314,6 +322,7 @@ padding: 0.8%;
 
 #descripcion-button1,
 #descripcion-id {
+    color :rgba(0, 0, 0, 0.747);
     background-color: rgba(255, 253, 253, 0.349);
 }
 
