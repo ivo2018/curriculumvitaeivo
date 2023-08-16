@@ -469,15 +469,15 @@ body {
 
   .homePage__content-key1 {
     position: absolute;
-    bottom: 50%;
-    left: 35%;
+    bottom: 52%;
+    left: -30%;
     transition: 0.3s all;
   }
 
   .homePage__content-key2 {
     position: absolute;
-    bottom: 40%;
-    left: 35%;
+    bottom: 43%;
+    left: -30%;
     transition: 0.3s all;
   }
 

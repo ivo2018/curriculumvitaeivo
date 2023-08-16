@@ -565,13 +565,16 @@ padding: 0.8%;
     }
 
     #descripcion-id {
+        position:absolute;
+        left: 0;
+        right: 0;
         display: block;
         color: black;
         border-radius: 3px;
         cursor: text;
-        width: 80%;
+        width: 90%;
         font-size: 1.4vh;
-        position: absolute;
+     
        
        
       
