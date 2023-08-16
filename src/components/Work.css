@@ -503,14 +503,15 @@ padding: 0.8%;
 
     .homePage__content_Divider-part1-first-title {
         text-align: center;
-        position: relative;
-        bottom: 2vh;
+     
+     
     }
 
     .homePage__content_Divider-part1-first-title2 {
         position: relative;
-        bottom: 8vh;
+        bottom: 40px;
         text-align: center;
+      
 
     }
 
