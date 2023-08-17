@@ -358,8 +358,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                            <div class="carousel3">
                                                                <img src={producto.photo} alt="img" draggable="false" title="value"></img>
                                                                <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
-                                                               <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
-                                                               <img src={producto.photo4} alt="img" draggable="false" title="value"></img>
+                                                       
                                                            </div>
                                                            <i id="right"class="fa-solid fa-greater-than" onClick={()=>firstIcon() }></i>
                                                        </div>
