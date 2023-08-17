@@ -319,7 +319,9 @@ const Work = (/*{handleClick,setChange}*/) => {
                                 <div class="homePage_content_Divider_part2-Child_contenedor">
                                     <div class="homePage__content_Divider-part2-Child_proyects">
                                         <div class="homePage__content_Divider-part2-Child_proyects-title">
+                                            
                                             <a href=" ">  Title</a>
+                                            <span class="content_spanBackground"> </span>
                                             <div class="homePage__content_Divider-part2-Child_proyects-content">
                                                 {list2.map((producto) => (
                                                     producto.id === product ?
@@ -340,28 +342,40 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                                     <button class="nav_descripcion-button1" id="descripcion-button1" onClick={() => descripcionButton1() + setText("descripcion")}>Overview</button>
                                                                     <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
                                                                 </li>
+                                                                <div class="descripcion">
                                                                 {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalles} </a> : null)}
-
+                                                                </div>                                              
 
                                                             </div>
                                                         </div>
                                                         : null
                                                 ))}
                                                 {list.map((producto) => (
-                                                    producto.id === product ?
-                                                        <div class="div-map_content">
+                                                   producto.id === product ?
+                                                   <div class="div-map_content">
+                                                       <div class="wrapper3">
+                                                           <i id="left" class="fa-solid fa-less-than"  onClick={()=>secondIcon() }></i>
+                                                           <div class="carousel3">
+                                                               <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                               <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
+                                                               <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
+                                                               <img src={producto.photo4} alt="img" draggable="false" title="value"></img>
+                                                           </div>
+                                                           <i id="right"class="fa-solid fa-greater-than" onClick={()=>firstIcon() }></i>
+                                                       </div>
+                                                       <div class="nav_descripcion">
 
-                                                            <img src={producto.photo} alt="img" draggable="false" title="value"></img>
-                                                            <div class="nav_descripcion">
-                                                                <li>
-                                                                    <button class="nav_descripcion-button1" id="descripcion-button1" onClick={() => descripcionButton1() + setText("descripcion")} >Overview</button>
-                                                                    <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
-                                                                </li>
-                                                                {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalle} </a> : null)}
+                                                           <li>
+                                                               <button class="nav_descripcion-button1" id="descripcion-button1" onClick={() => descripcionButton1() + setText("descripcion")}>Overview</button>
+                                                               <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
+                                                           </li>
+                                                           <div class="descripcion">
+                                                           {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalles} </a> : null)}
+                                                           </div>                                              
 
-                                                            </div>
-                                                        </div>
-                                                        : null
+                                                       </div>
+                                                   </div>
+                                                   : null
                                                 ))}
 
                                             </div>
