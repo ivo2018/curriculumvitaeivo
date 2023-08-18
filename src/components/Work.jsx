@@ -257,7 +257,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                     </button>
                 </div>
             </div>
-            <div id="windowWork" class="homePage__about" >
+            <div id="windowAbout" class="homePage__about" >
                 <div class="homePage__about-title">
                     <a href=" # ">Work
                     </a>
