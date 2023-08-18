@@ -434,18 +434,20 @@ body {
   }
 
   .homePage__content-text li a {
+
     display: block;
-    position: absolute;
-    width: 80%;
-    padding: 0%;
     outline: 2px rgba(3, 65, 70, 0.575);
-    color: rgb(243, 239, 184);
-    text-decoration: none;
-    background: rgba(3, 65, 70, 0.575);
+
+    background: rgba(93, 119, 121, 0.575);
     border-radius: 0px 20px 20px;
-    font-size: 2vh;
+    font-size:1.8vh;
     font-weight: 650;
-    line-height: 3.5vh;
+    line-height: 3vh;
+    float:left;
+    width:24vh;
+    height:30vh;
+    position: relative;
+    overflow: auto;  
   }
 
   .homePage__content-img img {
@@ -456,8 +458,10 @@ body {
   }
 
   .homePage__content-key {
-    position: relative;
-
+    position:absolute;
+    left: 45%;
+    bottom: 0%;
+    top: 0%;
   }
 
   .homePage__content-key img {
@@ -470,14 +474,14 @@ body {
   .homePage__content-key1 {
     position: absolute;
     bottom: 52%;
-    left: -30%;
+  
     transition: 0.3s all;
   }
 
   .homePage__content-key2 {
     position: absolute;
     bottom: 43%;
-    left: -30%;
+ 
     transition: 0.3s all;
   }
 
@@ -507,7 +511,7 @@ body {
   }
 
   .homePage__content-text_content li a span {
-    text-decoration: underline wavy rgb(255, 255, 255);
+    text-decoration: underline wavy rgb(86, 196, 181);
     display: inline-block;
     position: relative;
   }
