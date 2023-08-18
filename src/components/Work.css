@@ -498,12 +498,12 @@ padding: 0.8%;
         position: absolute;
         opacity: 1;
         width: 96%;
-        top: 37.5%;
-        height: 57%;
+        top: 34.5%;
+        height: 60%;
     }
 
     .carousel2 img {
-        height: 30px;
+        height: 20px;
         object-fit: cover;
 
         width: calc(100%/5);
@@ -521,7 +521,7 @@ padding: 0.8%;
     .homePage__content_Divider-part1-first-title {
         text-align: center;
         position: relative;
-        bottom: 13px;
+        bottom: 20px;
      
     }
 
@@ -529,7 +529,7 @@ padding: 0.8%;
    
         text-align: center;
         position: relative;
-        bottom: 62px;
+        bottom: 85px;
 
     }
 
@@ -574,7 +574,7 @@ padding: 0.8%;
 
     .homePage__content_Divider-part2-Child_proyects-content img {
         padding-top: 1.5%;
-        height: 20vh;
+        height: 18vh;
 
 
 
@@ -592,6 +592,7 @@ padding: 0.8%;
         display: block; 
         position: relative;
         overflow: auto;  
+       
     }
 
     .div-map_content {
