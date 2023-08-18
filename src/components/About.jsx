@@ -93,10 +93,11 @@ const About = (/*{setChange,handleClick}*/) => {
                                     </a>
                                 </li>
                                 <li class="homePage__content-key ">
-                                    <div id="key1" class="homePage__content-key1" onClick={() => opacitySelected(opacitystate,setOpacityState,"key1")}> 
+                                    
+                                    <div id="key2" class="homePage__content-key2" onClick={() => opacitySelected(opacitystate,setOpacityState,"key2")}>
                                         <img src={key} alt=""></img>
                                     </div>
-                                    <div id="key2" class="homePage__content-key2" onClick={() => opacitySelected(opacitystate,setOpacityState,"key2")}>
+                                    <div id="key1" class="homePage__content-key1" onClick={() => opacitySelected(opacitystate,setOpacityState,"key1")}> 
                                         <img src={key} alt=""></img>
                                     </div>
                                 </li>
