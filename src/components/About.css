@@ -410,8 +410,8 @@ body {
     bottom: 0px;
     left: 0px;
     box-shadow: 3px 2px 2px black;
-    margin: 35% 4%;
-    height: 75%;
+    margin: 30% 4%;
+    height: 82%;
     width: 92% !important;
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(241, 211, 211, 0.788) 0%);
   }
