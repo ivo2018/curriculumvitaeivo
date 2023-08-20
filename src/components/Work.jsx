@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
-import message from "../imgs/message.png"
+//import message from "../imgs/message.png"
 import "../components/Work.css"
 import close from "../imgs/close-icon.png";
 import { closeWindow, openWindow } from '../functions/eventsFunction';

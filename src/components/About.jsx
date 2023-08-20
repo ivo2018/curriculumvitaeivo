@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
-import message from "../imgs/message.png"
+//import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
 import marcador from "../imgs/marcador.png"
