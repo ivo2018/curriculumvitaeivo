@@ -12,7 +12,7 @@ import landing4 from "../imgs/Web/Anymo/landing4.png"
 import lareina from "../imgs/Web/LaReina/lareina.png"
 import lareina2 from "../imgs/Web/LaReina/LaReinaFooter.png"
 import lareina3 from "../imgs/Web/LaReina/lareinaProducts.png"
-import lareina4 from "../imgs/Web/LaReina/lareinaLogo_Shot.png"
+import lareina4 from "../imgs/Web/LaReina/lareinaLogo.png"
 
 var list = [
 
