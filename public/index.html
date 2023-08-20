@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link href="https://fonts.cdnfonts.com/css/gopixel-personal-use" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/brandon-grotesque-nathan-devi" rel="stylesheet">
-                                                          
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = "no />
-    <meta name="theme-color" content="#000000" />
-    
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link href="https://fonts.cdnfonts.com/css/gopixel-personal-use" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/brandon-grotesque-nathan-devi" rel="stylesheet">
+
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = " no />
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -31,16 +30,68 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <iframe src="flowers.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio autoplay>
-        <source src="flowers.mp3" type="audio/mp3">
-    </audio>
-    <!--
+  <title>React App</title>
+  <style>
+    button {
+      background: none;
+      border: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    #html-button1 {
+
+      position: absolute;
+  
+    }
+
+    #html-button2 {
+
+      position: absolute;
+      display: none;
+    
+      
+    }
+    #html-button1 img,#html-button2 img{
+      width: 25px;
+      height: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function changeAudio(x) {
+
+      if (x == 0) {
+        document.getElementById('sound1').play();
+        document.getElementById("html-button1").style.display = "none";
+        document.getElementById("html-button2").style.display = "block";
+      }
+      if (x == 1) {
+        document.getElementById('sound1').pause();
+        document.getElementById("html-button1").style.display = "block";
+        document.getElementById("html-button2").style.display = "none";
+      }
+
+    }
+  </script>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div>
+
+    <button id="html-button1" onclick="changeAudio(0)">
+      <img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_muted-0.png" alt="">
+    </button>
+    <button id="html-button2" onclick="changeAudio(1)">
+      <img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png" alt="">
+    </button>
+  </div>
+  <div id="root"></div>
+  <audio id="sound1" src="flowers.mp3" preload="auto"></audio>
+
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -50,5 +101,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>

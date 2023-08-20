@@ -20,9 +20,7 @@ const About = (/*{setChange,handleClick}*/) => {
     const navigate = useNavigate();
     const [opacitystate, setOpacityState] = useState(false);
 
-
     useEffect(() => {
-        
         titleEffect();
     });
     return (
@@ -53,7 +51,7 @@ const About = (/*{setChange,handleClick}*/) => {
                     </button>
                 </div>
                 <div class="homePage__folders-message"  onClick={() => FolderDecide("contact")}  >
-                    <img src={message} alt="folder" />
+                    <img src="https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png" alt="folder" />
                     <button id="contact">
                         <a href="/#" >
                             Contact
