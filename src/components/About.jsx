@@ -20,7 +20,9 @@ const About = (/*{setChange,handleClick}*/) => {
     const navigate = useNavigate();
     const [opacitystate, setOpacityState] = useState(false);
 
+
     useEffect(() => {
+        
         titleEffect();
     });
     return (
