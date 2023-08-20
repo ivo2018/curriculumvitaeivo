@@ -392,19 +392,19 @@ padding: 0.8%;
 .carousel3 img{
     height: 340px;
  
-    margin-left: 25%; /*    margin-left: 20px; responsive*/
+    margin-left: 24%; /*    margin-left: 20px; responsive*/
   width: 100%;
    
 
  
 }
 .carousel3 img:first-child{
-  margin-left: 22%;
+  margin-left: 16%;
 
 
 }
 .carousel3 img:last-child{
-    margin-right: 23%;
+    margin-right: 16%;
     
   
   }
