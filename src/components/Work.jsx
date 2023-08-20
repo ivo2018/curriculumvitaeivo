@@ -88,7 +88,7 @@ const Work = (/*{handleClick,setChange}*/) => {
             carousel.scrollLeft+=firstImgWidth;
        
         }else{
-            let firstImgWidth=firstImg.clientWidth+250;
+            let firstImgWidth=firstImg.clientWidth+245;
 
             carousel.scrollLeft+=firstImgWidth;
         }
@@ -99,7 +99,7 @@ const Work = (/*{handleClick,setChange}*/) => {
         if(carousel){
         const firstImg=carousel.querySelectorAll("img")[0];
         if(window.innerWidth>1000){
-        let firstImgWidth=firstImg.clientWidth+230;
+        let firstImgWidth=firstImg.clientWidth+245;
             carousel.scrollLeft+=-firstImgWidth;
         }else{
             let firstImgWidth=firstImg.clientWidth+20;
