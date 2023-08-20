@@ -81,7 +81,7 @@ const About = (/*{setChange,handleClick}*/) => {
                         <div class="homePage__content-text" >
                             <div class="homePage__content-text_content">
                                 <li >
-                                    <a href="/#" >
+                                
                                         {opacitystate ? (
                                             <a class="homePage__content-text_content-aboutDescription2" href="/#" >
                                                 Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador} alt=""></img> my work or my skills</span>. Thanks So Mutch
@@ -90,7 +90,7 @@ const About = (/*{setChange,handleClick}*/) => {
                                             <a class="homePage__content-text_content-aboutDescription1" href="/#">
                                                 I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={marcador} alt=""></img>let my imagination run</span> wild and let people know things about me.
                                                 </a>)}
-                                    </a>
+                                   
                                 </li>
                                 <li class="homePage__content-key ">
                                     
