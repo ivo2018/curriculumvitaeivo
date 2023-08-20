@@ -273,7 +273,7 @@ body {
 }
 
 .homePage__content-text_content li a span {
-  text-decoration: underline wavy rgba(16, 155, 155, 0.822);
+  text-decoration: underline wavy rgba(0, 0, 0, 0.822);
   display: inline-block;
   position: relative;
 }
@@ -512,7 +512,7 @@ body {
   }
 
   .homePage__content-text_content li a span {
-    text-decoration: underline wavy rgb(86, 196, 181);
+    text-decoration: underline wavy rgb(0, 5, 4);
     display: inline-block;
     position: relative;
   }
