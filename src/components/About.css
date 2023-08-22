@@ -7,6 +7,7 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
+
 }
 
 .homePage__folders {
@@ -409,13 +410,12 @@ body {
   #windowAbout {
     border: ridge 3px rgb(245, 245, 245);
     position: absolute;
-    top: 0px;
+    top: 100px;
     bottom: 0px;
-    left: 0px;
+    left: 17px;
     box-shadow: 3px 2px 2px black;
-    margin: 30% 4%;
     height: 82%;
-    width: 92% !important;
+    width: 92% ;
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(241, 211, 211, 0.788) 0%);
   }
 
