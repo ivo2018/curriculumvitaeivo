@@ -464,9 +464,9 @@ body {
 
  
 
-  .homePage__content-key {
-    padding-right: 100%;
-   
+  .homePage__content-key div img{
+    margin: 0% -20%;
+
   }
 
   .homePage__content-key img {
@@ -474,11 +474,12 @@ body {
     width: 6vh;
     height: 6vh;
     transition: 0.3s all;
+
   }
 
   .homePage__content-key1 {
 
-  
+
     transition: 0.3s all;
   }
 
