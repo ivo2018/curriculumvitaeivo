@@ -346,7 +346,7 @@ padding: 0.8%;
 
 }
 .wrapper3{
-    white-space: nowrap;
+
 
 
     font-size: 40px;
@@ -376,7 +376,7 @@ padding: 0.8%;
 }
 .carousel3{
     display: flex;
-    white-space: nowrap;
+ 
     font-size: 1.2rem;
     cursor: pointer;
 
@@ -386,7 +386,7 @@ padding: 0.8%;
 .wrapper3 .carousel3{
     overflow: hidden;
     scroll-behavior: smooth;
-   
+
   
 }
 .carousel3 img{
@@ -503,18 +503,18 @@ padding: 0.8%;
     }
 
     .carousel2 img {
-        height: 0.6em;
+        height: 0.4em;
         object-fit: cover;
 
-        width: calc(100%/5);
+        width: calc(100%/6);
     }
 
     .carousel img {
 
-        height: 0.6em;
+        height: 0.4em;
 
         object-fit: cover;
-        width: calc(100%/5);
+        width: calc(100%/6);
 
     }
 
@@ -530,50 +530,57 @@ padding: 0.8%;
    
         text-align: center;
         position: relative;
-        bottom: 70px;
+        bottom: 82px;
    
 
     }
 
     .homePage__content_Divider-part1-first-title a {
         font-size: 2vh;
-     
+        
     
 
     }
 
     .homePage__content_Divider-part1-first-title2 a {
         font-size: 2vh;
+    
 
     }
 
    
 
     .wrapper2 .carousel2 {
-        font-size: 5vh;
+        font-size: 8vh;
         white-space: nowrap;
         cursor: pointer;
         overflow: hidden;
         scroll-behavior: smooth;
+        position: relative;
+        bottom: 28px
     }
 
     .wrapper .carousel {
    
-        font-size: 5vh;
+        font-size: 8vh;
         white-space: nowrap;
         cursor: pointer;
         overflow: hidden;
         scroll-behavior: smooth;
-
+        position: relative;
+        bottom: 20px;
 
     }
-
+   
     .carousel_div2 a {
-        margin: 0% 25%;
+        margin: 0% 20%;
+     
+        border-bottom: 2px ridge rgba(148, 106, 106, 0.541);
     }
 
     .carousel_div a {
         margin: 0% 15%;
+         border-bottom: 2px ridge rgba(148, 106, 106, 0.541);
     }
 
     .homePage__content_Divider-part2-Child_proyects-content img {
