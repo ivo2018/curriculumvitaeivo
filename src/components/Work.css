@@ -519,19 +519,28 @@ padding: 0.8%;
     }
 
     .homePage__content_Divider-part1-first-title {
+      
         text-align: center;
         position: relative;
         bottom: 15px;
-     
+      
      
     }
 
+    .homePage__content_Divider-part1-first-title {
+        
+     .title1 {
+        text-shadow: 1.3px 0.5px rgb(2, 9, 71);
+    }
+}
     .homePage__content_Divider-part1-first-title2 {
    
         text-align: center;
         position: relative;
         bottom: 82px;
-   
+        .title2 {
+            text-shadow: 1.3px 0.5px rgb(2, 9, 71);
+        }
 
     }
 
@@ -575,12 +584,12 @@ padding: 0.8%;
     .carousel_div2 a {
         margin: 0% 20%;
      
-        border-bottom: 2px ridge rgba(148, 106, 106, 0.541);
+        {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}
     }
 
     .carousel_div a {
         margin: 0% 15%;
-         border-bottom: 2px ridge rgba(148, 106, 106, 0.541);
+      {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}   
     }
 
     .homePage__content_Divider-part2-Child_proyects-content img {

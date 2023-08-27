@@ -269,7 +269,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                         <div class="homePage__content_Divider-part1">
                             <div class="homePage__content_Divider-part1-first">
                                 <div class="homePage__content_Divider-part1-first-title">
-                                    <a href=" # ">  Projects Web</a>
+                                    <a href=" # " class="title1">  Projects Web</a>
 
                                     <div class="wrapper">
                                         <div class="carousel">
@@ -291,7 +291,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                             </div>
                             <div class="homePage__content_Divider-part1-second">
                                 <div class="homePage__content_Divider-part1-first-title2">
-                                    <a href=" # ">
+                                    <a href=" # " class="title2">
                                         Projects Games
                                     </a>
                                     <div class="wrapper2">
