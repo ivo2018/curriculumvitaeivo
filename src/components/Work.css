@@ -24,6 +24,7 @@
 .homePage__content_Divider-part1-first-title a {
     font-family: 'TheGoodMonolith', sans-serif;
     font-size: 3vh;
+    text-shadow: 1px 0.5px rgba(2, 9, 71, 0.801);
    
 }
 #windowWork {
@@ -124,7 +125,7 @@
 
 .homePage__content_Divider-part1-first-title2 a {
     font-size: 3vh;
-  
+    text-shadow: 1px 0.5px rgba(2, 9, 71, 0.801);
     font-family: 'TheGoodMonolith', sans-serif;
 }
 
@@ -298,10 +299,29 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 padding: 0.8%;
     cursor: pointer;
-    border-color: rgb(71, 62, 85);
+  
+        border:1px solid  grey;
+        right: 25%;
+        position: relative;
+        top: 1spx;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 20;
+        
 
+    
+ 
 }
-
+.nav_descripcion li button:first-child{
+    border-radius: 10px 0px 0px;
+    border:1px solid rgba(255, 253, 253, 0.349);
+}
+.nav_descripcion li button:last-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border:1px solid rgba(255, 253, 253, 0.349);
+}
 #descripcion-id {
     display: block;
     color: rgba(0, 0, 0, 0.747);
@@ -374,26 +394,23 @@ padding: 0.8%;
     right: 80px;
  
 }
-.carousel3{
+
+.wrapper3 .carousel3{
+    overflow: hidden;
+    scroll-behavior: smooth;
     display: flex;
  
     font-size: 1.2rem;
     cursor: pointer;
-
-
-
-}
-.wrapper3 .carousel3{
-    overflow: hidden;
-    scroll-behavior: smooth;
-
+    flex-direction: row;
   
 }
 .carousel3 img{
     height: 340px;
- 
     margin-left: 24%; /*    margin-left: 20px; responsive*/
   width: 100%;
+  object-fit: cover;
+
    
 
  
@@ -585,14 +602,14 @@ padding: 0.8%;
         margin: 0% 20%;
       color:rgb(12, 11, 17);
       font-weight: bold;
-        {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}
+        /*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/
     }
 
     .carousel_div a {
         font-weight: bold;
         color:rgb(12, 11, 17);
         margin: 0% 15%;
-      {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}   
+      /*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/
     }
 
     .homePage__content_Divider-part2-Child_proyects-content img {
@@ -616,6 +633,7 @@ padding: 0.8%;
         display: block; 
         position: relative;
         overflow: auto;  
+     
        
     }
 
@@ -624,8 +642,15 @@ padding: 0.8%;
     }
 
     .nav_descripcion li button {
-
+        border:1px solid  grey;
         right: 25%;
+        position: relative;
+        top: 2px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 20;
+        
 
     }
 

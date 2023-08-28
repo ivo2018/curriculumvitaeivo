@@ -57,6 +57,8 @@ const Work = (/*{handleClick,setChange}*/) => {
             button1.style.background = "rgba(255, 253, 253, 0.349)";
             button1.style.color = "rgba(0, 0, 0, 0.747)";
             button1.style.fontWeight = "bold";
+            button1.style.border="2px solid   rgba(255, 253, 253, 0.349)"
+            button2.style.border="2px solid grey"
             button2.style.background = 'none';
             button2.style.fontWeight = '500';
             descripcion.style.background = "rgba(255, 253, 253, 0.349)";
@@ -72,6 +74,8 @@ const Work = (/*{handleClick,setChange}*/) => {
             button2.style.background = "rgba(255, 253, 253, 0.349)";
             button1.style.background = 'none';
             button2.style.color = "rgba(0, 0, 0, 0.747)";
+            button2.style.border="2px solid   rgba(255, 253, 253, 0.349)"
+            button1.style.border="2px solid grey"
             button2.style.fontWeight = "bold";
             button1.style.fontWeight = '500';
             descripcion.style.background = "rgba(255, 253, 253, 0.349)";
@@ -371,7 +375,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                                <button class="nav_descripcion-button2" id="descripcion-button2" onClick={() => descripcionButton2() + setText('details')}>Details</button>
                                                            </li>
                                                            <div class="descripcion">
-                                                           {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalles} </a> : null)}
+                                                           {(text === "descripcion" ? <a href=" # " id="descripcion-id"> {producto.description} </a> : text === "details" ? <a href=" # " id="descripcion-id"> {producto.detalle} </a> : null)}
                                                            </div>                                              
 
                                                        </div>
