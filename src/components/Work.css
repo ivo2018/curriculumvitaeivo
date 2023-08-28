@@ -320,7 +320,7 @@ padding: 0.8%;
 .nav_descripcion li button:last-child{
     border-top-right-radius: 10px;
     border-top-left-radius: 0px;
-    border:1px solid rgba(255, 253, 253, 0.349);
+    border:1px solid grey;
 }
 #descripcion-id {
     display: block;
