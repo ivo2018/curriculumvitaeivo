@@ -545,6 +545,31 @@ color:rgb(0, 0, 0);
     position: relative;
   }
 
+
+}
+@media (max-width:360px) {
+  .homePage__content-key   {
+
+
+  }
+  .homePage__content-text li a{
+ 
+      margin-left: 10%;
+  }
+  .homePage__content-img {
+
+  margin: auto;
+     
+    }
+  .homePage__content-img img{
+height: 80px;
+position: absolute;
+top: 0%;
+display: none;
+
+
+  }
+  
 }
 
 .homePage__content-description h2 {
