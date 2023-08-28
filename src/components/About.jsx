@@ -78,7 +78,9 @@ const About = (/*{setChange,handleClick}*/) => {
                         <div clasS="homePage__content-img">
                             <img src={avatarimage} alt="" />
                         </div>
+                        
                         <div class="homePage__content-text" >
+                            <span class="marco_span">
                             <div class="homePage__content-text_content">
                                 <li >
                                 
@@ -102,6 +104,7 @@ const About = (/*{setChange,handleClick}*/) => {
                                     </div>
                                 </li>
                             </div>
+                            </span>
                         </div>
                     </div>
                 </div>

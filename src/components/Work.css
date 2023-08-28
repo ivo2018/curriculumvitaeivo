@@ -583,11 +583,14 @@ padding: 0.8%;
    
     .carousel_div2 a {
         margin: 0% 20%;
-     
+      color:rgb(12, 11, 17);
+      font-weight: bold;
         {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}
     }
 
     .carousel_div a {
+        font-weight: bold;
+        color:rgb(12, 11, 17);
         margin: 0% 15%;
       {/*border-bottom: 2px ridge rgba(148, 106, 106, 0.541);*/}   
     }
