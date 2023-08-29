@@ -565,7 +565,7 @@ color:rgb(0, 0, 0);
   }
   .homePage__content-img{
     flex-grow: 1;
-    width: 50%;
+    width: 100%;
     }
     .homePage__content-img img {
       object-fit: fill;
@@ -575,9 +575,8 @@ color:rgb(0, 0, 0);
     }
 
 }
-@media (max-width:600px) {
-  
- 
+@media (max-width:360px) {
+
   /*
   .homePage__content-key   {
 
