@@ -480,15 +480,15 @@ flex-grow: 5;
    
     text-decoration: none;
     /*background:rgba(32, 146, 139, 0.418);*/
-    background: rgba(143, 143, 139, 0.603);
+
     border-radius: 15px 0px 20px;
   
     letter-spacing: 1px;
     font-weight: 500;
   
     padding: 2%;
-   border:12px solid rgba(0, 0, 0, 0.212);
-    
+   border:4px solid rgba(255, 255, 255, 0.979);
+   background: rgba(197, 197, 182, 0.603);
    text-shadow: 1px -1.5px rgba(27, 29, 146, 0.377);
    color: black;
    width:80%;
