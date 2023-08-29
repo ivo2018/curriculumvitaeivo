@@ -556,10 +556,6 @@ color:rgb(0, 0, 0);
     display: inline-block;
     position: relative;
   }
-
-
-}
-@media (max-width:360px) {
   .homePage__content-title h1{
     font-size: 5vh;
   }
@@ -569,7 +565,7 @@ color:rgb(0, 0, 0);
   }
   .homePage__content-img{
     flex-grow: 1;
-    width: 100%;
+    width: 50%;
     }
     .homePage__content-img img {
       object-fit: fill;
@@ -577,6 +573,11 @@ color:rgb(0, 0, 0);
       width: 100%;
     
     }
+
+}
+@media (max-width:600px) {
+  
+ 
   /*
   .homePage__content-key   {
 
