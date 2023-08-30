@@ -106,7 +106,7 @@ body {
 
 .homePage_content-binary {
 
-  background-image: url("../imgs/2-1.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/06/13/11/abstract-1574340_1280.jpg");
   background-color: rgba(19, 235, 235, 0.836);
   
   background-size: cover;
@@ -133,6 +133,7 @@ body {
 
 .homePage__content-description h2 {
   color: rgb(51, 41, 41);
+  text-shadow: 2px 2px wheat;
   font-family: 'Minecraft', sans-serif;
   font-size: 2em ;
   font-weight: 100 ;
