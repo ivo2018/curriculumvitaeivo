@@ -7,7 +7,7 @@ import about from "../imgs/about.png"
 //import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
-import marcador from "../imgs/marcador.png"
+//import marcador from "../imgs/marcador.png"
 import close from "../imgs/close-icon.png";
 import { opacitySelected } from '../functions/eventsFunction';
 //import SelectionPage from './SelectionPage';
