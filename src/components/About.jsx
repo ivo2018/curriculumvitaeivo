@@ -86,11 +86,11 @@ const About = (/*{setChange,handleClick}*/) => {
                                 
                                         {opacitystate ? (
                                             <a class="homePage__content-text_content-aboutDescription2" href="/#" >
-                                                Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={marcador} alt=""></img> my work or my skills</span>. Thanks So Mutch
+                                                Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src="https://win98icons.alexmeub.com/icons/png/mouse_speed.png"alt=""></img> my work or my skills</span>. Thanks So Mutch
                                                </a>
                                         ) : (
                                             <a class="homePage__content-text_content-aboutDescription1" href="/#">
-                                                I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={marcador} alt=""></img>let my imagination run</span> wild and let people know things about me.
+                                                I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src="https://win98icons.alexmeub.com/icons/png/mouse_speed.png" alt=""></img>let my imagination run</span> wild and let people know things about me.
                                                 </a>)}
                                    
                                 </li>
