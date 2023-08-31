@@ -237,7 +237,7 @@ flex-grow: 5;
   height: 0em;
   width: 1.5em;
   animation-name: example3;
-  animation: example3 2.3s linear 2s
+  animation: example3 2.2s linear 2s
     /*1 interacion*/
   ;
 }
