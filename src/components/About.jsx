@@ -50,10 +50,10 @@ const About = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-message"  onClick={() => FolderDecide("contact")}  >
+                <div class="homePage__folders-message"  onClick={() =>navigate("/contact")+ FolderDecide("contact")}  >
                     <img src="https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png" alt="folder" />
                     <button id="contact">
-                        <a href="/#" >
+                        <a href="/contact" >
                             Contact
                         </a>
                     </button>

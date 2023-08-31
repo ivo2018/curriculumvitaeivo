@@ -1,0 +1,117 @@
+.form_content {
+    display: block;
+    margin:auto;
+    height: 45vh;
+    width: 70vh;
+    background-color: #c4c1c175;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.form_item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    height: 3.5vh;
+    margin: 0px;
+    background-color: rgba(8, 151, 170, 0.836);
+    color: rgb(253, 248, 248);
+    font-weight: 700;
+}
+
+
+.field {
+    background-color: rgba(175, 164, 164, 0.562);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 55vh;
+    height: 35vh;
+    border: 1px outset black;
+
+}
+
+
+.field label {
+    display: flex;
+    font-size: 20px;
+    color: #777;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.field input {
+    display: inline-block;
+    min-width: 50%;
+    line-height: 1.5;
+    font-size: 14px;
+    border: none;
+    background: rgba(0, 0, 0, 0.692);
+    border-bottom: 3px solid rgb(8, 62, 241);
+}
+
+.field textarea {
+    background-color: #77777746;
+    height: 80px;
+    width: 250px;
+    max-height: 80%;
+    max-width: 50%;
+
+}
+
+input[type="submit"] {
+    display: flex;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #01090e;
+    color: #fff;
+    border: none;
+    margin: auto;
+    justify-content: center;
+    border-radius: 20px;
+    text-shadow: 2px 2px rgb(57, 59, 59);
+
+}
+
+input[type="submit"]:hover {
+    background-color: #01090e;
+    color: #fff;
+    text-shadow: 2px 2px rgb(150, 44, 192);
+}
+
+input[type="submit"]:active {
+    background-color: #01090e;
+    color: #fff;
+    text-shadow: 1px 1px rgb(209, 94, 255);
+}
+@media (max-width:500px){
+    .form_content {
+      
+        height: 80%;
+        width: 90%;
+    
+    }
+    .field {
+      
+
+        width: 90%;
+        height: 80%;
+   
+   
+    }
+    
+}
