@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
@@ -13,7 +13,7 @@ import "../components/Contact.css"
 const Contact = (/*{setChange,handleClick}*/) => {
 
     const navigate = useNavigate();
-    const [opacitystate, setOpacityState] = useState(false);
+
     const form = useRef();
 
     const sendEmail = (e) => {
