@@ -31,7 +31,7 @@
 
 .field {
     background-color: rgba(175, 164, 164, 0.562);
-    background-image: linear-gradient(rgba(142, 142, 143, 0.26), rgb(202, 202, 202));
+    background-image: linear-gradient(rgb(162, 189, 189), rgba(66, 92, 104, 0.87));
     border-radius: 20px;
     position: absolute;
     top: 0px;
@@ -41,8 +41,8 @@
     margin: auto;
     width: 90vh;
     height: 50vh;
-    border: 1px outset black;
-    box-shadow: 0 5px 10px rgba(69, 62, 131, 0.589),0 3px 10px;
+    border: 0px outset black;
+  /*  box-shadow: 0 5px 10px rgba(69, 62, 131, 0.589),0 3px 10px;*/
 }
 
 
@@ -67,6 +67,9 @@
     border-bottom: 3px outset rgb(8, 62, 241);
     text-shadow: 2px 2px 20px rgb(8, 62, 241);
     padding-bottom: 1%;
+    color: whitesmoke;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px black;
   
 }
 .field input:focus{
@@ -77,8 +80,9 @@
 textarea:focus, input:focus{
     outline: none;
 }
-.field input::selection{
-    color: aqua;
+.field input::selection,.field textarea::selection{
+    color: rgba(0, 255, 255, 0.61);
+    text-shadow: 2px 2px 3px black;
 }
 
 .field textarea {
@@ -90,6 +94,9 @@ textarea:focus, input:focus{
     margin-bottom: 2%;
     border-bottom: 3px outset rgb(8, 62, 241);
     text-shadow: 2px 2px 20px rgb(8, 62, 241);
+    color: whitesmoke;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px black;
 }
 .field  textarea:focus{
     border-bottom: 3px inset  rgb(31, 153, 135);

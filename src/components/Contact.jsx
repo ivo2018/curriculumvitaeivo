@@ -72,7 +72,7 @@ const Contact = (/*{setChange,handleClick}*/) => {
                 <div class="homePage__content">
            
                     <div className="form_content">
-                    <p class="form_item">Contact</p>
+                    <p class="form_item">Contact Me</p>
                         <form ref={form} onSubmit={sendEmail} class="field">
                             <label>Name</label>
                             <input type="text"  autocomplete="off" name="user_name" />
