@@ -4,6 +4,7 @@ import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
 import close from "../imgs/close-icon.png";
+import Borde from "../imgs/Borde.png";
 import "../components/About.css"
 import { closeWindow, openWindow } from '../functions/eventsFunction';
 import { FolderDecide } from '../functions/eventsFunction';
@@ -73,12 +74,12 @@ const Contact = (/*{setChange,handleClick}*/) => {
                     <p class="form_item">Contact</p>
                         <form ref={form} onSubmit={sendEmail} class="field">
                             <label>Name</label>
-                            <input type="text" name="user_name" />
+                            <input type="text"  autocomplete="off" name="user_name" />
                             <label>Email</label>
-                            <input type="email" name="user_email" />
+                            <input type="email" autocomplete="off" name="user_email" />
                             <label>Message</label>
                             <textarea name="message" />
-                            <input type="submit" value="Send" />
+                            <input type="submit" autocomplete="off"  value="Send" />
                         </form>
 
                     </div>

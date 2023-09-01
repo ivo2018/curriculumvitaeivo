@@ -1,17 +1,18 @@
 .form_content {
     display: block;
     margin:auto;
-    height: 45vh;
-    width: 70vh;
-    background-color: #c4c1c175;
+    height: 60vh;
+    width: 150vh;
+    background-color:  rgb(179, 189, 189);
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
     left: 0;
     text-align: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 5px;
+
 }
 
 .form_item {
@@ -22,7 +23,7 @@
     top: 0px;
     height: 3.5vh;
     margin: 0px;
-    background-color: rgba(8, 151, 170, 0.836);
+    background-color: rgb(31, 153, 135);
     color: rgb(253, 248, 248);
     font-weight: 700;
 }
@@ -30,6 +31,7 @@
 
 .field {
     background-color: rgba(175, 164, 164, 0.562);
+    background-image: linear-gradient(rgba(142, 142, 143, 0.26), rgb(202, 202, 202));
     border-radius: 20px;
     position: absolute;
     top: 0px;
@@ -37,10 +39,10 @@
     left: 0px;
     right: 0px;
     margin: auto;
-    width: 55vh;
-    height: 35vh;
-    border: 1px outset black;
-
+    width: 90vh;
+    height: 50vh;
+    border: 2px ridge black;
+    box-shadow: 0 10px 15px rgba(69, 62, 131, 0.589),0 6px 20px;
 }
 
 
@@ -52,6 +54,7 @@
     align-items: center;
     justify-content: center;
     text-shadow: 2px 2px black;
+    padding-bottom: 1%;
 }
 
 .field input {
@@ -60,8 +63,21 @@
     line-height: 1.5;
     font-size: 14px;
     border: none;
-    background: rgba(0, 0, 0, 0.692);
-    border-bottom: 3px solid rgb(8, 62, 241);
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 3px outset rgb(8, 62, 241);
+    text-shadow: 2px 2px 20px rgb(8, 62, 241);
+    padding-bottom: 1%;
+  
+}
+.field input:focus{
+    border-bottom: 3px inset  rgb(31, 153, 135);
+    text-shadow: 2px 2px 20px rgb(31, 153, 135);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.field input::selection{
+    color: aqua;
 }
 
 .field textarea {
@@ -70,7 +86,13 @@
     width: 250px;
     max-height: 80%;
     max-width: 50%;
-
+    margin-bottom: 2%;
+    border-bottom: 3px outset rgb(8, 62, 241);
+    text-shadow: 2px 2px 20px rgb(8, 62, 241);
+}
+.field  textarea:focus{
+    border-bottom: 3px inset  rgb(31, 153, 135);
+    text-shadow: 2px 2px 20px rgb(31, 153, 135);
 }
 
 input[type="submit"] {
