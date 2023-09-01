@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
 import about from "../imgs/about.png"
+import Selector from "../imgs/Selector.png"
 //import message from "../imgs/message.png"
 import avatarimage from "../imgs/avatarimage.png";
 import key from "../imgs/key.png";
@@ -86,11 +87,11 @@ const About = (/*{setChange,handleClick}*/) => {
                                 
                                         {opacitystate ? (
                                             <a class="homePage__content-text_content-aboutDescription2" href="/#" >
-                                                Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src="http://www.rw-designer.com/cursor-view/116691-48.png"alt=""></img> my work or my skills</span>. Thanks So Mutch
+                                                Here are my personal interests, for professional purposes you can be interested in <span id="span1"><img src={Selector}alt=""></img> my work or my skills</span>. Thanks So Mutch
                                                </a>
                                         ) : (
                                             <a class="homePage__content-text_content-aboutDescription1" href="/#">
-                                                I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src="http://www.rw-designer.com/cursor-view/116691-48.png" alt=""></img>let my imagination run</span> wild and let people know things about me.
+                                                I'm Ivo, full stack developer from Buenos Aires This is my website, a place where I share my projects,<span id="span2"> <img src={Selector} alt=""></img>let my imagination run</span> wild and let people know things about me.
                                                 </a>)}
                                    
                                 </li>
