@@ -106,9 +106,9 @@ body {
 
 .homePage_content-binary {
 
-  background-image: url("https://cdn.pixabay.com/photo/2016/08/06/13/11/abstract-1574340_1280.jpg");
+  background-image: url("../imgs/binaryDefinitive.jpg");
   background-color: rgba(19, 235, 235, 0.836);
-  
+
   background-size: cover;
   object-position: bottom 10px right 20px;
   width:98%;
