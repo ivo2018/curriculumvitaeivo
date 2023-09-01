@@ -70,6 +70,7 @@ const Contact = (/*{setChange,handleClick}*/) => {
                     <img src={close} alt="" onClick={() => closeWindow()}></img>
                 </div>
                 <div class="homePage__content">
+           
                     <div className="form_content">
                     <p class="form_item">Contact</p>
                         <form ref={form} onSubmit={sendEmail} class="field">

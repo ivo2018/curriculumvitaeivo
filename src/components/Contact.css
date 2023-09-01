@@ -12,7 +12,7 @@
     text-align: center;
     justify-content: center;
     border-radius: 5px;
-
+    box-shadow: 0px 0px 30px 5px rgb(59, 56, 56) ;
 }
 
 .form_item {
@@ -41,8 +41,8 @@
     margin: auto;
     width: 90vh;
     height: 50vh;
-    border: 2px ridge black;
-    box-shadow: 0 10px 15px rgba(69, 62, 131, 0.589),0 6px 20px;
+    border: 1px outset black;
+    box-shadow: 0 5px 10px rgba(69, 62, 131, 0.589),0 3px 10px;
 }
 
 
@@ -72,6 +72,7 @@
 .field input:focus{
     border-bottom: 3px inset  rgb(31, 153, 135);
     text-shadow: 2px 2px 20px rgb(31, 153, 135);
+    box-shadow: -0px -10px 15px -10px  inset black ;
 }
 textarea:focus, input:focus{
     outline: none;
@@ -83,7 +84,7 @@ textarea:focus, input:focus{
 .field textarea {
     background-color: #77777746;
     height: 80px;
-    width: 250px;
+    width: 380px;
     max-height: 80%;
     max-width: 50%;
     margin-bottom: 2%;
@@ -93,6 +94,7 @@ textarea:focus, input:focus{
 .field  textarea:focus{
     border-bottom: 3px inset  rgb(31, 153, 135);
     text-shadow: 2px 2px 20px rgb(31, 153, 135);
+    box-shadow: -0px -10px 15px -10px  inset black ;
 }
 
 input[type="submit"] {
@@ -120,6 +122,7 @@ input[type="submit"]:active {
     color: #fff;
     text-shadow: 1px 1px rgb(209, 94, 255);
 }
+
 @media (max-width:500px){
     .form_content {
       
