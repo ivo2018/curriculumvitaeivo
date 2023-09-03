@@ -261,6 +261,8 @@ flex-grow: 5;
         padding-bottom: 3px;
     transform-origin: left;
     box-shadow: 0px;
+    border-radius: 3px;
+    box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.281),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
 
   }
 
@@ -277,7 +279,7 @@ flex-grow: 5;
         background-color: #0f00000c;
        
     padding-bottom: 3px;
-    border-radius: 8px;
+    border-radius: 3px;
     transform-origin: left;
     box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
   
@@ -298,7 +300,8 @@ flex-grow: 5;
         margin: auto;
         padding-bottom: 3px;
     transform-origin: left;
-    
+    border-radius: 3px;
+    box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
   }
 
   to {
@@ -314,7 +317,7 @@ flex-grow: 5;
         background-color: #0f00000c;
        
     padding-bottom: 3px;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
     transform-origin: left;
   
