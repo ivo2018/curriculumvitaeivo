@@ -252,7 +252,7 @@ flex-grow: 5;
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 55%;
+    height: 2vh;
     bottom:0px;
         top: 0;
         right: 0;
@@ -270,7 +270,7 @@ flex-grow: 5;
     position: absolute;
     width: 100%;
     transform: scaleX(1);
-    height: 55%;
+    height: 2vh;
     bottom:0px;
         top: 0;
         right: 0;
@@ -292,7 +292,7 @@ flex-grow: 5;
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 55%;
+    height: 2vh;
     bottom:0px;
         top: 0;
         right: 0;
@@ -301,14 +301,13 @@ flex-grow: 5;
         padding-bottom: 3px;
     transform-origin: left;
     border-radius: 3px;
-    box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
-  }
+    box-shadow:  0.1vh 0.5vh 2vh rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;  }
 
   to {
     position: absolute;
     width: 100%;
     transform: scaleX(1);
-    height: 55%;
+    height: 2vh;
     bottom:0px;
         top: 0;
         right: 0;
@@ -318,7 +317,7 @@ flex-grow: 5;
        
     padding-bottom: 3px;
     border-radius: 3px;
-    box-shadow:  3px 3px 25px rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
+    box-shadow:  0.1vh 0.5vh 2vh rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
     transform-origin: left;
   
   }
@@ -330,7 +329,7 @@ flex-grow: 5;
   position: relative;
 }
 #span1 ,#span2{
-  text-shadow: 2px 2px wheat;
+  text-shadow: 0vh -0.2vh wheat;
 }
 .homePage__content-text_content li a #span1::after {
   content: '';
