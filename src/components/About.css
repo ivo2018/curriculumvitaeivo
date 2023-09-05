@@ -242,7 +242,7 @@ flex-grow: 5;
   object-fit: cover;
   width: 2.5em;
   animation-name: example3;
-  animation: example3 3s linear 6s
+  animation: example3 3s linear 4s
     /*1 interacion*/
   ;
 }
@@ -301,8 +301,9 @@ flex-grow: 5;
         padding-bottom: 3px;
     transform-origin: left;
     border-radius: 3px;
-    box-shadow:  0.1vh 0.5vh 2vh rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;  }
-
+    box-shadow:  0.1vh 0.5vh 2vh rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;  
+    text-shadow: 0vh 0vh wheat;
+  }
   to {
     position: absolute;
     width: 100%;
@@ -318,9 +319,18 @@ flex-grow: 5;
     padding-bottom: 3px;
     border-radius: 3px;
     box-shadow:  0.1vh 0.5vh 2vh rgba(0, 17, 255, 0.432),0px 2px 5px rgba(255, 254, 254, 0.993) inset;
+    text-shadow: 0vh -0.2vh wheat;
     transform-origin: left;
   
   }
+}
+@keyframes spantextshadow{
+0%{
+  text-shadow: 0vh 0vh wheat;
+}
+100%{
+  text-shadow: 0vh -0.2vh wheat;
+}
 }
 
 .homePage__content-text_content li a span {
@@ -329,14 +339,15 @@ flex-grow: 5;
   position: relative;
 }
 #span1 ,#span2{
-  text-shadow: 0vh -0.2vh wheat;
+ animation-name: spantextshadow;
+ animation: spantextshadow 3s steps(2) 3s normal forwards;
 }
 .homePage__content-text_content li a #span1::after {
   content: '';
   
   animation-name: span1;
 
-  animation: span1 3s linear 6s
+  animation: span1 3s linear 4s
     /*1 interacion*/
     normal forwards;
 }
@@ -345,7 +356,7 @@ flex-grow: 5;
   content: '';
   animation-name: span2;
 
-  animation: span2 3s linear 6s
+  animation: span2 3s linear 4s
     /*1 interacion*/
     normal forwards;
 }
