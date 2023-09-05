@@ -31,8 +31,8 @@
 
 .field {
     
-    background-color: rgba(175, 164, 164, 0.562);
-    background-image: linear-gradient(rgba(162, 189, 189, 0.082), rgba(66, 92, 104, 0.87));
+    background-color: rgba(58, 59, 80, 0.89);
+   /* background-image: linear-gradient(rgba(162, 189, 189, 0.082), rgba(66, 92, 104, 0.87));*/
     border-radius: 20px;
     position: absolute;
     top: 0px;
@@ -56,7 +56,8 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 2px black;
+    text-shadow: 1.5px 1.5px rgb(255, 255, 255) ;
+
     margin: 10px;
 }
 
