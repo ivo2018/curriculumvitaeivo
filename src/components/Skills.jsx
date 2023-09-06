@@ -10,7 +10,7 @@ import { closeWindow, openWindow } from '../functions/eventsFunction';
 import { FolderDecide } from '../functions/eventsFunction';
 import YellowNote from "../imgs/Skills/YellowNote.png"
 import GreenNote from "../imgs/Skills/GreenNote.png"
-import PurpleNote from "../imgs/Skills/PurpleNote.png"
+
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
 import "../components/Skills.css"
