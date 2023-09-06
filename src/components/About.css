@@ -242,7 +242,7 @@ flex-grow: 5;
   object-fit: cover;
   width: 2.5em;
   animation-name: example3;
-  animation: example3 3s linear 4s
+  animation: example3 3s linear 3s
     /*1 interacion*/
   ;
 }
@@ -340,14 +340,14 @@ flex-grow: 5;
 }
 #span1 ,#span2{
  animation-name: spantextshadow;
- animation: spantextshadow 3s steps(2) 3s normal forwards;
+ animation: spantextshadow 3s step-end 3s normal forwards;
 }
 .homePage__content-text_content li a #span1::after {
   content: '';
   
   animation-name: span1;
 
-  animation: span1 3s linear 4s
+  animation: span1 3s linear 3s
     /*1 interacion*/
     normal forwards;
 }
@@ -356,7 +356,7 @@ flex-grow: 5;
   content: '';
   animation-name: span2;
 
-  animation: span2 3s linear 4s
+  animation: span2 3s linear 3s
     /*1 interacion*/
     normal forwards;
 }

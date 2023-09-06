@@ -35,7 +35,7 @@ const About = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills"  onClick={() => FolderDecide("skills")} >
+                <div class="homePage__folders-skills"  onClick={() => navigate("/skills")+FolderDecide("skills")} >
                     <img src={skills} alt="folder" />
                     <button id="skills" >
                         <a href="/#" >

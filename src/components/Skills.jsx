@@ -8,25 +8,16 @@ import close from "../imgs/close-icon.png";
 import "../components/About.css"
 import { closeWindow, openWindow } from '../functions/eventsFunction';
 import { FolderDecide } from '../functions/eventsFunction';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import "../components/Contact.css"
-const Contact = (/*{setChange,handleClick}*/) => {
+import YellowNote from "../imgs/Skills/YellowNote.png"
+import GreenNote from "../imgs/Skills/GreenNote.png"
+import PurpleNote from "../imgs/Skills/PurpleNote.png"
+import WhiteNote from "../imgs/Skills/WhiteNote.png";
+import PinkNote from "../imgs/Skills/PinkNote.png"
+import "../components/Skills.css"
+const Skills = (/*{setChange,handleClick}*/) => {
 
     const navigate = useNavigate();
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_lf3ngcf', 'template_jlee5nq', form.current, 'wZZD7cKPU2Je3STpl')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    }
     return (
         <div class="homePage">
             <div class="homePage__folders">
@@ -38,7 +29,7 @@ const Contact = (/*{setChange,handleClick}*/) => {
                         </a>
                     </button>
                 </div>
-                <div class="homePage__folders-skills" onClick={() => navigate("/skills")+FolderDecide("skills")} >
+                <div class="homePage__folders-skills" onClick={() => FolderDecide("skills")} >
                     <img src={skills} alt="folder" />
                     <button id="skills" >
                         <a href="/#" >
@@ -65,24 +56,24 @@ const Contact = (/*{setChange,handleClick}*/) => {
             </div>
             <div id="windowAbout" class="homePage__about" >
                 <div class="homePage__about-title">
-                    <a href=" ">Contact
+                    <a href=" ">Skills
                     </a>
                     <img src={close} alt="" onClick={() => closeWindow()}></img>
                 </div>
                 <div class="homePage__content">
-           
-                    <div className="form_content">
-                    <p class="form_item">Contact Me</p>
-                        <form ref={form} onSubmit={sendEmail} class="field">
-                            <label>Name</label>
-                            <input type="text"  autocomplete="off" name="user_name" />
-                            <label>Email</label>
-                            <input type="email" autocomplete="off" name="user_email" />
-                            <label>Message</label>
-                            <textarea name="message" />
-                            <input type="submit" autocomplete="off"  value="Send" />
-                        </form>
-
+                    <div class="collection">
+                        <div className="collectionItem">
+                            <img src={YellowNote} alt="" />
+                        </div>
+                        <div className="collectionItem">
+                            <img src={GreenNote} alt=""  />
+                        </div>
+                        <div className="collectionItem">
+                            <img src={WhiteNote} alt="" />
+                        </div>
+                        <div className="collectionItem">
+                            <img src={PinkNote} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,4 +81,4 @@ const Contact = (/*{setChange,handleClick}*/) => {
     );
 };
 
-export default Contact;
+export default Skills;

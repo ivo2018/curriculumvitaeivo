@@ -1,0 +1,83 @@
+.collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    width: 800px;
+    
+
+
+}
+.collectionItem:hover> img{
+    transform: scale(1.05);
+    
+}
+
+.collectionItem:nth-child(1)::before{
+    content: "<>";
+    position: absolute;
+    padding-top: 1%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color:darkslategray;
+    overflow: hidden;
+    width: 60px;
+    z-index: 20;
+    
+  
+}
+.collectionItem:nth-child(1):hover::before,.collectionItem:nth-child(2):hover::before ,.collectionItem:nth-child(3):hover::before,.collectionItem:nth-child(4):hover::before{
+    color: black;
+     text-shadow: 1px 1px rgb(151, 129, 129);
+ }
+.collectionItem:nth-child(2)::before{
+    content: "Tools";
+    position: absolute;
+    padding-top: 1%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color:darkslategray;
+    overflow: hidden;
+    width: 60px;
+    z-index: 20;
+}
+.collectionItem:nth-child(3)::before{
+    content: "work";
+    position: absolute;
+    padding-top: 1%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color:darkslategray;
+    overflow: hidden;
+    width: 60px;
+    z-index: 20;
+}
+.collectionItem:nth-child(4)::before{
+    content: "Exp";
+    position: absolute;
+    padding-top: 1%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color:darkslategray;
+    overflow: hidden;
+    width: 60px;
+    z-index: 20;
+}
+
+.collectionItem{
+flex: 1;
+margin: 80px auto;
+width:60px;
+max-height: 2px;
+
+}
+.collectionItem img{
+  
+   
+   width: 60px;
+   height: 60px;
+
+   
+    
+}

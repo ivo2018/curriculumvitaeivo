@@ -3,6 +3,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from './components/About';
 import Work from './components/Work';
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 //import SelectionPage from "./components/SelectionPage";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
    <Route path="/work" element={<Work/> }/>
    <Route path="/contact" element={<Contact/> }/>
+   <Route path="/skills" element={<Skills/> }/>
 
 </Routes>
 </BrowserRouter>
