@@ -24,7 +24,7 @@
     overflow: hidden;
     width: 60px;
     z-index: 20;
-    
+    text-shadow: 1px 1px rgb(83, 175, 179);
   
 }
 .collectionItem:nth-child(1):hover::before,.collectionItem:nth-child(2):hover::before ,.collectionItem:nth-child(3):hover::before,.collectionItem:nth-child(4):hover::before{
@@ -41,9 +41,10 @@
     overflow: hidden;
     width: 60px;
     z-index: 20;
+    text-shadow: 1px 1px rgb(83, 175, 179);
 }
 .collectionItem:nth-child(3)::before{
-    content: "work";
+    content: "Work";
     position: absolute;
     padding-top: 1%;
     font-size: 1.5vh;
@@ -52,6 +53,7 @@
     overflow: hidden;
     width: 60px;
     z-index: 20;
+    text-shadow: 1px 1px rgb(83, 175, 179);
 }
 .collectionItem:nth-child(4)::before{
     content: "Exp";
@@ -63,6 +65,7 @@
     overflow: hidden;
     width: 60px;
     z-index: 20;
+    text-shadow: 1px 1px rgb(83, 175, 179);
 }
 
 .collectionItem{
@@ -80,4 +83,18 @@ max-height: 2px;
 
    
     
+}
+@media (max-width:500px){
+    .collection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: row;
+        width: 300px;
+    
+    }
+    .collectionItem::before{
+        padding-top: 5% !important;
+    }
 }
