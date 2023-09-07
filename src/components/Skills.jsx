@@ -13,6 +13,7 @@ import GreenNote from "../imgs/Skills/GreenNote.png"
 
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
+import Note from "../imgs/Skills/note.png"
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
 
@@ -64,9 +65,14 @@ const Skills = (/*{setChange,handleClick}*/) => {
                     <div class="collection">
                         <div className="collectionItem">
                             <img src={YellowNote} alt="" />
+                            <div class="collectionBigNotes">
+                        <div className="collectionBigItem">
+                            <img src={Note} alt="" />
+                        </div>
+                    </div>
                         </div>
                         <div className="collectionItem">
-                            <img src={GreenNote} alt=""  />
+                            <img src={GreenNote} alt="" />
                         </div>
                         <div className="collectionItem">
                             <img src={WhiteNote} alt="" />
@@ -75,9 +81,12 @@ const Skills = (/*{setChange,handleClick}*/) => {
                             <img src={PinkNote} alt="" />
                         </div>
                     </div>
+                
                 </div>
+                </div>
+
             </div>
-        </div>
+        
     );
 };
 
