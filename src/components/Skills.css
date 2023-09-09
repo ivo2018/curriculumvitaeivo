@@ -130,7 +130,8 @@ position: relative;
         margin: 9%;
     }
     .collectionBigItem img{
-        width: 47vh;
+       margin-left: -2em;
+        width: 55vh;
         height: 45vh;    
     }
 }
