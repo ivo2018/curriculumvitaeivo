@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import folder from "../imgs/folder.png"
 import skills from "../imgs/skills.png"
@@ -16,6 +16,37 @@ import PinkNote from "../imgs/Skills/PinkNote.png"
 import Note from "../imgs/Skills/note.png"
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
+    const [count, setCount] = useState(0);
+    function Nota() {
+        var itemNote = document.getElementById('item');
+        var bigItem = document.querySelector('.collectionBigItem');
+        if (itemNote) {
+            if (count === 0) {
+                itemNote.style.bottom = "-9em";
+                setCount(count + 1);
+            }
+            if (count === 1) {
+                itemNote.style.right = "-5em";
+                itemNote.style.bottom = "-12em";
+                setCount(count + 1);
+            }
+            if (count === 2) {
+                itemNote.style.bottom = "0px";
+                itemNote.style.right = "0px";
+                itemNote.style.transition="2s all";
+                setCount(count + 1);
+              
+                
+            }
+            if(count===3){
+             
+                itemNote.style.transition="2s all";
+                bigItem.style.display="block";    
+            }
+            console.log(count);
+        }
+    }
+
 
     const navigate = useNavigate();
 
@@ -63,13 +94,13 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 </div>
                 <div class="homePage__content">
                     <div class="collection">
-                        <div className="collectionItem">
+                        <div id="item" className="collectionItem" onClick={() => Nota()}>
                             <img src={YellowNote} alt="" />
                             <div class="collectionBigNotes">
-                        <div className="collectionBigItem">
-                            <img src={Note} alt="" />
-                        </div>
-                    </div>
+                                <div id="bigItem" className="collectionBigItem">
+                                    <img src={Note} alt="" />
+                                </div>
+                            </div>
                         </div>
                         <div className="collectionItem">
                             <img src={GreenNote} alt="" />
@@ -81,12 +112,12 @@ const Skills = (/*{setChange,handleClick}*/) => {
                             <img src={PinkNote} alt="" />
                         </div>
                     </div>
-                
-                </div>
-                </div>
 
+                </div>
             </div>
-        
+
+        </div>
+
     );
 };
 

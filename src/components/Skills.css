@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+
     flex-direction: row;
-    width: 800px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 70%;
 }
 .collectionItem:hover> img{
     transform: scale(1.05);
@@ -72,6 +76,7 @@ width:60px;
 max-height: 2px;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 .collectionItem img{
    width: 60px;
@@ -84,9 +89,10 @@ align-items: center;
 0%{
     display: block;
     position: absolute;
-    top: 0px;
-    right: 60%;
+    top:20%;
+    right: 0px;
     left: 0px;
+    bottom: 0px;
     opacity: 0;
     transform:scale(0.3);
 }
@@ -96,7 +102,7 @@ align-items: center;
     position: absolute;
     top:20%;
     right: 0px;
-    left: 0px;
+    left: -50%;
     bottom: 0px;
     transform:scale(1);
  
@@ -105,7 +111,8 @@ align-items: center;
 }
 #bigItem{
     
-    display: none;
+    position: absolute;
+ display: none;
     opacity: 0;
     animation-name: noteMove;
     animation: noteMove 1s linear 0s forwards
@@ -114,7 +121,7 @@ align-items: center;
 }
 
 .collectionBigItem img{
-    width: 500px;
+    width: 1000px;
     height: 500px;
  
 }
@@ -123,8 +130,8 @@ align-items: center;
         margin: 9%;
     }
     .collectionBigItem img{
-        width: 300px;
-        height: 300px;     
+        width: 47vh;
+        height: 45vh;    
     }
 }
 
@@ -141,4 +148,38 @@ align-items: center;
     .collectionItem::before{
         padding-top: 5% !important;
     }
+    @keyframes noteMove{
+        0%{
+            display: block;
+            position: absolute;
+            top:20%;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0;
+            transform:scale(0.3);
+        }
+        100%{
+            display: block;
+            opacity: 1;
+            position: absolute;
+            top:3em;
+            right: 0px;
+            left: 0%;
+            bottom: 0px;
+            transform:scale(1);
+         
+         transition: all 1s ease-in;
+        }
+        }
+        #bigItem{
+            
+            position: absolute;
+         display: none;
+            opacity: 0;
+            animation-name: noteMove;
+            animation: noteMove 1s linear 0s forwards
+        
+            
+        }
 }
