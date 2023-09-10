@@ -17,31 +17,49 @@ import Note from "../imgs/Skills/note.png"
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
     const [count, setCount] = useState(0);
-    function Nota() {
-        var itemNote = document.getElementById('item');
-        var bigItem = document.querySelector('.collectionBigItem');
+    function Nota(item) {
+        var randomNumber = Math.floor(Math.random() * (10, 20)) + 1;
+        var itemNote = document.getElementById(item);
+        var bigItem = document.getElementById('bigItem');
         if (itemNote) {
+          if(count===4){
+            bigItem.style.animation="none";
+           bigItem.style.opacity=0;
+           setCount(0);
+         
+          }
             if (count === 0) {
-                itemNote.style.bottom = "-9em";
+                itemNote.style.bottom = -randomNumber + "em";
                 setCount(count + 1);
             }
             if (count === 1) {
-                itemNote.style.right = "-5em";
-                itemNote.style.bottom = "-12em";
+                if (item === "item" || item === "item2") {
+                    itemNote.style.right = -randomNumber + "em";
+                    itemNote.style.bottom = -randomNumber + "em";
+                } else {
+                    itemNote.style.left = -randomNumber + "em";
+                    itemNote.style.bottom = -randomNumber + "em";
+                }
                 setCount(count + 1);
             }
             if (count === 2) {
+                if (item === "item" || item === "item2") {
                 itemNote.style.bottom = "0px";
                 itemNote.style.right = "0px";
-                itemNote.style.transition = "2s all";
+                }else{
+                    itemNote.style.bottom = "0px";
+                    itemNote.style.left = "0px";
+                }
+                itemNote.style.transition = "0.9s all";
                 setCount(count + 1);
 
 
             }
             if (count === 3) {
-
-                itemNote.style.transition = "2s all";
+               bigItem.style.animation="noteMove 1s linear 0s forwards";
+                itemNote.style.transition = "0s all";
                 bigItem.style.display = "block";
+                setCount(count + 1);
             }
             console.log(count);
         }
@@ -95,25 +113,24 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 <div class="homePage__content">
                     <div className="card">
                         <div class="collection">
-                            <div id="item" className="collectionItem" onClick={() => Nota()}>
+                            <div id="item" className="collectionItem" onClick={() => Nota("item")}>
                                 <img src={YellowNote} alt="" />
-
                             </div>
 
-                            <div className="collectionItem">
+                            <div id="item2" className="collectionItem" onClick={() => Nota("item2")}>
                                 <img src={GreenNote} alt="" />
                             </div>
-                            <div className="collectionItem">
+                            <div id="item3" className="collectionItem" onClick={() => Nota("item3")}>
                                 <img src={WhiteNote} alt="" />
                             </div>
-                            <div className="collectionItem">
+                            <div id="item4" className="collectionItem" onClick={() => Nota("item4")}>
                                 <img src={PinkNote} alt="" />
                             </div>
 
                         </div>
-                        <div  className="collectionBigItem">
-                                    <img src={Note} alt="" />
-                                </div>
+                        <div id="bigItem" className="collectionBigItem">
+                            <img src={Note} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
