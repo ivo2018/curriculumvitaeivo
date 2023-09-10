@@ -33,15 +33,15 @@ const Skills = (/*{setChange,handleClick}*/) => {
             if (count === 2) {
                 itemNote.style.bottom = "0px";
                 itemNote.style.right = "0px";
-                itemNote.style.transition="2s all";
+                itemNote.style.transition = "2s all";
                 setCount(count + 1);
-              
-                
+
+
             }
-            if(count===3){
-             
-                itemNote.style.transition="2s all";
-                bigItem.style.display="block";    
+            if (count === 3) {
+
+                itemNote.style.transition = "2s all";
+                bigItem.style.display = "block";
             }
             console.log(count);
         }
@@ -93,26 +93,28 @@ const Skills = (/*{setChange,handleClick}*/) => {
                     <img src={close} alt="" onClick={() => closeWindow()}></img>
                 </div>
                 <div class="homePage__content">
-                    <div class="collection">
-                        <div id="item" className="collectionItem" onClick={() => Nota()}>
-                            <img src={YellowNote} alt="" />
-                            <div class="collectionBigNotes">
-                                <div id="bigItem" className="collectionBigItem">
+                    <div className="card">
+                        <div class="collection">
+                            <div id="item" className="collectionItem" onClick={() => Nota()}>
+                                <img src={YellowNote} alt="" />
+
+                            </div>
+
+                            <div className="collectionItem">
+                                <img src={GreenNote} alt="" />
+                            </div>
+                            <div className="collectionItem">
+                                <img src={WhiteNote} alt="" />
+                            </div>
+                            <div className="collectionItem">
+                                <img src={PinkNote} alt="" />
+                            </div>
+
+                        </div>
+                        <div  className="collectionBigItem">
                                     <img src={Note} alt="" />
                                 </div>
-                            </div>
-                        </div>
-                        <div className="collectionItem">
-                            <img src={GreenNote} alt="" />
-                        </div>
-                        <div className="collectionItem">
-                            <img src={WhiteNote} alt="" />
-                        </div>
-                        <div className="collectionItem">
-                            <img src={PinkNote} alt="" />
-                        </div>
                     </div>
-
                 </div>
             </div>
 

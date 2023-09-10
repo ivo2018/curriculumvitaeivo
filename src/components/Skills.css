@@ -1,14 +1,18 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    height: 100%;
+
+}
 .collection{
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: row;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    width: 70%;
+    width: 100%;
+    height: 20%;
 }
 .collectionItem:hover> img{
     transform: scale(1.05);
@@ -71,9 +75,8 @@
 
 .collectionItem{
 flex: 1;
-margin: 80px auto;
-width:60px;
-max-height: 2px;
+margin: 8% auto;
+width:6%;
 justify-content: center;
 align-items: center;
 position: relative;
@@ -82,8 +85,16 @@ position: relative;
    width: 60px;
    height: 60px;
 }
-.collectionBigItem img{
+.collectionBigItem{
+width: 100%;
+height: 100%;
+   
   
+    }
+.collectionBigItem img{
+    width: 100%;
+    height: 100%;
+   
 }
 @keyframes noteMove{
 0%{
@@ -100,16 +111,16 @@ position: relative;
     display: block;
     opacity: 1;
     position: absolute;
-    top:20%;
+    top:6%;
     right: 0px;
-    left: -50%;
+    left: 0%;
     bottom: 0px;
     transform:scale(1);
  
  transition: all 1s ease-in;
 }
 }
-#bigItem{
+.collectionBigItem{
     
     position: absolute;
  display: none;
@@ -120,67 +131,10 @@ position: relative;
     
 }
 
-.collectionBigItem img{
-    width: 150vh;
-    height: 500px;
- 
-}
-@media (max-width:500px){
-    .collectionBigItem{
-        margin: 9%;
-    }
-    .collectionBigItem img{
-       margin-left: -2em;
-        width: 55vh;
-        height: 45vh;    
-    }
-}
+
+
 
 @media (max-width:500px){
-    .collection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        flex-direction: row;
-        width: 300px;
-    
-    }
-    .collectionItem::before{
-        padding-top: 5% !important;
-    }
-    @keyframes noteMove{
-        0%{
-            display: block;
-            position: absolute;
-            top:20%;
-            right: 0px;
-            left: 0px;
-            bottom: 0px;
-            opacity: 0;
-            transform:scale(0.3);
-        }
-        100%{
-            display: block;
-            opacity: 1;
-            position: absolute;
-            top:3em;
-            right: 0px;
-            left: 0%;
-            bottom: 0px;
-            transform:scale(1);
-         
-         transition: all 1s ease-in;
-        }
-        }
-        #bigItem{
-            
-            position: absolute;
-         display: none;
-            opacity: 0;
-            animation-name: noteMove;
-            animation: noteMove 1s linear 0s forwards
-        
-            
-        }
+
+
 }
