@@ -16,41 +16,133 @@ import PinkNote from "../imgs/Skills/PinkNote.png"
 
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
-    const [count, setCount] = useState(0);
+  //  const [count, setCount] = useState(0);
     const [item2, setItem] = useState(0);
 
     //const [textnote, setTextNote] = useState("");
     function Nota(item) {
-        var randomNumber = Math.floor(Math.random() * (6, 14)) + 1;
+     //   var randomNumber = Math.floor(Math.random() * (6, 14)) + 1;
         var itemNote = document.getElementById(item);
- 
+        var itemYellow = document.getElementById("item");
+        var itemGreen = document.getElementById("item2");
+        var itemWhite = document.getElementById("item3");
+        var itemPink = document.getElementById("item4");
         var bigItem = document.getElementById('bigItem');
         var bigItem2 = document.getElementById('bigItemContent');
-
         if (itemNote) {
-            if (item === "item2" || item === "item3" || item === "item4") {
-                if (item === "item2") {
-                    itemNote.style.rotate = "190deg";
-                    itemNote.style.opacity = "0";
+           /* if(item==="item"){
+                console.log("item");
+                if (count === 0) {
+                        itemNote.style.bottom = -randomNumber + "em";
+                        setCount(count + 1);
+                   
+                }
+               else if (count === 1) {
+                    if (item === "item") {
+                        itemNote.style.right = -randomNumber + "em";
+                        itemNote.style.bottom = -randomNumber + "em";
+    
+                        setCount(count + 1);
+                    }
+                }
+             else   if (count === 2) {
+                    if (item === "item") {
+                        itemNote.style.bottom = "0%";
+                        itemNote.style.right = "0%";
+                        itemNote.style.left = "0%";
+                        itemNote.style.top = "0%";
+    
+                        itemNote.style.transition = "0.9s all";
+    
+    
+                        setCount(count + 1);
+                    }
+    
+                }
+               else if (count === 3) {
+                    if (item === "item") {
+                        itemNote.style.transform = "scale(1.5)";
+                      //  itemNote.style.rotate = "190deg";
+                        itemNote.style.left = "40%";
+                        itemNote.style.top = "45%";
+                    //    itemNote.style.opacity = "0";
+                       itemNote.style.display="none";
+                        itemNote.style.transition = "0.5s all";
+                        bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
+                        bigItem.style.display = "block";
+                        itemGreen.style.display="block";
+                        itemWhite.style.display = "block";
+                        itemPink.style.display="block";
+                        if (item === "item") {
+                            bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
+                            itemNote.style.left = "0%";
+                            itemNote.style.top = "0%";
+                            itemNote.style.transform = "scale(1)";
+                        }
+                          
+                        setCount(count + 1);
+                    }
+                }
+              else  if (count === 4) {
+                   
+                  //  bigItem.style.animation = "none";
+                //    bigItem.style.opacity = 0;
+                    setCount(0);
+                    
+    
+                }
+  
+            }*/
+            if (item === "item") {
+                //    itemNote.style.rotate = "190deg";
+                 //   itemNote.style.opacity = "0";
+                    itemNote.style.display = "none";
                     itemNote.style.transition = "0.5s all";
                     bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
                     bigItem.style.display = "block";
+                   itemWhite.style.display = "block";
+                   itemPink.style.display="block";
+                        itemGreen.style.display="block";
+                    
+                }
+               else if (item === "item2") {
+                //    itemNote.style.rotate = "190deg";
+                 //   itemNote.style.opacity = "0";
+                    itemNote.style.display = "none";
+                    itemNote.style.transition = "0.5s all";
+                    bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
+                    bigItem.style.display = "block";
+                   itemWhite.style.display = "block";
+                   itemPink.style.display="block";
+                        itemYellow.style.display="block";
+                    
                 }
                 else if (item === "item3") {
-                    itemNote.style.rotate = "190deg";
-                    itemNote.style.opacity = "0";
+                //    itemNote.style.rotate = "190deg";
+                   // itemNote.style.opacity = "0";
+                   itemNote.style.display = "none";
                     itemNote.style.transition = "0.5s all";
                     bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
                     bigItem.style.display = "block";
-
-
+                    itemGreen.style.display="block";
+                    itemPink.style.display="block";
+                    itemYellow.style.display="block";
+              
                 }
                 else if (item === "item4") {
-                    itemNote.style.rotate = "190deg";
-                    itemNote.style.opacity = "0";
+                //    itemNote.style.rotate = "190deg";
+                 //   itemNote.style.opacity = "0";
+                 itemNote.style.display = "none";
                     itemNote.style.transition = "0.5s all";
                     bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
                     bigItem.style.display = "block";
+                    itemGreen.style.display="block";
+                    itemWhite.style.display = "block";
+                    itemYellow.style.display="block";
+               
+                }
+                if(item==="item"){
+                    bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
                 }
                 if (item === "item2") {
 
@@ -63,65 +155,11 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 if (item === "item4") {
                     bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)"
                 }
-                setCount(0);
-            }
-            if (count === 4) {
-                if(item==="item"){
-                bigItem.style.animation = "none";
-                bigItem.style.opacity = 0;
-                setCount(0);
-                }
+                
+            
+         
 
-            }
-
-            if (count === 0) {
-                if (item === "item") {
-                    itemNote.style.bottom = -randomNumber + "em";
-                    setCount(count + 1);
-
-                }
-            }
-            if (count === 1) {
-                if (item === "item") {
-                    itemNote.style.right = -randomNumber + "em";
-                    itemNote.style.bottom = -randomNumber + "em";
-
-                    setCount(count + 1);
-                }
-            }
-            if (count === 2) {
-                if (item === "item") {
-                    itemNote.style.bottom = "0%";
-                    itemNote.style.right = "0%";
-                    itemNote.style.left = "0%";
-                    itemNote.style.top = "0%";
-
-                    itemNote.style.transition = "0.9s all";
-
-
-                    setCount(count + 1);
-                }
-
-            }
-            if (count === 3) {
-                if (item === "item") {
-                    itemNote.style.transform = "scale(1.5)";
-                    itemNote.style.rotate = "190deg";
-                    itemNote.style.left = "40%";
-                    itemNote.style.top = "45%";
-                    itemNote.style.opacity = "0";
-                    itemNote.style.transition = "0.5s all";
-                    bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
-                    bigItem.style.display = "block";
-
-                    if (item === "item") {
-                        bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
-                    }
-                    setCount(count + 1);
-                }
-            }
-
-            console.log(count);
+          //  console.log(count);
         }
     }
 
