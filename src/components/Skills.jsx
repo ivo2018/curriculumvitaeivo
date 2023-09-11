@@ -23,10 +23,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
     function Nota(item) {
         var randomNumber = Math.floor(Math.random() * (6, 14)) + 1;
         var itemNote = document.getElementById(item);
-        var itemYellow = document.getElementById("item");
-        var itemGreen = document.getElementById("item2");
-        var itemWhite = document.getElementById("item3");
-        var itemPink = document.getElementById("item4");
+ 
         var bigItem = document.getElementById('bigItem');
         var bigItem2 = document.getElementById('bigItemContent');
 
