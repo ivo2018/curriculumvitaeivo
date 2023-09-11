@@ -168,26 +168,28 @@ height: 100%;
     margin:auto;
     height: 60%;
     width: 60%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
-                linear-gradient(90deg,rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
-                linear-gradient(0deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
-                linear-gradient(0deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%), 
+                linear-gradient(90deg,rgba(0, 0, 0, 0.932) 50%, transparent 50%), 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.753) 50%, transparent 50%), 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.753) 50%, transparent 50%);
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 8px 2px, 8px 2px, 2px 8px, 2px 8px;
-    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    background-size: 50px 2px, 50px 2px, 2px 50px, 2px 50px;
+   /*  background-size: 10px 2px, 10px 2px, 2px 10px, 2px 10px;*/
+    background-position: 0% 0%, 99.9% 99.9%, 0.1% 99.9%, 99.9% 0%;
     border-radius: 5px;
     padding: 10px;
-    animation: dash 12s linear infinite;
+    animation: dash 10s linear infinite;
     
 }
 #item,#item2,#item3,#item4{
-
+opacity: 1;
   
 }
 
 @keyframes dash {
+    
     to {
-        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+        background-position: 99.9% 0%, 0% 99.9%, 0.1% 0%, 99.9% 99.9%;
     }
 }
 
