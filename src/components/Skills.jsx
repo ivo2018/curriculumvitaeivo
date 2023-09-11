@@ -13,7 +13,7 @@ import GreenNote from "../imgs/Skills/GreenNote.png"
 
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
-import Note from "../imgs/Skills/note.png"
+
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
     const [count, setCount] = useState(0);
