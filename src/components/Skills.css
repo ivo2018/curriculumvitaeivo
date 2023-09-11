@@ -74,6 +74,7 @@
 }
 
 .collectionItem{
+  
 flex: 1;
 margin: 8% auto;
 width:6%;
@@ -139,7 +140,7 @@ height: 100%;
 }
 }
 #bigItem{
-    
+
     position: absolute;
  display: none;
     opacity: 0;
@@ -149,7 +150,49 @@ height: 100%;
     
 }
 
+#bigItemContent{
+    position: absolute;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin:auto;
+    width: 99.8%;
+    height: 99.8%;
+    
+  background-color: rgba(0, 0,0, 0);
 
+    
+    
+}
+
+.bigItem__border {
+    position: absolute;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin:auto;
+    height: 60%;
+    width: 60%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
+                linear-gradient(90deg,rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%), 
+                linear-gradient(0deg, rgba(0, 0, 0, 0.637) 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 8px 2px, 8px 2px, 2px 8px, 2px 8px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    border-radius: 5px;
+    padding: 10px;
+    animation: dash 12s linear infinite;
+    
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
 
 
 @media (max-width:500px){

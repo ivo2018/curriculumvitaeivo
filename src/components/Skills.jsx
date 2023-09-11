@@ -20,14 +20,16 @@ const Skills = (/*{setChange,handleClick}*/) => {
     function Nota(item) {
         var randomNumber = Math.floor(Math.random() * (10, 20)) + 1;
         var itemNote = document.getElementById(item);
+
         var bigItem = document.getElementById('bigItem');
+        var bigItem2 = document.getElementById('bigItemContent');
         if (itemNote) {
-          if(count===4){
-            bigItem.style.animation="none";
-           bigItem.style.opacity=0;
-           setCount(0);
-         
-          }
+            if (count === 4) {
+                bigItem.style.animation = "none";
+                bigItem.style.opacity = 0;
+                setCount(0);
+
+            }
             if (count === 0) {
                 itemNote.style.bottom = -randomNumber + "em";
                 setCount(count + 1);
@@ -44,9 +46,9 @@ const Skills = (/*{setChange,handleClick}*/) => {
             }
             if (count === 2) {
                 if (item === "item" || item === "item2") {
-                itemNote.style.bottom = "0px";
-                itemNote.style.right = "0px";
-                }else{
+                    itemNote.style.bottom = "0px";
+                    itemNote.style.right = "0px";
+                } else {
                     itemNote.style.bottom = "0px";
                     itemNote.style.left = "0px";
                 }
@@ -56,9 +58,21 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
             }
             if (count === 3) {
-               bigItem.style.animation="noteMove 1s linear 0s forwards";
+                bigItem.style.animation = "noteMove 1s linear 0s forwards";
                 itemNote.style.transition = "0s all";
                 bigItem.style.display = "block";
+                if (item === "item") {
+                    bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
+                }
+                if (item === "item2") {
+                    bigItem2.style.backgroundColor = "rgba(0, 198, 8, 0.438)"
+                }
+                if (item === "item3") {
+                    bigItem2.style.backgroundColor = "rgba(255, 255, 255, 0.438)"
+                }
+                if (item === "item4") {
+                    bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)"
+                }
                 setCount(count + 1);
             }
             console.log(count);
@@ -129,7 +143,11 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                         </div>
                         <div id="bigItem" className="collectionBigItem">
-                            <img src={Note} alt="" />
+                            <div class="bigItem__border">
+                                <div id="bigItemContent" class="bigItem__content">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
