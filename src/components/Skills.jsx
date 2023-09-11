@@ -51,18 +51,31 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 if (item === "item" || item === "item2") {
                     itemNote.style.bottom = "0px";
                     itemNote.style.right = "0px";
+                    itemNote.style.left = "0px";
+                    itemNote.style.top = "0px";
                 } else {
                     itemNote.style.bottom = "0px";
                     itemNote.style.left = "0px";
                 }
                 itemNote.style.transition = "0.9s all";
+
+
                 setCount(count + 1);
 
 
             }
             if (count === 3) {
-                bigItem.style.animation = "noteMove 1s linear 0s forwards";
-                itemNote.style.transition = "0s all";
+                if(item==="item"){
+                itemNote.style.transform="scale(1.5)";   
+                itemNote.style.rotate="190deg";  
+                
+                itemNote.style.left="500px";
+             
+                itemNote.style.top="60px";
+                itemNote.style.opacity="0";
+                itemNote.style.transition = "0.5s all";
+                }
+                bigItem.style.animation = "noteMove 1s linear 0.1s forwards";
                 bigItem.style.display = "block";
                 if (item === "item") {
                     bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
