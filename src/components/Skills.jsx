@@ -18,9 +18,10 @@ import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
     const [count, setCount] = useState(0);
     const [item, setItem] = useState(0);
-    const [textnote, setTextNote] = useState("");
+    
+    //const [textnote, setTextNote] = useState("");
     function Nota(setItem) {
-        var randomNumber = Math.floor(Math.random() * (10, 20)) + 1;
+        var randomNumber = Math.floor(Math.random() * (6, 14)) + 1;
         var itemNote = document.getElementById(item);
 
         var bigItem = document.getElementById('bigItem');
