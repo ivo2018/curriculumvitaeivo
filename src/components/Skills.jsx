@@ -17,7 +17,9 @@ import PinkNote from "../imgs/Skills/PinkNote.png"
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
     const [count, setCount] = useState(0);
-    function Nota(item) {
+    const [item, setItem] = useState(0);
+    const [textnote, setTextNote] = useState("");
+    function Nota(setItem) {
         var randomNumber = Math.floor(Math.random() * (10, 20)) + 1;
         var itemNote = document.getElementById(item);
 
@@ -127,17 +129,17 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 <div class="homePage__content">
                     <div className="card">
                         <div class="collection">
-                            <div id="item" className="collectionItem" onClick={() => Nota("item")}>
+                            <div id="item" className="collectionItem" onClick={() => Nota(setItem("item"))}>
                                 <img src={YellowNote} alt="" />
                             </div>
 
-                            <div id="item2" className="collectionItem" onClick={() => Nota("item2")}>
+                            <div id="item2" className="collectionItem" onClick={() => Nota(setItem("item2"))}>
                                 <img src={GreenNote} alt="" />
                             </div>
-                            <div id="item3" className="collectionItem" onClick={() => Nota("item3")}>
+                            <div id="item3" className="collectionItem" onClick={() => Nota(setItem("item3"))}>
                                 <img src={WhiteNote} alt="" />
                             </div>
-                            <div id="item4" className="collectionItem" onClick={() => Nota("item4")}>
+                            <div id="item4" className="collectionItem" onClick={() => Nota(setItem("item4"))}>
                                 <img src={PinkNote} alt="" />
                             </div>
 
@@ -145,7 +147,20 @@ const Skills = (/*{setChange,handleClick}*/) => {
                         <div id="bigItem" className="collectionBigItem">
                             <div class="bigItem__border">
                                 <div id="bigItemContent" class="bigItem__content">
+                                    Holi
+                                    {item === "item" ? (
+                                        <div> Nota amarilla </div>
+                                    )
+                                        : item === "item2" ? (
+                                            <div> Nota verde </div>
+                                        ) : item==="item3" ?
 
+                                            (
+                                                <div> Nota blanca </div>
+                                            ):(
+                                                <div> Nota rosa </div>
+                                            )
+                                            }
                                 </div>
                             </div>
                         </div>
