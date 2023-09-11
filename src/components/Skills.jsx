@@ -69,9 +69,9 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 itemNote.style.transform="scale(1.5)";   
                 itemNote.style.rotate="190deg";  
                 
-                itemNote.style.left="500px";
+                itemNote.style.left="40%";
              
-                itemNote.style.top="60px";
+                itemNote.style.top="45%";
                 itemNote.style.opacity="0";
                 itemNote.style.transition = "0.5s all";
                 }
