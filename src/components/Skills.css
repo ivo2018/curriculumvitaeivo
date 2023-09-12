@@ -186,6 +186,17 @@ opacity: 1;
   
 }
 
+.iconItem2,.iconItem{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.iconItem2 img,.iconItem img{
+    width: 3% !important;
+  
+}
 @keyframes dash {
     
     to {
