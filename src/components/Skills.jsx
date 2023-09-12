@@ -150,7 +150,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 }
                 if (item === "item3") {
 
-                    bigItem2.style.backgroundColor = "rgba(255, 255, 255, 0.438)"
+                    bigItem2.style.backgroundColor = "rgba(255, 254, 254, 0.8)"
                 }
                 if (item === "item4") {
                     bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)"
@@ -231,18 +231,23 @@ const Skills = (/*{setChange,handleClick}*/) => {
                         <div id="bigItem" className="collectionBigItem">
                             <div class="bigItem__border">
                                 <div id="bigItemContent" class="bigItem__content">
-                                    Holi
+                                    Hello
                                     {item2 === "item" ? (
-                                        <div> Nota amarilla </div>
+                                        <div>
+                                        I use different programming languages, I have knowledge of javascript, php, c#, html css </div>
                                     )
                                         : item2 === "item2" ? (
-                                            <div> Nota verde </div>
+                                            <div> 
+                                            I use different tools, frameworks like react, laravel, collective.
+                                            I also manage databases, SQL, MySQL. </div>
                                         ) : item2 === "item3" ?
-
+                                           
                                             (
-                                                <div> Nota blanca </div>
+                                                <div>      I am currently working for a large national industry company doing system maintenance and creating developments for it. 
+                                                And I'm also creating a system for a national brewery. </div>
                                             ) : (
-                                                <div> Nota rosa </div>
+                                                <div> 
+                                                I have experience in creating full stack web pages. systems development, and creation of both 2D and 3D video games. </div>
                                             )
                                     }
 
