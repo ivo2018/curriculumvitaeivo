@@ -16,6 +16,10 @@ import csharp from "../imgs/csharp.png";
 import php from "../imgs/php.png";
 import html from "../imgs/html.png";
 import css from "../imgs/css.png";
+import unity from "../imgs/unity.png";
+import laravel from "../imgs/laravel.png";
+import mysql from "../imgs/mysql.png";
+import sql from "../imgs/sql.png";
 
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
@@ -242,19 +246,33 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                         <div class="text">
                                             I use different programming languages, I have knowledge of javascript, php, c#, html css
                                             <div className="iconItem">
+                                            <p>
                                                 <img src={javascript} alt="" />
-                                                JavaScript
-
+                                             
+                                                    JavaScript
+                                                </p>
+                                                <p>
                                                 <img src={csharp} alt="" />
-                                                Csharp
+                                               
+                                                    Csharp
 
+                                                </p>
+                                                <p>
                                                 <img src={php} alt="" />
-                                                Php
-
+                                              
+                                                    Php
+                                                </p>
+                                                <p>
                                                 <img src={html} alt="" />
-                                                Html
+
+                                               
+                                                    Html
+                                                </p>
+                                                <p>
                                                 <img src={css} alt="" />
-                                                Css
+                                               
+                                                    Css
+                                                </p>
                                             </div>
                                         </div>
 
@@ -264,8 +282,26 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                 I use different tools, frameworks like react, laravel, collective.
                                                 I also manage databases, SQL, MySQL
                                                 <div className="iconItem2">
+                                                    <p>
                                                     <img src={react} alt="" />
                                                     React
+                                                    </p>
+                                                    <p>
+                                                    <img src={laravel} alt="" />
+                                                   Laravel
+                                                    </p>
+                                                    <p>
+                                                    <img src={mysql} alt="" />
+                                                   Mysql
+                                                    </p>
+                                                    <p>
+                                                    <img src={sql} alt="" />
+                                                    Sql
+                                                    </p>
+                                                    <p>
+                                                    <img src={unity} alt="" />
+                                                    Unity
+                                                    </p>
                                                 </div>
                                             </div>
                                         ) : item2 === "item3" ?
