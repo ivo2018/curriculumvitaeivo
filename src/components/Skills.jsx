@@ -239,14 +239,14 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                 <div id="bigItemContent" class="bigItem__content">
                                     Hello
                                     {item2 === "item" ? (
-                                        <div>
+                                        <div class="text">
                                             I use different programming languages, I have knowledge of javascript, php, c#, html css
                                             <div className="iconItem">
                                                 <img src={javascript} alt="" />
                                                 JavaScript
 
                                                 <img src={csharp} alt="" />
-                                                C# Sharp
+                                                Csharp
 
                                                 <img src={php} alt="" />
                                                 Php
@@ -260,7 +260,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                                     )
                                         : item2 === "item2" ? (
-                                            <div>
+                                            <div class="text">
                                                 I use different tools, frameworks like react, laravel, collective.
                                                 I also manage databases, SQL, MySQL
                                                 <div className="iconItem2">
@@ -271,10 +271,10 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                         ) : item2 === "item3" ?
 
                                             (
-                                                <div>      I am currently working for a large national industry company doing system maintenance and creating developments for it.
+                                                <div class="text">      I am currently working for a large national industry company doing system maintenance and creating developments for it.
                                                     And I'm also creating a system for a national brewery. </div>
                                             ) : (
-                                                <div>
+                                                <div class="text">
                                                     I have experience in creating full stack web pages. systems development, and creation of both 2D and 3D video games. </div>
                                             )
                                     }
