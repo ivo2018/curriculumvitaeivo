@@ -244,14 +244,14 @@ const Skills = (/*{setChange,handleClick}*/) => {
                             <div class="bigItem__border">
                                 <div id="bigItemContent" class="bigItem__content">
                                     {item2 === "item" ? (
-                                        <div className="div">
+                                        <div className="itemTitle">
                                             Lenguages
                                         </div>
                                     ) : item2 === "item2" ? (
-                                        <div className="div">Tools</div>
+                                        <div className="itemTitle">Tools</div>
                                     ) : item2 === "item3" ? (
-                                        <div className="div">Work</div>
-                                    ) : <div> Exp </div>}
+                                        <div className="itemTitle">Work</div>
+                                    ) : <div className="itemTitle"> Exp </div>}
                                     {item2 === "item" ? (
                                         <div class="text">
 

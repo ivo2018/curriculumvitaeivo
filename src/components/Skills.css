@@ -234,10 +234,13 @@
     font-weight: 200;
 
     cursor: text;
-  
+    font-weight: 500;
     flex-wrap: wrap;
     height:50%;
    
+}
+.itemTitle{
+    font-weight: 800;
 }
 
 @keyframes dash {
@@ -254,9 +257,8 @@
 
     .text {
 
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.7vh;
-        line-height: 5vh;
+      
+        line-height: 3vh;
         font-weight: 200;
     
         cursor: text;
