@@ -20,7 +20,9 @@ import unity from "../imgs/unity.png";
 import laravel from "../imgs/laravel.png";
 import mysql from "../imgs/mysql.png";
 import sql from "../imgs/sql.png";
-
+import node from "../imgs/node.png";
+import github from "../imgs/github.png";
+import phpmyadmin from "../imgs/phpmyadmin.png"
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
 
@@ -241,36 +243,54 @@ const Skills = (/*{setChange,handleClick}*/) => {
                         <div id="bigItem" className="collectionBigItem">
                             <div class="bigItem__border">
                                 <div id="bigItemContent" class="bigItem__content">
-                                    Hello
+                                    {item2 === "item" ? (
+                                        <div className="div">
+                                            Lenguages
+                                        </div>
+                                    ) : item2 === "item2" ? (
+                                        <div className="div">Tools</div>
+                                    ) : item2 === "item3" ? (
+                                        <div className="div">Work</div>
+                                    ) : <div> Exp </div>}
                                     {item2 === "item" ? (
                                         <div class="text">
-                                            I use different programming languages, I have knowledge of javascript, php, c#, html css
+
+                                            Knowledge of different programming languages.
+                                            The languages ​​I currently use are:
                                             <div className="iconItem">
-                                            <p>
-                                                <img src={javascript} alt="" />
-                                             
+                                                <p>
+                                                    <img src={javascript} alt="" />
+
                                                     JavaScript
                                                 </p>
                                                 <p>
-                                                <img src={csharp} alt="" />
-                                               
+                                                    <img src={csharp} alt="" />
+
                                                     Csharp
 
                                                 </p>
                                                 <p>
-                                                <img src={php} alt="" />
-                                              
+                                                        <img src={sql} alt="" />
+                                                        Sql
+                                                    </p>
+                                                    <p>
+                                                        <img src={node} alt="" />
+                                                        NodeJs
+                                                    </p>
+                                                <p>
+                                                    <img src={php} alt="" />
+
                                                     Php
                                                 </p>
                                                 <p>
-                                                <img src={html} alt="" />
+                                                    <img src={html} alt="" />
 
-                                               
+
                                                     Html
                                                 </p>
                                                 <p>
-                                                <img src={css} alt="" />
-                                               
+                                                    <img src={css} alt="" />
+
                                                     Css
                                                 </p>
                                             </div>
@@ -279,29 +299,36 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                     )
                                         : item2 === "item2" ? (
                                             <div class="text">
-                                                I use different tools, frameworks like react, laravel, collective.
-                                                I also manage databases, SQL, MySQL
+                                             
+The tools and frameworks I use are:
                                                 <div className="iconItem2">
                                                     <p>
-                                                    <img src={react} alt="" />
-                                                    React
+                                                        <img src={react} alt="" />
+                                                        React
                                                     </p>
                                                     <p>
-                                                    <img src={laravel} alt="" />
-                                                   Laravel
+                                                        <img src={laravel} alt="" />
+                                                        Laravel
                                                     </p>
                                                     <p>
-                                                    <img src={mysql} alt="" />
-                                                   Mysql
+                                                        <img src={mysql} alt="" />
+                                                        Mysql Workbench
+                                                    </p>
+                                               
+                                                    <p>
+                                                        <img src={phpmyadmin} alt="" />
+                                                       phpMyAdmin
+                                                    </p>
+                                               
+                                                    <p>
+                                                        <img src={unity} alt="" />
+                                                        Unity
                                                     </p>
                                                     <p>
-                                                    <img src={sql} alt="" />
-                                                    Sql
+                                                        <img src={github} alt="" />
+                                                        GitHub
                                                     </p>
-                                                    <p>
-                                                    <img src={unity} alt="" />
-                                                    Unity
-                                                    </p>
+
                                                 </div>
                                             </div>
                                         ) : item2 === "item3" ?
