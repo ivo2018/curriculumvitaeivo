@@ -270,13 +270,13 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                                                 </p>
                                                 <p>
-                                                        <img src={sql} alt="" />
-                                                        Sql
-                                                    </p>
-                                                    <p>
-                                                        <img src={node} alt="" />
-                                                        NodeJs
-                                                    </p>
+                                                    <img src={sql} alt="" />
+                                                    Sql
+                                                </p>
+                                                <p>
+                                                    <img src={node} alt="" />
+                                                    NodeJs
+                                                </p>
                                                 <p>
                                                     <img src={php} alt="" />
 
@@ -299,8 +299,8 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                     )
                                         : item2 === "item2" ? (
                                             <div class="text">
-                                             
-The tools and frameworks I use are:
+
+                                                The tools and frameworks I use are:
                                                 <div className="iconItem2">
                                                     <p>
                                                         <img src={react} alt="" />
@@ -314,12 +314,12 @@ The tools and frameworks I use are:
                                                         <img src={mysql} alt="" />
                                                         Mysql Workbench
                                                     </p>
-                                               
+
                                                     <p>
                                                         <img src={phpmyadmin} alt="" />
-                                                       phpMyAdmin
+                                                        phpMyAdmin
                                                     </p>
-                                               
+
                                                     <p>
                                                         <img src={unity} alt="" />
                                                         Unity
@@ -334,11 +334,20 @@ The tools and frameworks I use are:
                                         ) : item2 === "item3" ?
 
                                             (
-                                                <div class="text">      I am currently working for a large national industry company doing system maintenance and creating developments for it.
-                                                    And I'm also creating a system for a national brewery. </div>
+                                                <div class="text">
+
+                                                    I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.
+
+                                                    <br />
+
+                                                    And I am developing a system for an international brewing company called <a href="https://gluckcerveceria.com"> Gluck</a> in PHP.
+                                                </div>
                                             ) : (
                                                 <div class="text">
-                                                    I have experience in creating full stack web pages. systems development, and creation of both 2D and 3D video games. </div>
+
+                                                    I have experience in creating pages and full stack systems. with role systems, permissions and authentication.
+                                                    Also in the creation of
+                                                    2D and 3D video games. </div>
                                             )
                                     }
 
