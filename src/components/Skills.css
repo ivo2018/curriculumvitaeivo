@@ -196,6 +196,7 @@
     padding: 10px;
     animation: dash 10s linear infinite;
     text-shadow: 1px 0.5px rgb(68, 50, 50);
+    box-shadow: 1px 1px 10px 0px black;
 }
 
 #item,

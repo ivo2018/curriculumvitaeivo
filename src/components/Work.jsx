@@ -24,6 +24,7 @@ const Work = (/*{handleClick,setChange}*/) => {
         const carousel= document.querySelector(".carousel3");
         if(carousel){
         let isDragStart=false,prevPageX,prevScrollLeft;
+        
         const dragStart=(e)=>{
             isDragStart=true;
             prevPageX=e.pageX;
