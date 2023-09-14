@@ -162,7 +162,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
             }
             if (item === "item3") {
 
-                bigItem2.style.backgroundColor = "rgba(255, 254, 254, 0.8)"
+                bigItem2.style.backgroundColor = "rgba(255, 255, 233, 0.438)"
             }
             if (item === "item4") {
                 bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)"
@@ -314,12 +314,6 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         <img src={mysql} alt="" />
                                                         Mysql Workbench
                                                     </p>
-
-                                                    <p>
-                                                        <img src={phpmyadmin} alt="" />
-                                                        phpMyAdmin
-                                                    </p>
-
                                                     <p>
                                                         <img src={unity} alt="" />
                                                         Unity
@@ -328,19 +322,23 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         <img src={github} alt="" />
                                                         GitHub
                                                     </p>
+                                                    <p >
+                                                        <img src={phpmyadmin} alt="" />
+                                                        phpMyAdmin
+                                                    </p>
 
                                                 </div>
                                             </div>
                                         ) : item2 === "item3" ?
 
                                             (
-                                                <div class="text">
+                                                <div class="text" >
 
-                                                    I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.
+                                                   <p> I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.</p>
 
-                                                    <br />
+                                                   
 
-                                                    And I am developing a system for an international brewing company called <a href="https://gluckcerveceria.com"> Gluck</a> in PHP.
+                                                   <p>  And I am developing a system for an international brewing company called <a href="https://gluckcerveceria.com"> Gluck</a> in PHP.</p>
                                                 </div>
                                             ) : (
                                                 <div class="text">
