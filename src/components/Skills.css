@@ -228,7 +228,7 @@
 }
 
 .text {
-
+  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.7vh;
     line-height:100%;
@@ -279,7 +279,7 @@
 @media (max-width:500px){
     .text {
 
-     
+        display: flex;
         font-weight: 600;
   
     }
