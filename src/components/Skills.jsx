@@ -254,9 +254,13 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                     ) : <div className="itemTitle"> Exp </div>}
                                     {item2 === "item" ? (
                                         <div class="text">
-
+                                            <div>
+                                        <div>
                                             Knowledge of different programming languages.
                                             The languages ​​I currently use are:
+
+                                            </div>
+                                            </div>
                                             <div className="iconItem">
                                                 <p>
                                                     <img src={javascript} alt="" />
