@@ -255,11 +255,11 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                     {item2 === "item" ? (
                                         <div class="text">
                                             <div>
-                                        <div>
-                                            Knowledge of different programming languages.
-                                            The languages ​​I currently use are:
+                                                <div>
+                                                    Knowledge of different programming languages.
+                                                    The languages ​​I currently use are:
 
-                                            </div>
+                                                </div>
                                             </div>
                                             <div className="iconItem">
                                                 <p>
@@ -303,8 +303,10 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                     )
                                         : item2 === "item2" ? (
                                             <div class="text">
+                                                <div>
+                                                    The tools and frameworks I use are:
 
-                                                The tools and frameworks I use are:
+                                                </div>
                                                 <div className="iconItem2">
                                                     <p>
                                                         <img src={react} alt="" />
@@ -337,19 +339,21 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                                             (
                                                 <div class="text" >
+                                                    <div style={{color:"aqua",textShadow:"2px 2px black" ,display:"inline"}}>
+                                                        <p> I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.</p>
 
-                                                   <p> I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.</p>
 
-                                                   
 
-                                                   <p>  And I am developing a system for an international brewing company called <a href="https://gluckcerveceria.com"> Gluck</a> in PHP.</p>
+                                                        <p>  And I am developing a system for an international brewing company called <a href="https://gluckcerveceria.com"> Gluck</a> in PHP.</p>
+                                                    </div>
                                                 </div>
                                             ) : (
                                                 <div class="text">
-
-                                                    I have experience in creating pages and full stack systems. with role systems, permissions and authentication.
-                                                    Also in the creation of
-                                                    2D and 3D video games. </div>
+                                                    <div>
+                                                        I have experience in creating pages and full stack systems. with role systems, permissions and authentication.
+                                                        Also in the creation of
+                                                        2D and 3D video games. </div>
+                                                </div>
                                             )
                                     }
 
