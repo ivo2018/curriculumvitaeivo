@@ -238,12 +238,14 @@
     flex-wrap: wrap;
     height:50%;
     text-align: center;
+    line-height:3vh
    
 }
 .text div:first-child{
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 .text div:nth-child(1) div{
 justify-content: center;
