@@ -297,6 +297,13 @@ width: 50%;
         font-weight: 600;
   
     }
+    .text div:nth-child(1) div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+        }
    
 }
 @media (max-width:290px) {

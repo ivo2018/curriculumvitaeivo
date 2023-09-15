@@ -304,8 +304,9 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                         : item2 === "item2" ? (
                                             <div class="text">
                                                 <div>
+                                                <div>
                                                     The tools and frameworks I use are:
-
+                                                    </div>
                                                 </div>
                                                 <div className="iconItem2">
                                                     <p>
