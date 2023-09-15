@@ -339,7 +339,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                                             (
                                                 <div class="text" >
-                                                    <div style={{color:"aqua",textShadow:"2px 2px black" ,display:"inline"}}>
+                                                    <div style={{color:"rgb(1, 134, 134)",textShadow:"1px -1px 0px black" ,display:"inline"}}>
                                                         <p> I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.</p>
 
 
