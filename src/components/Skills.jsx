@@ -154,18 +154,22 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
             }
             if (item === "item") {
-                bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)"
+               bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)";
+             
+          //   bigItem2.style.background="linear-gradient(0deg, rgba(34,193,195,0.43) 0%, rgba(253,187,45,0.43) 100%)"
             }
             if (item === "item2") {
 
-                bigItem2.style.backgroundColor = "rgba(0, 198, 8, 0.438)"
+                bigItem2.style.backgroundColor = "rgba(0, 198, 8, 0.438)";
+            // bigItem2.style.background = "linear-gradient(0deg, rgba(139,249,250,0.43) 0%, rgba(23,255,10,0.43) 100%)";
             }
             if (item === "item3") {
 
-                bigItem2.style.backgroundColor = "rgba(255, 255, 233, 0.438)"
+                bigItem2.style.backgroundColor = "rgba(255, 255, 233, 0.438)";
             }
             if (item === "item4") {
-                bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)"
+                bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)";
+            //   bigItem2.style.background = " linear-gradient(0deg, rgba(250,208,139,0.43) 0%, rgba(255,10,171,0.43) 100%)"
             }
 
 
