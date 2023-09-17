@@ -184,21 +184,27 @@
     margin: auto;
     height: 60%;
     width: 60%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%),
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%),
         linear-gradient(90deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%),
         linear-gradient(0deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%),
         linear-gradient(0deg, rgba(0, 0, 0, 0.932) 50%, transparent 50%);
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
     background-size: 50px 2px, 50px 2px, 2px 50px, 2px 50px;
     /*  background-size: 10px 2px, 10px 2px, 2px 10px, 2px 10px;*/
-    background-position: 0% 0.3%, 99.9% 99.9%, 0.1% 99.9%, 99.9% 0%;
+    background-position: 0% 0.1%, 99.9% 99.9%, 0.1% 99.9%, 99.9% 0.1%;
     border-radius: 5px;
     padding: 10px;
     animation: dash 10s linear infinite;
     text-shadow: 0.4px 0px rgba(68, 50, 50, 0.781);
     box-shadow: 1px 1px 10px 0px black ;
+    border: 2px solid white;
 }
+@keyframes dash {
 
+    to {
+        background-position: 99.9% 0.1%, 0.1% 99.9%, 0.1% 0.1%, 99.9% 99.9%;
+    }
+}
 #item,
 #item2,
 #item3,
@@ -263,6 +269,14 @@ width: 50%;
     text-shadow: 1px 1px rgb(168, 85, 85),-2px -2px whitesmoke
     ;
 }
+.text div::selection{
+    background-color: rgba(45, 53, 53, 0.336);
+    text-shadow: 2px 2px white;
+}
+.text div p::selection,.text div p a::selection{
+    background-color: rgba(45, 53, 53, 0.336);
+    text-shadow: 2px 2px white;
+}
 .text a:hover{
       text-shadow: 2px 2px rgb(255, 255, 255),-2px -2px whitesmoke;
 }
@@ -274,12 +288,7 @@ width: 50%;
     margin:3%;
 }
 
-@keyframes dash {
 
-    to {
-        background-position: 99.9% 0.3%, 0% 99.9%, 0.1% 0%, 99.9% 99.9%;
-    }
-}
 .iconItem{
     color: rgba(0, 0, 0, 0.897);
     font-weight: 600;
