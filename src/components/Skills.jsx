@@ -25,7 +25,9 @@ import github from "../imgs/github.png";
 import phpmyadmin from "../imgs/phpmyadmin.png"
 import WhiteNote from "../imgs/Skills/WhiteNote.png";
 import PinkNote from "../imgs/Skills/PinkNote.png"
-
+import vtex from "../imgs/Skills/vtex.png";
+//import titulo from "../imgs/Titulo.png";
+import titulo2 from "../imgs/Titulo2.png";
 import "../components/Skills.css"
 const Skills = (/*{setChange,handleClick}*/) => {
     //  const [count, setCount] = useState(0);
@@ -344,6 +346,10 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         <img src={phpmyadmin} alt="" />
                                                         phpMyAdmin
                                                     </p>
+                                                    <p> 
+                                                    <img src={vtex} alt="" />
+                                                        Vtex
+                                                    </p>
 
                                                 </div>
                                             </div>
@@ -365,6 +371,12 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         I have experience in creating pages and full stack systems. with role systems, permissions and authentication.
                                                         Also in the creation of
                                                         2D and 3D video games. </div>
+                                                      
+                                                        <p class="text_exp">
+                                                        <img src={titulo2} alt="" />
+                                                   
+                                                    </p>
+                                                 
                                                 </div>
                                             )
                                     }

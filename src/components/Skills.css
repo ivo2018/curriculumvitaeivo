@@ -300,6 +300,18 @@ width: 50%;
     font-weight: 600;
     text-shadow: 2px 2px  rgba(46, 117, 32, 0.623),-1px -1px white;
 }
+.text_exp {
+    margin: auto;
+height: 90%;
+width: 90%;
+box-shadow: 2px 2px 15px black  ;
+overflow: auto;
+overflow-y: hidden;
+}
+.text_exp img{
+    object-fit: cover;
+ 
+}
 
 @media (max-width:500px){
     .text {
@@ -326,7 +338,14 @@ width: 50%;
             font-weight: 600;
             text-shadow: 1.5px 1.5px  rgba(37, 167, 11, 0.623),-1px -1px white;
         }
-   
+        .text_exp {
+            margin: auto;
+        height: 90%;
+        width: 90%;
+        box-shadow: 2px 2px 15px black  ;
+        overflow:auto;
+
+        }
 }
 @media (max-width:290px) {
 
