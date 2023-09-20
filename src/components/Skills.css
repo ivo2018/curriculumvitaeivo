@@ -340,11 +340,16 @@ overflow-y: hidden;
         }
         .text_exp {
             margin: auto;
-        height: 90%;
-        width: 90%;
+        height: 90px;
+        width: 600px;
         box-shadow: 2px 2px 15px black  ;
-        overflow:auto;
-
+        overflow: auto;
+    
+   
+        }
+        .text_exp img{
+            object-fit:fill;
+          
         }
 }
 @media (max-width:290px) {
