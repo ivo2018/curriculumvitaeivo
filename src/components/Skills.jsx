@@ -156,29 +156,29 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
             }
             if (item === "item") {
-              bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)";
-             
-          //  bigItem2.style.background="linear-gradient(0deg, rgba(34,193,195,0.43) 0%, rgba(253,187,45,0.43) 100%)"
-        //  bigItem2.style.background="linear-gradient(0deg, rgba(219, 198, 8, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
+                bigItem2.style.backgroundColor = "rgba(219, 198, 8, 0.438)";
+
+                //  bigItem2.style.background="linear-gradient(0deg, rgba(34,193,195,0.43) 0%, rgba(253,187,45,0.43) 100%)"
+                //  bigItem2.style.background="linear-gradient(0deg, rgba(219, 198, 8, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
 
             }
             if (item === "item2") {
 
                 bigItem2.style.backgroundColor = "rgba(0, 198, 8, 0.438)";
-      
-       //   bigItem2.style.background="linear-gradient(0deg, rgba(0, 198, 8, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
-   
+
+                //   bigItem2.style.background="linear-gradient(0deg, rgba(0, 198, 8, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
+
             }
             if (item === "item3") {
 
-              bigItem2.style.backgroundColor = "rgba(255, 255, 233, 0.438)";
-          //     bigItem2.style.background="linear-gradient(0deg, rgba(34,193,195,0.43) 0%, rgba(255, 255, 233, 0.2) 100%)"
+                bigItem2.style.backgroundColor = "rgba(255, 255, 233, 0.438)";
+                //     bigItem2.style.background="linear-gradient(0deg, rgba(34,193,195,0.43) 0%, rgba(255, 255, 233, 0.2) 100%)"
 
             }
             if (item === "item4") {
                 bigItem2.style.backgroundColor = "rgba(255, 54, 94, 0.438)";
-        
-          //  bigItem2.style.background="linear-gradient(0deg, rgba(255, 54, 94, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
+
+                //  bigItem2.style.background="linear-gradient(0deg, rgba(255, 54, 94, 0.438) 0%, rgba(255, 255, 233, 0.2) 100%)"
             }
 
 
@@ -317,8 +317,8 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                         : item2 === "item2" ? (
                                             <div class="text">
                                                 <div>
-                                                <div>
-                                                    The tools and frameworks I use are:
+                                                    <div>
+                                                        The tools and frameworks I use are:
                                                     </div>
                                                 </div>
                                                 <div className="iconItem2">
@@ -346,8 +346,8 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         <img src={phpmyadmin} alt="" />
                                                         phpMyAdmin
                                                     </p>
-                                                    <p> 
-                                                    <img src={vtex} alt="" />
+                                                    <p>
+                                                        <img src={vtex} alt="" />
                                                         Vtex
                                                     </p>
 
@@ -357,7 +357,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                                             (
                                                 <div class="text" >
-                                                    <div style={{color:"rgb(1, 134, 134,0.6)",textShadow:"0.3px -1px 0px black" ,display:"inline"}}>
+                                                    <div style={{ color: "rgb(1, 134, 134,0.6)", textShadow: "0.3px -1px 0px black", display: "inline" }}>
                                                         <p> I am currently working for a construction company called     <a href="https://imepho.com.ar">Imepho</a> performing maintenance and development in PHP.</p>
 
 
@@ -370,13 +370,19 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                     <div>
                                                         I have experience in creating pages and full stack systems. with role systems, permissions and authentication.
                                                         Also in the creation of
-                                                        2D and 3D video games. </div>
-                                                      
-                                                        <p class="text_exp">
-                                                        <img src={titulo2} alt="" />
+                                                        2D and 3D video games.
+
                                                    
+                                                    </div>
+                                                    <div>
+                                                    Completed tertiary studies.
+                                                    </div>
+
+                                                    <p class="text_exp">
+                                                        <img src={titulo2} alt="" />
+
                                                     </p>
-                                                 
+
                                                 </div>
                                             )
                                     }
