@@ -308,11 +308,12 @@ box-shadow: 2px 2px 15px black  ;
 overflow: auto;
 overflow-y: hidden;
 border:1vh solid transparent;
-border-image:url('/src/imgs/borderblue.jpg') 5% round;
+border-image:url('/src/imgs/borderblue.jpg') 3% 2% round;
 
 }
 .text_exp img{
-    object-fit: cover;
+    object-fit:fill;
+    overflow: auto;
  
 }
 
@@ -344,8 +345,8 @@ border-image:url('/src/imgs/borderblue.jpg') 5% round;
         .text_exp {
             margin: auto;
             margin-top: 0px;
-        height: 100px;
-        width: 600px;
+        height: 45%;
+        width: 100%;
         box-shadow: 2px 2px 15px black  ;
         overflow: auto;
 

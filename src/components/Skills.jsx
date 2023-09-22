@@ -372,10 +372,10 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         Also in the creation of
                                                         2D and 3D video games.
 
-                                                   
+
                                                     </div>
                                                     <div>
-                                                    Completed tertiary studies.
+                                                        Completed tertiary studies-(Software developer and video game programmer)
                                                     </div>
 
                                                     <p class="text_exp">
