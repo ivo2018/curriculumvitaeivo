@@ -13,7 +13,10 @@ import lareina from "../imgs/Web/LaReina/lareina.png"
 import lareina2 from "../imgs/Web/LaReina/LaReinaFooter.png"
 import lareina3 from "../imgs/Web/LaReina/lareinaProducts.png"
 import lareina4 from "../imgs/Web/LaReina/lareinaLogo.png"
-
+import gluckindex from "../imgs/Web/Gluck/index.png"
+import gluckshow from "../imgs/Web/Gluck/Show.png"
+import gluckedit from "../imgs/Web/Gluck/Edit.png"
+import gluckcreate from "../imgs/Web/Gluck/Create.png"
 var list = [
 
     {
@@ -28,7 +31,7 @@ var list = [
   ,detalle:"detalles......"  },
     {
         id:"2 ",
-        name: "DarteArte2",
+        name: "Anymo",
         photo: landing1,
         photo2:landing2,
         photo3: landing3,
@@ -38,7 +41,7 @@ var list = [
     ,
     {
         id:"3 ",
-        name: "DarteArte2",
+        name: "LaReina",
         photo: lareina,
         photo2: lareina2,
         photo3: lareina3,
@@ -48,8 +51,11 @@ var list = [
   ,detalle:"detalles......"  }
     ,
     {    id:"4 ",
-        name: "DarteArte2",
-        photo: foto,
+        name: "Gluck",
+        photo: gluckindex,
+        photo2: gluckcreate,
+        photo3: gluckshow,
+        photo4: gluckedit,
         description:" Hola esta es la descripcion"
   ,detalle:"detalles......"  }
     ,
