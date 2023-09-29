@@ -13,10 +13,10 @@ import lareina from "../imgs/Web/LaReina/lareina.png"
 import lareina2 from "../imgs/Web/LaReina/LaReinaFooter.png"
 import lareina3 from "../imgs/Web/LaReina/lareinaProducts.png"
 import lareina4 from "../imgs/Web/LaReina/lareinaLogo.png"
-import gluckindex from "../imgs/Web/Gluck/index.png"
+import gluckindex from "../imgs/Web/Gluck/Create.png"
 import gluckshow from "../imgs/Web/Gluck/Show.png"
 import gluckedit from "../imgs/Web/Gluck/Edit.png"
-import gluckcreate from "../imgs/Web/Gluck/Create.png"
+import gluckcreate from "../imgs/Web/Gluck/index.png"
 var list = [
 
     {

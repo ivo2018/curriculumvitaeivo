@@ -8,8 +8,8 @@ import Smoke from "../imgs/Videojuegos/Zemaria/SmokeAturdido.png"
 import Explosion from "../imgs/Videojuegos/Zemaria/Explosion.png"
 import MainScene from "../imgs/Videojuegos/Sekeletons/MainScene.png";
 import MainScene2 from "../imgs/Videojuegos/Sekeletons/MainScene2.png";
-import MainScene3 from "../imgs/Videojuegos/Sekeletons/MainScene3.png";
-import MainScene5 from "../imgs/Videojuegos/Sekeletons/MainScene5.png";
+import MainScene3 from "../imgs/Videojuegos/Sekeletons/MainScene8.png";
+import MainScene5 from "../imgs/Videojuegos/Sekeletons/MainScene7.png";
 
 
 var list=[
