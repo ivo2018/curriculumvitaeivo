@@ -279,9 +279,9 @@ const Work = (/*{handleClick,setChange}*/) => {
                                     <div class="wrapper">
                                         <div class="carousel">
                                             {list.map((producto) => (
-                                                <div class="carousel_div" onClick={() => setProduct(producto.id)}>
+                                                <div class="carousel_div" onClick={() => setProduct(producto.id)} >
                                                     <a href=" # "> {producto.name} </a>
-                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                    <img src={producto.photo} alt="img" draggable="false" title="value" style={{objectFit:"scale-down"}} ></img>
                                                 </div>
 
                                             ))}
@@ -304,7 +304,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                             {list2.map((producto) => (
                                                 <div class="carousel_div2" onClick={() => setProduct(producto.id)}>
                                                     <a href=" # "> {producto.name} </a>
-                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                    <img src={producto.photo} alt="img" draggable="false" title="value" style={{objectFit:"scale-down"}}></img>
                                                 </div>
 
                                             ))}
@@ -334,7 +334,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                             <div class="wrapper3">
                                                                 <i id="left" class="fa-solid fa-less-than"  onClick={()=>secondIcon() }></i>
                                                                 <div class="carousel3">
-                                                                    <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                                    <img src={producto.photo1} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
                                                                     <img src={producto.photo4} alt="img" draggable="false" title="value"></img>
@@ -361,7 +361,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                                                        <div class="wrapper3">
                                                            <i id="left" class="fa-solid fa-less-than"  onClick={()=>secondIcon() }></i>
                                                            <div class="carousel3">
-                                                               <img src={producto.photo} alt="img" draggable="false" title="value"></img>
+                                                               <img src={producto.photo1} alt="img" draggable="false" title="value"></img>
                                                                <img src={producto.photo2} alt="img" draggable="false" title="value"></img>
                                                                <img src={producto.photo3} alt="img" draggable="false" title="value"></img>
                                                                <img src={producto.photo4} alt="img" draggable="false" title="value"></img>

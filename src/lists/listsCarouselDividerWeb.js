@@ -17,12 +17,14 @@ import gluckindex from "../imgs/Web/Gluck/Create.png"
 import gluckshow from "../imgs/Web/Gluck/Show.png"
 import gluckedit from "../imgs/Web/Gluck/Edit.png"
 import gluckcreate from "../imgs/Web/Gluck/index.png"
+import folder from "../imgs/folderWindows.png"
 var list = [
 
     {
         id:"1 ",
         name: "DarteArte",
-        photo: Home,
+        photo: folder,
+        photo1:Home,
         photo2:Home2,
         photo3: ProductDetail,
         photo4:ProductDetailBuy,
@@ -32,7 +34,8 @@ var list = [
     {
         id:"2 ",
         name: "Anymo",
-        photo: landing1,
+        photo: folder,
+        photo1: landing1,
         photo2:landing2,
         photo3: landing3,
         photo4:landing4,
@@ -42,7 +45,8 @@ var list = [
     {
         id:"3 ",
         name: "LaReina",
-        photo: lareina,
+        photo: folder,
+        photo1: lareina,
         photo2: lareina2,
         photo3: lareina3,
         photo4: lareina4
@@ -53,7 +57,8 @@ var list = [
     ,
     {    id:"4 ",
         name: "Gluck",
-        photo: gluckindex,
+        photo: folder,
+        photo1: gluckindex,
         photo2: gluckcreate,
         photo3: gluckshow,
         photo4: gluckedit,

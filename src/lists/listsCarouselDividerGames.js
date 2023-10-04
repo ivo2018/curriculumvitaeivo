@@ -19,12 +19,14 @@ import Wild1 from "../imgs/Videojuegos/Wild Team/3PLAYERS.png";
 import Wild2 from "../imgs/Videojuegos/Wild Team/3PLAYERS2.png";
 import Wild3 from "../imgs/Videojuegos/Wild Team/4 PLAYERS TEAM.png";
 import Wild4 from "../imgs/Videojuegos/Wild Team/4PLAYERSTEAM2.png";
+import folder from "../imgs/folderWindows.png"
 
 var list=[
     {
         id:"1",
         name: "Zemaria",
-        photo:Bandera,
+        photo:folder,
+        photo1:Bandera,
         photo2:Explosion,
         photo3:Smoke,
         photo4:ConsigoLanzaCohetes,
@@ -33,7 +35,8 @@ var list=[
     {
         id:"2",
         name: "Skeletons",
-        photo:MainScene,
+        photo:folder,
+        photo1:MainScene,
         photo2:MainScene2,
         photo3:MainScene3,
         photo4:MainScene5,
@@ -42,7 +45,8 @@ var list=[
     {
         id:"3",
         name: "Dragon'S Fire",
-        photo:Dragon1,
+        photo:folder,
+        photo1:Dragon1,
         photo2:Dragon2,
         photo3:Dragon3,
         photo4:Dragon4,
@@ -51,7 +55,8 @@ var list=[
     {
         id:"4",
         name: "Wild Team",
-        photo:Wild1,
+        photo:folder,
+        photo1:Wild1,
         photo2:Wild2,
         photo3:Wild3,
         photo4:Wild4,
