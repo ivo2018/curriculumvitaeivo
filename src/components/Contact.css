@@ -57,8 +57,8 @@
     align-items: center;
     justify-content: center;
     text-shadow: 1.5px 1.5px rgb(255, 255, 255) ;
-
-    margin: 10px;
+    margin: auto;
+    padding:1%;
 }
 
 .field input {
@@ -69,6 +69,8 @@
     min-width: 50%;
     line-height: 1.5;
     font-size: 14px;
+    width: 50%;
+    height: 2.5vh;
   /*  border: none;*/
 
     background: rgba(0, 0, 0, 0);
@@ -95,15 +97,15 @@ textarea:focus, input:focus{
 
 .field textarea {
     background-color: #77777746;
-    height: 80px;
-    width: 380px;
+    height: 10vh;
+    width: 38%;
     max-height: 80%;
     max-width: 50%;
     margin-bottom: 2%;
     border-bottom: 3px outset rgb(8, 62, 241);
     text-shadow: 2px 2px 20px rgb(8, 62, 241);
     color: whitesmoke;
-  
+        margin: auto;
     font-weight: 600;
     text-shadow: 1px 1px black;
 }
@@ -117,7 +119,12 @@ textarea:focus, input:focus{
 
 input[type="submit"] {
     display: flex;
-    padding: 6px 30px;
+    position: absolute;
+ width: 50%;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
     font-size: 14px;
     background-color: #01090e;
     color: #fff;
@@ -126,7 +133,7 @@ input[type="submit"] {
     justify-content: center;
     border-radius: 20px;
     text-shadow: 2px 2px rgb(57, 59, 59);
-
+    text-align: center;
 }
 
 input[type="submit"]:hover {
@@ -140,8 +147,12 @@ input[type="submit"]:active {
     color: #fff;
     text-shadow: 1px 1px rgb(209, 94, 255);
 }
-
-@media (max-width:500px){
+.form_content-info{
+display: flex;
+flex-direction: column;
+line-height: 6vh;
+}
+@media (max-width:1900px){
     .form_content {
       
         height: 80%;
@@ -155,6 +166,20 @@ input[type="submit"]:active {
         height: 80%;
    
    
+    }
+    .field textarea {
+        background-color: #77777746;
+        height: 10vh;
+        width: 38%;
+        max-height: 20%;
+        max-width: 50%;
+        margin-bottom: 2%;
+        border-bottom: 3px outset rgb(8, 62, 241);
+        text-shadow: 2px 2px 20px rgb(8, 62, 241);
+        color: whitesmoke;
+            margin: auto;
+        font-weight: 600;
+        text-shadow: 1px 1px black;
     }
     
 }

@@ -26,9 +26,9 @@ var list = [
         photo2:Home2,
         photo3: ProductDetail,
         photo4:ProductDetailBuy,
-        description:" University Pompeu Fabra website for Masters degree information and purchase, blog, and educational related content. The website consists of the following parts: a CMS section for content creation by the university using Drupal with customized modules. This data is integrated with the university's API in a backend that is then collected by Nextjs to serve as the frontend"
+        description:" Darte arte is an Ecomerce project carried out with the intention of being a means of artistic communication and sale. Where you can sell clothes and different accessories."
         
-  ,detalle:"detalles......"  },
+  ,detalle:"This page is full stack, it was developed with the React Js framework, it has a role system for users and administrators, the backend is made with Node js and connected to a Mysql database"  },
     {
         id:"2 ",
         name: "Anymo",
@@ -36,8 +36,8 @@ var list = [
         photo2:landing2,
         photo3: landing3,
         photo4:landing4,
-        description:"University Pompeu Fabra website for Masters degree information and purchase, blog, and educational related content. The website consists of the following parts: a CMS section for content creation by the university using Drupal with customized modules. This data is integrated with the university's API in a backend that is then collected by Nextjs to serve as the frontend"
-  ,detalle:"detalles......"  }
+        description:"Anymo is a project with the idea of ​​being a means of selling a phenomenon called  'Moments'  those moments are a complete and unique experience for the client who acquires them, these moments are acquired via monthly subscriptions.  The images presented correspond to the landing page that explains how it works."
+  ,detalle:"This page is full stack, it was developed with the React Js framework, it has a role system for users and administrators, the backend is made with Node js and connected to a Mysql database"  }
     ,
     {
         id:"3 ",
@@ -47,8 +47,9 @@ var list = [
         photo3: lareina3,
         photo4: lareina4
         ,
-        description:" Hola esta es la descripcion"
-  ,detalle:"detalles......"  }
+        description:" La Reina is an example project of an existing page of a bakery in Pinamar, the intention of this project is to try to show the imprint of a brand on a web page"
+        ,detalle:"This page is full stack, it was developed with the React Js framework, it has a role system for users and administrators, the backend is made with Node js and connected to a Mysql database"  }
+
     ,
     {    id:"4 ",
         name: "Gluck",

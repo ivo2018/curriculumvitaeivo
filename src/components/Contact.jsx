@@ -74,12 +74,14 @@ const Contact = (/*{setChange,handleClick}*/) => {
                     <div className="form_content">
                     <p class="form_item">Contact Me</p>
                         <form ref={form} onSubmit={sendEmail} class="field">
+                         <div class="form_content-info">
                             <label>Name</label>
                             <input type="text"  autocomplete="off" name="user_name" />
                             <label>Email</label>
                             <input type="email" autocomplete="off" name="user_email" />
                             <label>Message</label>
                             <textarea name="message" />
+                            </div>
                             <input type="submit" autocomplete="off"  value="Send" />
                         </form>
 

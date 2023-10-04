@@ -1,4 +1,4 @@
-import photo from "../imgs/2-0.jpg"
+
 /*import foto2 from "../imgs/2-2.jpg"
 import foto3 from "../imgs/2.jpg"
 import foto4 from "../imgs/2-1.jpg"*/
@@ -10,7 +10,15 @@ import MainScene from "../imgs/Videojuegos/Sekeletons/MainScene.png";
 import MainScene2 from "../imgs/Videojuegos/Sekeletons/MainScene2.png";
 import MainScene3 from "../imgs/Videojuegos/Sekeletons/MainScene8.png";
 import MainScene5 from "../imgs/Videojuegos/Sekeletons/MainScene7.png";
+import Dragon1 from "../imgs/Videojuegos/Dragon's Fire/2PLAYERSGAME.png";
+import Dragon2 from "../imgs/Videojuegos/Dragon's Fire/2PLAYERSGAME2.png";
+import Dragon3 from "../imgs/Videojuegos/Dragon's Fire/2PLAYERSGAME3.png";
+import Dragon4 from "../imgs/Videojuegos/Dragon's Fire/2PLAYERSGAME6.png";
 
+import Wild1 from "../imgs/Videojuegos/Wild Team/3PLAYERS.png";
+import Wild2 from "../imgs/Videojuegos/Wild Team/3PLAYERS2.png";
+import Wild3 from "../imgs/Videojuegos/Wild Team/4 PLAYERS TEAM.png";
+import Wild4 from "../imgs/Videojuegos/Wild Team/4PLAYERSTEAM2.png";
 
 var list=[
     {
@@ -33,14 +41,20 @@ var list=[
  ,detalles:"detalles......."   },
     {
         id:"3",
-        name: "Zemaria",
-        photo:photo,
+        name: "Dragon'S Fire",
+        photo:Dragon1,
+        photo2:Dragon2,
+        photo3:Dragon3,
+        photo4:Dragon4,
         description:"Infojobs Assistant is an extension for Google Chrome that allows the user to get an in-depth analysis of their resume in relation to the job offer they want to apply for. The purpose of the extension is to facilitate the selection process for the candidate so that they feel more confident and increase their chances of getting the job"
   ,detalles:"detalles......."  },
     {
         id:"4",
-        name: "Zemariaa",
-        photo:photo,
+        name: "Wild Team",
+        photo:Wild1,
+        photo2:Wild2,
+        photo3:Wild3,
+        photo4:Wild4,
         description:"Hola esta es mi descripcion"
    ,detalles:"detalles......." }
 ];
